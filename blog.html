@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog - Graphura India Private Limited</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Figtree:wght@400&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html" aria-label="Graphura Home">
+          <img src="image/bg removed.png" alt="Graphura Logo" />
+        </a>
+      </div>
+      <div class="navbar-menu" role="menubar" aria-label="Primary Navigation">
+        <ul class="navbar-nav">
+          <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+          
+          <!-- Services Dropdown -->
+          <li class="nav-dropdown" role="none">
+            <a href="#" class="dropdown-toggle" role="menuitem" aria-haspopup="true" aria-expanded="false" tabindex="0">
+              Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-label="Services submenu">
+              <li role="none"><a href="services/seo.html" role="menuitem">SEO Services</a></li>
+              <li role="none"><a href="services/social-media.html" role="menuitem">Social Media Management</a></li>
+              <li role="none"><a href="services/content-marketing.html" role="menuitem">Content Marketing</a></li>
+              <li role="none"><a href="services/digital-advertising.html" role="menuitem">Digital Advertising</a></li>
+              <li role="none"><a href="services/brand-strategy.html" role="menuitem">Brand Strategy</a></li>
+            </ul>
+          </li>
+
+          <li role="none"><a href="about.html" role="menuitem">About Us</a></li>
+          <li role="none"><a href="branding.html" role="menuitem">Branding</a></li>
+          <li role="none"><a href="blog.html" role="menuitem" class="active">Blog</a></li>
+          <li role="none"><a href="contact.html" role="menuitem" class="btn btn-primary">Contact Us</a></li>
+        </ul>
+        <button class="navbar-toggle" aria-label="Toggle Menu" aria-expanded="false">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mini Hero Section -->
+  <section class="blog-hero hero" aria-label="Blog Hero Section" style="position: relative; overflow: hidden;">
+    <div class="particles-container" aria-hidden="true">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+
+    <!-- Floating Graphura Logo on right -->
+    <div class="floating-logo-container" aria-hidden="true" style="
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      width: 120px;
+      height: 120px;
+      z-index: 2;
+      pointer-events: none;
+      user-select: none;
+      animation: floatVertical 6s ease-in-out infinite;
+      filter: drop-shadow(0 0 10px rgba(26, 115, 232, 0.7));
+    ">
+      <img src="image/bg removed.png" alt="Graphura Logo" class="floating-graphura-logo" style="
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.12);
+        padding: 10px;
+      "/>
+    </div>
+
+    <div class="container">
+      <div class="hero-content" style="text-align:center;">
+        <span class="badge-text" style="font-weight:700; font-size:1rem; color:var(--white); background:rgba(0,0,0,0.25); padding:0.25rem 0.8rem; border-radius:6px;">Insights</span>
+        <h1 class="hero-title" style="margin-top:1rem; font-size:3rem; line-height:1.3;">
+          <span class="title-highlight" style="display:block; margin-bottom:0.3rem;">Graphura Blog</span>
+          <span class="title-line" style="font-weight:600; font-size:1.7rem;">
+            Explore expert articles, industry trends, and actionable tips designed to help you master digital marketing and grow your business effectively.
+          </span>
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <div class="blog-container container" style="display:flex; gap:2rem; margin-top:4rem; max-width: 1200px;">
+    <main class="blog-main" style="flex:3;">
+      <!-- Featured Posts -->
+      <section class="featured-posts" aria-label="Featured Posts" style="margin-bottom: 3rem;">
+        <h2 style="margin-bottom:2rem; font-weight:700;">Featured Posts</h2>
+        <div class="post-carousel" style="display:flex; gap:2rem; overflow-x:auto; scroll-behavior: smooth; padding-bottom: 1rem;">
+          <article class="featured-post" style="min-width:320px; background:#fff; padding:1rem; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+            <img src="featured-post1.jpg" alt="Featured Post 1" style="border-radius:6px; width:100%; height:180px; object-fit:cover;" />
+            <h3 style="margin-top:1rem; font-size:1.3rem; color:var(--secondary);">5 Essential SEO Strategies for Small Businesses</h3>
+            <p style="font-size:1rem; color:var(--text-light); margin:0.75rem 0;">Discover the most effective SEO techniques to boost your online presence...</p>
+            <a href="#" class="btn-text" aria-label="Read more about 5 Essential SEO Strategies for Small Businesses">Read More <i class="fas fa-arrow-right"></i></a>
+          </article>
+          <article class="featured-post" style="min-width:320px; background:#fff; padding:1rem; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+            <img src="featured-post2.jpg" alt="Featured Post 2" style="border-radius:6px; width:100%; height:180px; object-fit:cover;" />
+            <h3 style="margin-top:1rem; font-size:1.3rem; color:var(--secondary);">Social Media Trends to Watch in 2025</h3>
+            <p style="font-size:1rem; color:var(--text-light); margin:0.75rem 0;">Stay ahead of the curve with these emerging social media trends...</p>
+            <a href="#" class="btn-text" aria-label="Read more about Social Media Trends to Watch in 2025">Read More <i class="fas fa-arrow-right"></i></a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+  <!-- Recent Posts Grid -->
+  <section class="recent-posts container" aria-label="Latest Blog Articles" style="max-width:1200px; margin:4rem auto;">
+    <h2 style="margin-bottom:2rem; font-weight:700; text-align:center;">Latest Articles</h2>
+    <div class="posts-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap:2rem;">
+      <article class="blog-post" style="background:#fff; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1); padding:1rem;">
+        <img src="post1.jpg" alt="Blog Post 1" style="width:100%; height:180px; object-fit:cover; border-radius:6px;" />
+        <h3 style="margin-top:1rem; color:var(--secondary);">How to Create Engaging Content for Your Audience</h3>
+        <p style="margin:0.75rem 0; color:var(--text-light);">Learn the secrets to creating content that resonates with your target market...</p>
+        <a href="#" class="btn-text" aria-label="Read more about How to Create Engaging Content for Your Audience">Read More <i class="fas fa-arrow-right"></i></a>
+      </article>
+
+      <article class="blog-post" style="background:#fff; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1); padding:1rem;">
+        <img src="post2.jpg" alt="Blog Post 2" style="width:100%; height:180px; object-fit:cover; border-radius:6px;" />
+        <h3 style="margin-top:1rem; color:var(--secondary);">The Power of Email Marketing in 2025</h3>
+        <p style="margin:0.75rem 0; color:var(--text-light);">Why email marketing remains one of the most effective digital channels...</p>
+        <a href="#" class="btn-text" aria-label="Read more about The Power of Email Marketing in 2025">Read More <i class="fas fa-arrow-right"></i></a>
+      </article>
+
+      <article class="blog-post" style="background:#fff; border-radius:8px; box-shadow:0 4px 10px rgba(0,0,0,0.1); padding:1rem;">
+        <img src="post3.jpg" alt="Blog Post 3" style="width:100%; height:180px; object-fit:cover; border-radius:6px;" />
+        <h3 style="margin-top:1rem; color:var(--secondary);">Branding Tips for Startups</h3>
+        <p style="margin:0.75rem 0; color:var(--text-light);">Establish a strong brand identity from day one with these expert tips...</p>
+        <a href="#" class="btn-text" aria-label="Read more about Branding Tips for Startups">Read More <i class="fas fa-arrow-right"></i></a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Subscribe Section -->
+  <section class="subscribe-section" style="background: var(--primary); color: var(--white); padding: 3rem 0;">
+    <div class="container" style="max-width: 600px; text-align: center;">
+      <h2 style="font-weight:700; font-size:2rem; margin-bottom:1rem;">Stay Updated</h2>
+      <p style="font-size:1.1rem; margin-bottom:2rem;">Subscribe to our newsletter for the latest digital marketing insights</p>
+      <form class="subscribe-form" style="display:flex; max-width: 400px; margin: 0 auto; gap:0.5rem;" aria-label="Subscribe to newsletter">
+        <input
+          type="email"
+          placeholder="Your email address"
+          required
+          style="flex:1; padding:0.7rem 1rem; font-size:1rem; border:none; border-radius: 4px 0 0 4px;"
+        />
+        <button
+          type="submit"
+          style="background: var(--accent); color: var(--white); border:none; padding:0.7rem 1.5rem; font-weight:600; border-radius: 0 4px 4px 0; cursor: pointer;"
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>Graphura</h3>
+          <p>Your trusted digital marketing partner helping businesses grow their online presence and reach their target audience effectively.</p>
+          <div class="footer-social" aria-label="Social Media Links" role="navigation">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="branding.html">Branding</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-services">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="services.html#seo">SEO Services</a></li>
+            <li><a href="services.html#social-media">Social Media Management</a></li>
+            <li><a href="services.html#content-marketing">Content Marketing</a></li>
+            <li><a href="services.html#advertising">Digital Advertising</a></li>
+            <li><a href="branding.html">Brand Strategy</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 Business Street, Mumbai, India</li>
+            <li><i class="fas fa-phone" aria-hidden="true"></i> +91 9876543210</li>
+            <li><i class="fas fa-envelope" aria-hidden="true"></i> info@graphura.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Graphura India Private Limited. All Rights Reserved.</p>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
