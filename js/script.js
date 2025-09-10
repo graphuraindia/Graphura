@@ -280,38 +280,78 @@ document.addEventListener('DOMContentLoaded', function () {
 
     /* ------------------------ Testimonial Slider ------------------------ */
 
-    const testimonialSlides = document.querySelectorAll('.testimonial-slide');
     let currentTestimonialIndex = 0;
+    let testimonialInterval;
+    const testimonials = document.querySelectorAll('.testimonial');
+    const dots = document.querySelectorAll('.dot');
 
+    // Function to show specific testimonial
     function showTestimonial(index) {
-        testimonialSlides.forEach((slide) => slide.classList.remove('active'));
-        if (testimonialSlides[index]) testimonialSlides[index].classList.add('active');
+        // Hide all testimonials
+        testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        // Update current index
         currentTestimonialIndex = index;
+        
+        // Show selected testimonial
+        testimonials[index].classList.add('active');
+        dots[index].classList.add('active');
+        
+        // Reset the auto-advance timer
+        resetTestimonialInterval();
     }
 
-    // Auto-rotate testimonials every 5 seconds
-    let testimonialInterval = setInterval(() => {
-        let nextIndex = (currentTestimonialIndex + 1) % testimonialSlides.length;
-        showTestimonial(nextIndex);
-    }, 5000);
-
-    // Pause auto-rotation on hover
-    const testimonialCarousel = document.querySelector('.testimonial-carousel');
-    if (testimonialCarousel) {
-        testimonialCarousel.addEventListener('mouseenter', () => {
-            clearInterval(testimonialInterval);
-        });
-        testimonialCarousel.addEventListener('mouseleave', () => {
-            testimonialInterval = setInterval(() => {
-                let nextIndex = (currentTestimonialIndex + 1) % testimonialSlides.length;
-                showTestimonial(nextIndex);
-            }, 5000);
-        });
+    // Function to change testimonial (next/previous)
+    function changeTestimonial(direction) {
+        let newIndex = currentTestimonialIndex + direction;
+        
+        // Handle wrap-around
+        if (newIndex < 0) {
+            newIndex = testimonials.length - 1;
+        } else if (newIndex >= testimonials.length) {
+            newIndex = 0;
+        }
+        
+        showTestimonial(newIndex);
     }
 
-    // Initialize first testimonial
-    if (testimonialSlides.length) {
-        showTestimonial(0);
+    // Function to auto-advance testimonials
+    function autoAdvanceTestimonials() {
+        changeTestimonial(1);
+    }
+
+    // Function to reset the auto-advance interval
+    function resetTestimonialInterval() {
+        clearInterval(testimonialInterval);
+        testimonialInterval = setInterval(autoAdvanceTestimonials, 5000); // Change every 5 seconds
+    }
+
+    // Initialize the testimonial slider
+    if (testimonials.length > 0) {
+        // Start auto-advancing
+        resetTestimonialInterval();
+        
+        // Pause auto-advancement when user interacts with controls
+        const controls = document.querySelectorAll('.prev, .next, .dot');
+        controls.forEach(control => {
+            control.addEventListener('click', function() {
+                resetTestimonialInterval();
+            });
+        });
+        
+        // Pause auto-advancement when hovering over testimonial
+        const testimonialContainer = document.querySelector('.testimonial-slider');
+        if (testimonialContainer) {
+            testimonialContainer.addEventListener('mouseenter', function() {
+                clearInterval(testimonialInterval);
+            });
+            
+            // Resume auto-advancement when mouse leaves testimonial
+            testimonialContainer.addEventListener('mouseleave', function() {
+                resetTestimonialInterval();
+            });
+        }
     }
 
     /* ------------------------ FAQ Accordion Functionality ------------------------ */
@@ -419,7 +459,7 @@ document.addEventListener('DOMContentLoaded', function () {
     /* ------------------------ Scroll-triggered Animation on Elements ------------------------ */
 
     const animatedElements = document.querySelectorAll(
-        '.package-card, .benefit-item, .stat-item, .faq-item, .service-card, .process-step, .testimonial-slide, .portfolio-item'
+        '.package-card, .benefit-item, .stat-item, .faq-item, .service-card, .process-step, .testimonial, .portfolio-item'
     );
 
     const animationObserver = new IntersectionObserver(

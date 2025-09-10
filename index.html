@@ -15,6 +15,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 </head>
 <body>
     <!-- Navbar -->
@@ -33,31 +35,31 @@
 
                     <!-- Services Dropdown menu -->
                     <li class="nav-dropdown" role="none">
-                        <a
-                            href="#"
-                            class="dropdown-toggle"
-                            role="menuitem"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            tabindex="0"
-                        >
-                            Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                        </a>
-                        <ul class="dropdown-menu" role="menu" aria-label="Services submenu">
-                            <li role="none"><a role="menuitem" href="services/seo.html">SEO Services</a></li>
-                            <li role="none"><a role="menuitem" href="services/social-media.html">Social Media Management</a></li>
-                            <li role="none"><a role="menuitem" href="services/content-marketing.html"
-                                >Content Marketing</a
-                            ></li>
-                            <li role="none"><a role="menuitem" href="services/digital-advertising.html"
-                                >Digital Advertising</a
-                            ></li>
-                            <li role="none"><a role="menuitem" href="services/brand-strategy.html">Brand Strategy</a></li>
-                        </ul>
-                    </li>
+                      <a
+                        href="#"
+                        class="dropdown-toggle"
+                        role="menuitem"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        tabindex="0"
+                    >
+                        Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" aria-label="Services submenu">
+                    <li role="none"><a role="menuitem" href="services/seo.html">SEO Services</a></li>
+                    <li role="none"><a role="menuitem" href="services/smm.html">Social Media Marketing</a></li>
+                    <li role="none"><a role="menuitem" href="services/smo.html">Social Media Optimization</a></li>
+                    <li role="none"><a role="menuitem" href="services/Flyers.html">Flyers</a></li>
+                    <li role="none"><a role="menuitem" href="services/cw.html">Content Writing</a></li>
+                    <li role="none"><a role="menuitem" href="services/Thumbnail.html">Thumbnail Design</a></li>
+                    <li role="none"><a role="menuitem" href="services/banner.html">Banner Design</a></li>
+                    <li role="none"><a role="menuitem" href="services/logo.html">Logo Design</a></li>
+                    <li role="none"><a role="menuitem" href="services/card.html">Business Card Design</a></li>
+                    <li role="none"><a role="menuitem" href="services/poster.html">Poster Design</a></li>
+                  </ul>
+                </li>
 
-                    <li role="none"><a role="menuitem" href="about.html">About Us</a></li>
-                    <li role="none"><a role="menuitem" href="branding.html">Branding</a></li>
+                <li role="none"><a role="menuitem" href="about.html">About Us</a></li>
                     <li role="none"><a role="menuitem" href="blog.html">Blog</a></li>
                     <li role="none">
                         <a role="menuitem" href="contact.html" class="btn btn-primary" style="color: #fff;">Contact Us</a>
@@ -78,7 +80,7 @@
                 <a href="#" class="mobile-dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
                 <ul class="mobile-dropdown-menu">
                     <li><a href="services/seo.html">SEO Services</a></li>
-                    <li><a href="services/social-media.html">Social Media Management</a></li>
+                    <li><a href="services/smm.html">Social Media Marketing</a></li>
                     <li><a href="services/content-marketing.html">Content Marketing</a></li>
                     <li><a href="services/digital-advertising.html">Digital Advertising</a></li>
                     <li><a href="services/brand-strategy.html">Brand Strategy</a></li>
@@ -126,10 +128,8 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="hero-badge">
-                        <span class="badge-text">🚀 #1 Digital Marketing Agency</span>
-                    </div>
-                    
+                    <div class="hero-badge"></div>
+
                     <h1 class="hero-title">
                         <span class="title-line">Transform Your</span>
                         <span class="title-highlight">Digital Presence</span>
@@ -241,7 +241,7 @@
                                     <span class="stat-label">Google Rankings</span>
                                 </div>
                             </div>
-                            <a href="services.html#seo" class="btn btn-text">
+                            <a href="services/seo.html" class="btn btn-text">
                                 <span>Learn More</span>
                                 <i class="fas fa-arrow-right"></i>
                             </a>
@@ -279,7 +279,7 @@
                                     <span class="stat-label">Followers</span>
                                 </div>
                             </div>
-                            <a href="services.html#social-media" class="btn btn-text">
+                            <a href="services/smm.html" class="btn btn-text">
                                 <span>Learn More</span>
                                 <i class="fas fa-arrow-right"></i>
                             </a>
@@ -295,7 +295,7 @@
                             <div class="icon-glow"></div>
                         </div>
                         <div class="service-content">
-                            <h3>Content Marketing</h3>
+                            <h3>Content Writing</h3>
                             <p>Tell your brand story with compelling content that resonates with your audience and drives conversions.</p>
                             <ul class="service-features">
                                 <li><i class="fas fa-check"></i> Blog & Article Writing</li>
@@ -313,7 +313,7 @@
                                     <span class="stat-label">Engagement Rate</span>
                                 </div>
                             </div>
-                            <a href="services.html#content-marketing" class="btn btn-text">
+                            <a href="services/cw.html" class="btn btn-text">
                                 <span>Learn More</span>
                                 <i class="fas fa-arrow-right"></i>
                             </a>
@@ -355,14 +355,21 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="section testimonials">
-        <div class="container">
+ <!-- Testimonials Section -->
+<section class="section testimonials">
+    <div class="container">
+        <div class="section-header">
             <h2 class="section-title">What Our Clients Say</h2>
             <p class="section-subtitle">Hear from businesses we've helped grow</p>
-            <div class="testimonial-slider">
+        </div>
+        
+        <div class="testimonial-slider">
+            <div class="testimonial-track">
                 <div class="testimonial active">
                     <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -370,18 +377,27 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p>"Graphura transformed our online presence. Our website traffic increased by 300% within just 3 months of working with them. Their team is professional, responsive, and truly understands digital marketing."</p>
+                        <p class="testimonial-text">"Graphura transformed our online presence. Our website traffic increased by 300% within just 3 months of working with them. Their team is professional, responsive, and truly understands digital marketing."</p>
                         <div class="client-info">
-                            <img src="images/client1.jpg" alt="Rahul Sharma">
-                            <div>
+                            <div class="client-avatar">
+                                <img src="images/client1.jpg" alt="Rahul Sharma">
+                            </div>
+                            <div class="client-details">
                                 <h4>Rahul Sharma</h4>
                                 <p>CEO, TechSolutions</p>
                             </div>
+                            <div class="company-logo">
+                                <img src="images/techsolutions-logo.png" alt="TechSolutions">
+                            </div>
                         </div>
                     </div>
                 </div>
+                
                 <div class="testimonial">
                     <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -389,18 +405,27 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <p>"The social media strategy developed by Graphura helped us double our engagement and significantly increase our follower base. They consistently deliver creative content that aligns with our brand."</p>
+                        <p class="testimonial-text">"The social media strategy developed by Graphura helped us double our engagement and significantly increase our follower base. They consistently deliver creative content that aligns with our brand."</p>
                         <div class="client-info">
-                            <img src="images/client2.jpg" alt="Priya Patel">
-                            <div>
+                            <div class="client-avatar">
+                                <img src="images/client2.jpg" alt="Priya Patel">
+                            </div>
+                            <div class="client-details">
                                 <h4>Priya Patel</h4>
                                 <p>Marketing Director, FashionHub</p>
+                            </div>
+                            <div class="company-logo">
+                                <img src="images/fashionhub-logo.png" alt="FashionHub">
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 <div class="testimonial">
                     <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-right"></i>
+                        </div>
                         <div class="stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -408,28 +433,56 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star-half-alt"></i>
                         </div>
-                        <p>"Their content marketing services are exceptional. Our blog traffic increased by 150% and we're generating quality leads consistently. Graphura understands our industry and audience perfectly."</p>
+                        <p class="testimonial-text">"Their content marketing services are exceptional. Our blog traffic increased by 150% and we're generating quality leads consistently. Graphura understands our industry and audience perfectly."</p>
                         <div class="client-info">
-                            <img src="images/client3.jpg" alt="Vikram Mehta">
-                            <div>
+                            <div class="client-avatar">
+                                <img src="images/client3.jpg" alt="Vikram Mehta">
+                            </div>
+                            <div class="client-details">
                                 <h4>Vikram Mehta</h4>
                                 <p>Founder, EduGrow</p>
+                            </div>
+                            <div class="company-logo">
+                                <img src="images/edugrow-logo.png" alt="EduGrow">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="slider-controls">
-                <button class="prev"><i class="fas fa-chevron-left"></i></button>
-                <div class="dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-                <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="slider-controls">
+            <button class="prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        
+        <div class="testimonial-stats">
+            <div class="testimonial-stat">
+                <span class="number">300+</span>
+                <span class="label">Happy Clients</span>
+            </div>
+            <div class="testimonial-stat">
+                <span class="number">98%</span>
+                <span class="label">Satisfaction Rate</span>
+            </div>
+            <div class="testimonial-stat">
+                <span class="number">4.9/5</span>
+                <span class="label">Average Rating</span>
             </div>
         </div>
-    </section>
+        
+        <div class="testimonial-floating-elements">
+            <div class="testimonial-floating-element"><i class="fas fa-heart"></i></div>
+            <div class="testimonial-floating-element"><i class="fas fa-star"></i></div>
+            <div class="testimonial-floating-element"><i class="fas fa-quote-left"></i></div>
+        </div>
+    </div>
+</section>
 
     <!-- Who We Are Section -->
     <section class="section about-preview">
@@ -447,7 +500,7 @@
                     <a href="about.html" class="btn btn-secondary">Our Story</a>
                 </div>
                 <div class="about-image">
-                    <img src="images/about-team.jpg" alt="Graphura Team">
+                    <img src="image/team.svg" alt="Graphura Team">
                 </div>
             </div>
         </div>
@@ -512,89 +565,61 @@
                     </div>
                 </article>
             </div>
-            <div class="text-center">
-                <a href="blog.html" class="btn btn-outline">View All Articles</a>
-            </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <div class="contact-content">
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
-                            </div>
-                            <div class="form-group">
-                                <select id="subject" name="subject">
-                                    <option value="" disabled selected>Select Subject</option>
-                                    <option value="general">General Inquiry</option>
-                                    <option value="services">Services Information</option>
-                                    <option value="quote">Request a Quote</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-accent">Send Message</button>
-                    </form>
+   <section id="contact" class="section contact">
+    <div class="container">
+        <h2 class="section-title">Schedule a Meeting</h2>
+        <div class="contact-content" style="display: flex; flex-wrap: wrap; gap: 40px;">
+            <!-- Calendar iframe - Now on the LEFT side -->
+            <div style="flex: 1; min-width: 300px; order: 1;">
+                <iframe src="calendar.html" style="width: 100%; height: 600px; border: none; border-radius: 12px;"></iframe>
+            </div>
+            
+            <!-- Contact Info - Now on the RIGHT side -->
+            <div class="contact-info" style="flex: 1; min-width: 300px; order: 2;">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <h3 style="color: #fbfafa;">Our Office</h3>
+                        <p style="color: #f4f3f3;">123 Business Street, Mumbai, Maharashtra 400001, India</p>
+                    </div>
                 </div>
-                <div class="contact-info">
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3 style="color: #0b0b0b;">Our Office</h3>
-                            <p style="color: #0b0b0b;">123 Business Street, Mumbai, Maharashtra 400001, India</p>
-                        </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
                     </div>
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3 style="color: #0b0b0b;">Phone</h3>
-                            <p><a href="tel:+919876543210" style="color: #0b0b0b;">+91 9876543210</a></p>
-                            <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
-                        </div>
+                    <div class="info-content">
+                        <h3 style="color: #f8f6f6;">Phone</h3>
+                        <p><a href="tel:+919876543210" style="color: #fdfafa;">+91 9876543210</a></p>
+                        <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
                     </div>
-                    <div class="info-card">
-                        <div class="info-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="info-content">
-                            <h3 style="color: #0b0b0b;">Email</h3>
-                            <p><a href="mailto:info@graphura.com" style="color: #0b0b0b;">info@graphura.com</a></p>
-                        </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
                     </div>
-                    <div class="contact-social">
-                        <h3 >Follow Us</h3>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
+                    <div class="info-content">
+                        <h3 style="color: #fefcfc;">Email</h3>
+                        <p><a href="mailto:info@graphura.com" style="color: #fffdfd;">info@graphura.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-social">
+                    <h3 style="color: #fefcfc;">Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -623,19 +648,19 @@
                 <div class="footer-services">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><a href="services.html#seo">SEO Services</a></li>
-                        <li><a href="services.html#social-media">Social Media Management</a></li>
-                        <li><a href="services.html#content-marketing">Content Marketing</a></li>
-                        <li><a href="services.html#advertising">Digital Advertising</a></li>
-                        <li><a href="branding.html">Brand Strategy</a></li>
+                         <li role="none"><a role="menuitem" href="services/seo.html">SEO Services</a></li>
+                            <li role="none"><a role="menuitem" href="services/smm.html">Social Media Marketing</a></li>
+                            <li role="none"><a role="menuitem" href="services/smo.html">Social Media Optimization</a></li>
+                            <li role="none"><a role="menuitem" href="services/Flyers.html">Flyers</a></li>
+                            <li role="none"><a role="menuitem" href="services/cw.html">Content Writing</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <h4>Contact Us</h4>
                     <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Street, Mumbai, India</li>
-                        <li><i class="fas fa-phone"></i> +91 9876543210</li>
-                        <li><i class="fas fa-envelope"></i> info@graphura.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Gurgaon, Haryana, India</li>
+                        <li><i class="fas fa-phone"></i> +91 7378021327</li>
+                        <li><i class="fas fa-envelope"></i> official@graphura.in</li>
                     </ul>
                 </div>
             </div>
@@ -650,12 +675,12 @@
         </div>
     </footer>
 
-    <!-- Live Chat Button -->
-    <div class="live-chat">
-        <button class="chat-btn">
-            <i class="fas fa-comment-dots"></i>
-        </button>
-    </div>
+<!-- WhatsApp Chat Button -->
+<div class="whatsapp-chat">
+    <a href="https://wa.me/+917378021327" target="_blank" class="chat-btn">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
 
     <script src="js/script.js"></script>
 </body>
