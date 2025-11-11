@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services - Fresh & Clean Laundry</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css/Service.css" />
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-lg">
+      <nav
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <a href="../index.html" class="flex items-center gap-3 group">
+          <div>
+            <div class="flex items-center space-x-3">
+              <img
+                src="../img/Graphura.png"
+                alt="FreshClean Logo"
+                class="header-logo object-contain rounded-sm"
+              />
+            </div>
+          </div>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8">
+          <ul class="flex items-center gap-8">
+            <li>
+              <a
+                href="../index.html"
+                class="text-gray-600 hover:text-blue-600 nav-link transition font-medium"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="text-gray-600 hover:text-blue-600 nav-link transition font-medium"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./blog.html"
+                class="text-gray-600 hover:text-blue-600 nav-link transition font-medium"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a href="./service.html" class="text-blue-600 font-bold nav-link"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="./Contact.html"
+                class="text-gray-600 hover:text-blue-600 nav-link transition font-medium"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <button
+            id="book-now-btn"
+            class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2.5 rounded-lg font-semibold transition shadow-lg hover:shadow-xl"
+          >
+            Book Now
+          </button>
+        </div>
+
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-gray-800 text-3xl"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-200 shadow-2xl"
+      >
+        <ul class="px-6 py-8 space-y-5">
+          <li>
+            <a
+              href="../index.html"
+              class="block text-gray-800 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 rounded-xl px-4 font-semibold"
+              >🏠 Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="./about.html"
+              class="block text-gray-800 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 rounded-xl px-4 font-semibold"
+              >👥 About</a
+            >
+          </li>
+          <li>
+            <a
+              href="./blog.html"
+              class="block text-gray-800 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 rounded-xl px-4 font-semibold"
+              >📝 Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="./service.html"
+              class="block text-blue-600 font-bold py-3 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl px-4"
+              >🧺 Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="./Contact.html"
+              class="block text-gray-800 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 rounded-xl px-4 font-semibold"
+              >📞 Contact</a
+            >
+          </li>
+          <li class="pt-4 border-t-2 border-gray-200">
+            <button
+              id="mobile-book-now"
+              class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-xl font-bold shadow-xl"
+            >
+              📅 Book Now
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <section
+      class="hero-section relative overflow-hidden bg-blue-600 text-white py-20"
+    >
+      <div class="hero-slider">
+        <div class="hero-slide active">
+          <img
+            src="https://www.laundrywala.in/wp-content/uploads/2025/02/On-demand-laundry-services.jpg"
+            alt="Laundry Service 1"
+          />
+        </div>
+        <div class="hero-slide">
+          <img
+            src="https://tse3.mm.bing.net/th/id/OIP.jpfs55HR77oC51-DT7HIiwHaE8?w=1024&h=683&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Laundry Service 2"
+          />
+        </div>
+        <div class="hero-slide">
+          <img
+            src="https://vulcanpost.com/wp-content/uploads/2024/04/dobiqueen-malaysia-self-service-laundry-pick-up-7-1024x536.jpg"
+            alt="Laundry Service 3"
+          />
+        </div>
+        <div class="hero-slide">
+          <img
+            src="https://dimalaundry.com/wp-content/uploads/2024/02/How-Does-Expert-Laundry-Service-Prolong-Your-Clothes-Life-2.jpg"
+            alt="Laundry Service 4"
+          />
+        </div>
+      </div>
+
+      <!-- Floating blobs -->
+      <!-- <div class="absolute top-20 left-10 w-72 h-72 bg-white/30 rounded-full floating-blob" style="animation-delay: 0s; z-index: 1;"></div>
+  <div class="absolute bottom-20 right-10 w-96 h-96 bg-purple-300/40 rounded-full floating-blob" style="animation-delay: 1s; z-index: 1;"></div> -->
+      <div
+        class="absolute top-20 left-10 w-72 h-72 bg-white floating-blob"
+        style="animation-delay: 0s; z-index: 2"
+      ></div>
+      <div
+        class="absolute bottom-20 right-10 w-96 h-96 bg-purple-300 floating-blob"
+        style="animation-delay: 1s; z-index: 2"
+      ></div>
+
+      <!-- Content Section -->
+      <div
+        class="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center justify-between gap-10"
+      >
+        <!-- Left Content -->
+        <div class="md:w-1/2">
+          <div
+            class="inline-block bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8"
+          >
+            <span class="text-sm font-semibold text-white"
+              >⭐ Professional Laundry Solutions</span
+            >
+          </div>
+
+          <h1
+            class="text-5xl md:text-6xl font-extrabold mb-6 text-white leading-tight animate-fade-in"
+          >
+            Our Premium Services
+          </h1>
+
+          <p
+            class="text-xl md:text-2xl mb-10 text-blue-50 leading-relaxed animate-fade-in"
+            style="animation-delay: 0.1s"
+          >
+            Professional laundry solutions tailored to your needs. Quality
+            service, every time. Experience the difference with Fresh & Clean
+            Laundry.
+          </p>
+
+          <div
+            class="flex flex-col sm:flex-row gap-4 animate-fade-in"
+            style="animation-delay: 0.2s"
+          >
+            <button
+              onclick="openBookingModal()"
+              class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition shadow-2xl hover:shadow-3xl hover:scale-105 transform"
+            >
+              Book a Service →
+            </button>
+            <button
+              id="scroll-services-btn"
+              class="bg-transparent border-2 border-white text-white hover:bg-white/20 px-8 py-4 rounded-xl font-bold text-lg transition backdrop-blur-sm"
+            >
+              Explore Services ↓
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div
+          class="md:w-1/2 flex justify-center animate-fade-in"
+          style="animation-delay: 0.3s"
+        >
+          <img
+            src="../img/front.png"
+            alt="Laundry Service"
+            class="rounded-3xl shadow-2xl w-full max-w-xs transform hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+      </div>
+      <div class="hero-dots">
+        <span class="hero-dot active" onclick="currentSlide(0)"></span>
+        <span class="hero-dot" onclick="currentSlide(1)"></span>
+        <span class="hero-dot" onclick="currentSlide(2)"></span>
+        <span class="hero-dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section
+      class="py-8 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-600 text-white relative overflow-hidden"
+    >
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="transform hover:scale-110 transition">
+            <div
+              class="stat-number text-4xl md:text-5xl font-extrabold"
+              data-target="10000"
+            >
+              0
+            </div>
+            <p class="text-blue-100 text-lg font-semibold mt-1">
+              Happy Customers
+            </p>
+          </div>
+          <div class="transform hover:scale-110 transition">
+            <div
+              class="stat-number text-4xl md:text-5xl font-extrabold"
+              data-target="50000"
+            >
+              0
+            </div>
+            <p class="text-blue-100 text-lg font-semibold mt-1">
+              Orders Completed
+            </p>
+          </div>
+          <div class="transform hover:scale-110 transition">
+            <div
+              class="stat-number text-4xl md:text-5xl font-extrabold"
+              data-target="15"
+            >
+              0
+            </div>
+            <p class="text-blue-100 text-lg font-semibold mt-1">
+              Years Experience
+            </p>
+          </div>
+          <div class="transform hover:scale-110 transition">
+            <div
+              class="stat-number text-4xl md:text-5xl font-extrabold"
+              data-target="4.9"
+            >
+              0
+            </div>
+            <p class="text-blue-100 text-lg font-semibold mt-1">
+              Average Rating
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">
+            Why Choose Fresh & Clean?
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            We combine cutting-edge technology with traditional care methods to
+            deliver exceptional laundry services
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center p-6">
+            <div
+              class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-clock text-blue-600 text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              Quick Turnaround
+            </h3>
+            <p class="text-gray-600">
+              Same-day service available for most orders. We value your time as
+              much as you do.
+            </p>
+          </div>
+
+          <div class="text-center p-6">
+            <div
+              class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-leaf text-green-600 text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Eco-Friendly</h3>
+            <p class="text-gray-600">
+              We use biodegradable detergents and energy-efficient processes to
+              protect our planet.
+            </p>
+          </div>
+
+          <div class="text-center p-6">
+            <div
+              class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i class="fas fa-award text-purple-600 text-3xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              Quality Guarantee
+            </h3>
+            <p class="text-gray-600">
+              100% satisfaction guarantee. If you're not happy, we'll make it
+              right.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section id="services-section" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Comprehensive laundry solutions for all your needs
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Wash & Fold Service -->
+          <div
+            class="service-card bg-white rounded-2xl shadow-lg border-2 border-gray-100 overflow-hidden"
+          >
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="Wash & Fold Service"
+              />
+              <div class="service-name-overlay">
+                <h3 class="text-2xl font-bold">Wash & Fold</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Professional washing, drying, and folding of your everyday
+                laundry with eco-friendly detergents.
+              </p>
+              <ul class="space-y-3 mb-6 text-gray-700">
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                  Same-day service available
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i> Sorted
+                  by color & fabric
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                  Starting at ₹50/kg
+                </li>
+              </ul>
+              <div class="flex justify-between items-center">
+                <a
+                  href="../services page/service1.html"
+                  class="text-blue-600 font-semibold hover:text-blue-800 transition"
+                  >Learn More →</a
+                >
+                <button
+                  onclick="openBookingModal('Wash & Fold')"
+                  class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-semibold transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dry Cleaning Service -->
+          <div
+            class="service-card bg-white rounded-2xl shadow-lg border-2 border-gray-100 overflow-hidden"
+          >
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1604514628550-37477afdf4e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="Dry Cleaning Service"
+              />
+              <div class="service-name-overlay">
+                <h3 class="text-2xl font-bold">Dry Cleaning</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Professional washing, drying, and folding of your everyday
+                laundry with eco-friendly detergents.
+              </p>
+              <ul class="space-y-3 mb-6 text-gray-700">
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                  Same-day service available
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i> Sorted
+                  by color & fabric
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                  Starting at ₹50/kg
+                </li>
+              </ul>
+              <div class="flex justify-between items-center">
+                <a
+                  href="../services page/service2.html"
+                  class="text-blue-600 font-semibold hover:text-blue-800 transition"
+                  >Learn More →</a
+                >
+                <button
+                  onclick="openBookingModal('Dry Cleaning')"
+                  class="bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg font-semibold transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stain Removal Service -->
+          <div
+            class="service-card bg-white rounded-2xl shadow-lg border-2 border-gray-100 overflow-hidden"
+          >
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1604176354204-9268737828e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="Stain Removal Service"
+              />
+              <div class="service-name-overlay">
+                <h3 class="text-2xl font-bold">Stain Removal</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Professional washing, drying, and folding of your everyday
+                laundry with eco-friendly detergents.
+              </p>
+              <ul class="space-y-3 mb-6 text-gray-700">
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                  Same-day service available
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i> Sorted
+                  by color & fabric
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                  Starting at ₹50/kg
+                </li>
+              </ul>
+              <div class="flex justify-between items-center">
+                <a
+                  href="../services page/service3.html"
+                  class="text-blue-600 font-semibold hover:text-blue-800 transition"
+                  >Learn More →</a
+                >
+                <button
+                  onclick="openBookingModal('Stain Removal')"
+                  class="bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 rounded-lg font-semibold transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ironing Service -->
+          <div
+            class="service-card bg-white rounded-2xl shadow-lg border-2 border-gray-100 overflow-hidden"
+          >
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="Ironing Service"
+              />
+              <div class="service-name-overlay">
+                <h3 class="text-2xl font-bold">Ironing & Pressing</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Professional ironing and pressing services for wrinkle-free,
+                crisp clothing.
+              </p>
+              <ul class="space-y-3 mb-6 text-gray-700">
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i> Steam
+                  pressing
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i> Quick
+                  turnaround
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                  Starting at ₹30/item
+                </li>
+              </ul>
+              <div class="flex justify-between items-center">
+                <a
+                  href="../services page/service4.html"
+                  class="text-blue-600 font-semibold hover:text-blue-800 transition"
+                  >Learn More →</a
+                >
+                <button
+                  onclick="openBookingModal('Ironing & Pressing')"
+                  class="bg-orange-600 hover:bg-orange-700 text-white py-2 px-4 rounded-lg font-semibold transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pickup & Delivery -->
+          <div
+            class="service-card bg-white rounded-2xl shadow-lg border-2 border-gray-100 overflow-hidden"
+          >
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="Pickup & Delivery Service"
+              />
+              <div class="service-name-overlay">
+                <h3 class="text-2xl font-bold">Pickup & Delivery</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Convenient doorstep pickup and delivery at your preferred time.
+              </p>
+              <ul class="space-y-3 mb-6 text-gray-700">
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                  Flexible scheduling
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                  Real-time tracking
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i> FREE
+                  on orders ₹500+
+                </li>
+              </ul>
+              <div class="flex justify-between items-center">
+                <a
+                  href="../services page/service5.html"
+                  class="text-blue-600 font-semibold hover:text-blue-800 transition"
+                  >Learn More →</a
+                >
+                <button
+                  onclick="openBookingModal('Pickup & Delivery')"
+                  class="bg-pink-600 hover:bg-pink-700 text-white py-2 px-4 rounded-lg font-semibold transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Premium Care -->
+          <div
+            class="service-card bg-white rounded-2xl shadow-lg border-2 border-gray-100 overflow-hidden"
+          >
+            <div class="service-image">
+              <img
+                src="https://img.freepik.com/premium-photo/laundry-room-hd-8k-wallpaper-stock-photographic-image_915071-30521.jpg?w=2000"
+                alt="Premium Care Service"
+              />
+              <div class="service-name-overlay">
+                <h3 class="text-2xl font-bold">Premium Care</h3>
+              </div>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-6 leading-relaxed">
+                Luxury care for designer clothes, leather, suede, and premium
+                fabrics.
+              </p>
+              <ul class="space-y-3 mb-6 text-gray-700">
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                  Specialist handling
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                  Premium packaging
+                </li>
+                <li class="flex items-center">
+                  <i class="fas fa-check-circle text-green-500 mr-3"></i> Custom
+                  pricing
+                </li>
+              </ul>
+              <div class="flex justify-between items-center">
+                <a
+                  href="../services page/service6.html"
+                  class="text-blue-600 font-semibold hover:text-blue-800 transition"
+                  >Learn More →</a
+                >
+                <button
+                  onclick="openBookingModal('Premium Care')"
+                  class="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-lg font-semibold transition"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">How It Works</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Simple steps to get your laundry done professionally
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4"
+            >
+              1
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">
+              Schedule Pickup
+            </h3>
+            <p class="text-gray-600">
+              Book online or call us to schedule a pickup at your convenience.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4"
+            >
+              2
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">We Collect</h3>
+            <p class="text-gray-600">
+              Our professional team collects your laundry from your doorstep.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4"
+            >
+              3
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Expert Care</h3>
+            <p class="text-gray-600">
+              We clean, treat, and care for your clothes with premium products.
+            </p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-4"
+            >
+              4
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-2">Fresh Delivery</h3>
+            <p class="text-gray-600">
+              Your fresh, clean clothes are delivered back to you neatly folded.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">
+            What Our Customers Say
+          </h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Don't just take our word for it - hear from our satisfied customers
+          </p>
+        </div>
+
+        <div class="reviews-container reviews-marquee">
+          <div class="reviews-track">
+            <div
+              class="bg-gradient-to-br from-white to-blue-50 rounded-3xl p-8 shadow-xl border-2 border-blue-100 review-slide"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold mr-4"
+                >
+                  AS
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800">Aarav Sharma</h4>
+                  <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-600">
+                "Fresh & Clean has transformed my laundry routine. Their stain
+                removal service saved my favorite shirt!"
+              </p>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-white to-green-50 rounded-3xl p-8 shadow-xl border-2 border-green-100 review-slide"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold mr-4"
+                >
+                  PK
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800">Priya Kumar</h4>
+                  <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-600">
+                "The pickup and delivery service is a lifesaver for my busy
+                schedule. Always on time and professional."
+              </p>
+            </div>
+
+            <div
+              class="bg-gradient-to-br from-white to-purple-50 rounded-3xl p-8 shadow-xl border-2 border-purple-100 review-slide"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold mr-4"
+                >
+                  RS
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800">Rohan Singh</h4>
+                  <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-600">
+                "Their premium care service handled my designer suits perfectly.
+                Worth every penny!"
+              </p>
+            </div>
+
+            <!-- Duplicates for seamless loop -->
+            <div
+              class="bg-gradient-to-br from-white to-blue-50 rounded-3xl p-8 shadow-xl border-2 border-blue-100 review-slide"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold mr-4"
+                >
+                  AS
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800">Aarav Sharma</h4>
+                  <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-600">
+                "Fresh & Clean has transformed my laundry routine. Their stain
+                removal service saved my favorite shirt!"
+              </p>
+            </div>
+            <div
+              class="bg-gradient-to-br from-white to-green-50 rounded-3xl p-8 shadow-xl border-2 border-green-100 review-slide"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold mr-4"
+                >
+                  PK
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800">Priya Kumar</h4>
+                  <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-600">
+                "The pickup and delivery service is a lifesaver for my busy
+                schedule. Always on time and professional."
+              </p>
+            </div>
+            <div
+              class="bg-gradient-to-br from-white to-purple-50 rounded-3xl p-8 shadow-xl border-2 border-purple-100 review-slide"
+            >
+              <div class="flex items-center mb-4">
+                <div
+                  class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold mr-4"
+                >
+                  RS
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-800">Rohan Singh</h4>
+                  <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-600">
+                "Their premium care service handled my designer suits perfectly.
+                Worth every penny!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Inquiry Form -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4 max-w-3xl">
+        <div
+          class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 shadow-xl border-2 border-blue-200"
+        >
+          <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">
+            Have Questions? Get in Touch
+          </h2>
+          <p class="text-gray-600 text-center mb-8">
+            Fill out the form below and we'll get back to you within 24 hours.
+          </p>
+
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="f9e61c38-d61e-4fc6-af47-ee504c7b6e0b"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="Service Inquiry - Fresh & Clean Laundry"
+            />
+            <input
+              type="hidden"
+              name="from_name"
+              value="Fresh & Clean Services"
+            />
+
+            <div class="mb-6">
+              <label class="block text-gray-700 font-bold mb-2"
+                >Your Name</label
+              >
+              <input
+                type="text"
+                name="name"
+                required
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
+              />
+            </div>
+
+            <div class="mb-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-gray-700 font-bold mb-2">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
+                />
+              </div>
+              <div>
+                <label class="block text-gray-700 font-bold mb-2">Phone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  required
+                  class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <label class="block text-gray-700 font-bold mb-2"
+                >Service Interested In</label
+              >
+              <select
+                name="service_interest"
+                required
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
+              >
+                <option value="">Select a service</option>
+                <option>Wash & Fold</option>
+                <option>Dry Cleaning</option>
+                <option>Stain Removal</option>
+                <option>Ironing & Pressing</option>
+                <option>Pickup & Delivery</option>
+                <option>Premium Care</option>
+              </select>
+            </div>
+
+            <div class="mb-6">
+              <label class="block text-gray-700 font-bold mb-2"
+                >Your Message</label
+              >
+              <textarea
+                name="message"
+                rows="4"
+                required
+                class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
+              ></textarea>
+            </div>
+
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+
+            <button
+              type="submit"
+              class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-4 rounded-lg font-bold text-lg transition shadow-lg"
+            >
+              Send Inquiry 📧
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-20"
+    >
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div>
+            <img
+              src="../img/logo.jpg"
+              alt="Fresh & Clean Logo"
+              class="footer-logo object-contain rounded-lg"
+            />
+            <p class="text-gray-400 leading-relaxed text-lg">
+              Professional laundry services delivered to your doorstep.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-black mb-6 text-2xl">Quick Links</h4>
+            <ul class="space-y-4 text-gray-400">
+              <li>
+                <a href="./service.html" class="footer-link text-lg"
+                  ><i class="fas fa-angle-right mr-3"></i>Services</a
+                >
+              </li>
+              <li>
+                <a href="./about.html" class="footer-link text-lg"
+                  ><i class="fas fa-angle-right mr-3"></i>About</a
+                >
+              </li>
+              <li>
+                <a href="./blog.html" class="footer-link text-lg"
+                  ><i class="fas fa-angle-right mr-3"></i>Blog</a
+                >
+              </li>
+              <li>
+                <a href="./Contact.html" class="footer-link text-lg"
+                  ><i class="fas fa-angle-right mr-3"></i>Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-black mb-6 text-2xl">Our Services</h4>
+            <ul class="space-y-4 text-gray-400">
+              <li>
+                <a
+                  href="../services page/service1.html"
+                  class="footer-link text-lg"
+                  ><i class="fas fa-check text-green-500 mr-3"></i>Wash &
+                  Fold</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services page/service2.html"
+                  class="footer-link text-lg"
+                  ><i class="fas fa-check text-green-500 mr-3"></i>Dry
+                  Cleaning</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services page/service3.html"
+                  class="footer-link text-lg"
+                  ><i class="fas fa-check text-green-500 mr-3"></i>Stain
+                  Removal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services page/service4.html"
+                  class="footer-link text-lg"
+                  ><i class="fas fa-check text-green-500 mr-3"></i>Ironing &
+                  Pressing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services page/service5.html"
+                  class="footer-link text-lg"
+                  ><i class="fas fa-check text-green-500 mr-3"></i>Pickup &
+                  Delivery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../services page/service6.html"
+                  class="footer-link text-lg"
+                  ><i class="fas fa-check text-green-500 mr-3"></i>Premium
+                  Care</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-black mb-6 text-2xl">Follow Us</h4>
+            <div class="flex gap-4 mb-8">
+              <a
+                href="#"
+                class="w-14 h-14 rounded-full bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center hover:scale-110 transition shadow-lg"
+              >
+                <i class="fab fa-facebook-f text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="w-14 h-14 rounded-full bg-gradient-to-br from-blue-400 to-blue-500 flex items-center justify-center hover:scale-110 transition shadow-lg"
+              >
+                <i class="fab fa-twitter text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="w-14 h-14 rounded-full bg-gradient-to-br from-pink-600 to-pink-700 flex items-center justify-center hover:scale-110 transition shadow-lg"
+              >
+                <i class="fab fa-instagram text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t-2 border-gray-700 pt-10 text-center">
+          <p class="text-gray-400 text-lg">
+            &copy; 2025 Fresh & Clean Laundry Services. All rights reserved.
+            <span class="mx-3">|</span>
+            Made with <i class="fas fa-heart text-red-500"></i> in India
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <button id="scroll-top">
+      <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/+919662003947"
+      target="_blank"
+      style="
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #25d366;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 998;
+        box-shadow: 0 10px 30px -5px rgba(37, 211, 102, 0.6);
+      "
+    >
+      <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="text-4xl font-black">Book a Service</h3>
+              <p class="text-blue-100 mt-2 text-lg">
+                Fill in the details below
+              </p>
+            </div>
+            <button
+              id="close-modal"
+              class="text-white hover:text-gray-200 text-4xl transform hover:rotate-90 hover:scale-110 transition"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="f9e61c38-d61e-4fc6-af47-ee504c7b6e0b"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New Booking - Fresh & Clean"
+            />
+            <input type="hidden" name="service" id="hidden-service" />
+
+            <div class="mb-6">
+              <label class="block text-gray-800 font-bold mb-3 text-lg"
+                >Service Type</label
+              >
+              <select
+                id="booking-service"
+                name="service"
+                class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+                required
+              >
+                <option value="">Select a service</option>
+                <option>Wash & Fold</option>
+                <option>Dry Cleaning</option>
+                <option>Stain Removal</option>
+                <option>Ironing & Pressing</option>
+                <option>Pickup & Delivery</option>
+                <option>Premium Care</option>
+              </select>
+            </div>
+
+            <div class="mb-6 grid grid-cols-2 gap-5">
+              <div>
+                <label class="block text-gray-800 font-bold mb-3 text-lg"
+                  >Date</label
+                >
+                <input
+                  type="date"
+                  id="booking-date"
+                  name="date"
+                  class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+                  required
+                />
+              </div>
+              <div>
+                <label class="block text-gray-800 font-bold mb-3 text-lg"
+                  >Time</label
+                >
+                <select
+                  name="time"
+                  class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+                  required
+                >
+                  <option>Morning (8am-12pm)</option>
+                  <option>Afternoon (12pm-4pm)</option>
+                  <option>Evening (4pm-8pm)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <label class="block text-gray-800 font-bold mb-3 text-lg"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                name="name"
+                class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+                required
+              />
+            </div>
+
+            <div class="mb-6 grid grid-cols-2 gap-5">
+              <div>
+                <label class="block text-gray-800 font-bold mb-3 text-lg"
+                  >Phone</label
+                >
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="+91-XXXXXXXXXX"
+                  class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+                  required
+                />
+              </div>
+              <div>
+                <label class="block text-gray-800 font-bold mb-3 text-lg"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <label class="block text-gray-800 font-bold mb-3 text-lg"
+                >Pickup Address</label
+              >
+              <textarea
+                name="address"
+                rows="2"
+                class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+                required
+              ></textarea>
+            </div>
+
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+
+            <button
+              type="submit"
+              class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-6 rounded-2xl font-black text-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition"
+            >
+              Confirm Booking 🎉
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../javascript/service.js"></script>
+</html>

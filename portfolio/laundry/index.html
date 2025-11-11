@@ -1,0 +1,1810 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fresh & Clean Laundry Services</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css/home.css" />
+  </head>
+
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Page Loader -->
+    <div id="page-loader">
+      <div class="text-center">
+        <div
+          class="w-16 h-16 rounded-full bg-white flex items-center justify-center mx-auto mb-4 animate-pulse-slow"
+        >
+          <div class="text-blue-600 text-3xl rounded-full overflow-hidden">
+            <img
+              src="./img/G-logo.jpg"
+              alt="Fresh & Clean"
+              class="w-16 h-16 object-cover"
+            />
+          </div>
+        </div>
+        <h2 class="text-3xl font-bold text-white mb-2">Fresh & Clean</h2>
+        <div class="flex gap-2 justify-center">
+          <div
+            class="w-2 h-2 rounded-full bg-white animate-bounce"
+            style="animation-delay: 0s"
+          ></div>
+          <div
+            class="w-2 h-2 rounded-full bg-white animate-bounce"
+            style="animation-delay: 0.2s"
+          ></div>
+          <div
+            class="w-2 h-2 rounded-full bg-white animate-bounce"
+            style="animation-delay: 0.4s"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-lg">
+      <nav
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <a href="#home" class="flex items-center gap-3 group">
+          <div>
+            <div class="flex items-center space-x-3">
+              <img
+                src="./img/Graphura.png"
+                alt="FreshClean Logo"
+                class="header-logo object-contain rounded-sm"
+              />
+            </div>
+          </div>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8">
+          <ul class="flex items-center gap-8">
+            <li>
+              <a
+                href="index.html#home"
+                class="text-gray-600 hover:text-blue-600 nav-link transition font-medium"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/about.html"
+                class="text-gray-600 hover:text-blue-600 nav-link transition font-medium"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/blog.html"
+                class="text-gray-600 hover:text-blue-600 nav-link transition font-medium"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/service.html"
+                class="text-gray-600 hover:text-blue-600 nav-link transition font-medium"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="./pages/Contact.html"
+                class="text-gray-600 hover:text-blue-600 nav-link transition font-medium"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <button
+            id="book-now-btn"
+            class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2.5 rounded-lg font-semibold transition shadow-lg hover:shadow-xl"
+          >
+            Book Now
+          </button>
+        </div>
+
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-gray-800 text-3xl"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-200 shadow-2xl"
+      >
+        <ul class="px-6 py-8 space-y-5">
+          <li>
+            <a
+              href="index.html#home"
+              class="block text-gray-800 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 rounded-xl px-4 font-semibold"
+              >🏠 Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="./pages/about.html"
+              class="block text-gray-800 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 rounded-xl px-4 font-semibold"
+              >👥 About</a
+            >
+          </li>
+          <li>
+            <a
+              href="./pages/blog.html"
+              class="block text-gray-800 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 rounded-xl px-4 font-semibold"
+              >📝 Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="./pages/service.html"
+              class="block text-gray-800 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 rounded-xl px-4 font-semibold"
+              >🧺 Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="./pages/Contact.html"
+              class="block text-gray-800 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 rounded-xl px-4 font-semibold"
+              >📞 Contact</a
+            >
+          </li>
+          <li class="pt-4 border-t-2 border-gray-200">
+            <button
+              id="mobile-book-now"
+              class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-xl font-bold shadow-xl"
+            >
+              📅 Book Now
+            </button>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <!-- <section
+      id="home"
+      class="text-white py-12 md:py-20 relative overflow-hidden flex items-center"
+    >
+      <div class="absolute inset-0 opacity-10">
+        <div
+          class="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl animate-pulse-slow"
+        ></div>
+        <div
+          class="absolute bottom-20 right-10 w-96 h-96 bg-purple-300 rounded-full blur-3xl animate-pulse-slow"
+          style="animation-delay: 1s"
+        ></div>
+      </div>
+      <div
+        class="absolute top-20 left-10 w-72 h-72 bg-white floating-blob"
+        style="animation-delay: 0s; z-index: 2"
+      ></div>
+      <div
+        class="absolute bottom-20 right-10 w-96 h-96 bg-purple-300 floating-blob"
+        style="animation-delay: 1s; z-index: 2"
+      ></div>
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row items-center relative z-10"
+      >
+        <div class="md:w-1/2 mb-10 md:mb-0 animate-fade-in">
+          <div
+            class="inline-block bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6"
+          >
+            <span class="text-sm font-semibold"
+              >⭐ Rated 4.9/5 by 10,000+ customers</span
+            >
+          </div>
+          <h1
+            class="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight"
+          >
+            Professional Laundry & Dry Cleaning
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 text-blue-100 leading-relaxed">
+            We pick up, clean, and deliver your clothes right to your
+            doorstep—fresh, clean, and on your schedule.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button
+              id="schedule-pickup-btn"
+              class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition shadow-2xl hover:shadow-3xl hover:scale-105"
+            >
+              Schedule a Pickup →
+            </button>
+            <button
+              id="learn-more-btn"
+              class="bg-transparent border-2 border-white text-white hover:bg-white/20 px-8 py-4 rounded-xl font-bold text-lg transition backdrop-blur-sm"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div
+          class="md:w-1/2 flex justify-center animate-fade-in"
+          style="animation-delay: 0.3s"
+        >
+          <img
+            src="./img/front.png"
+            alt="Laundry Service"
+            class="rounded-3xl shadow-2xl w-full max-w-xs transform hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+      </div>
+    </section> -->
+
+    <section
+      class="hero-section relative overflow-hidden bg-blue-600 text-white py-20"
+    >
+      <div class="hero-slider">
+        <div class="hero-slide active">
+          <img
+            src="https://www.laundrywala.in/wp-content/uploads/2025/02/On-demand-laundry-services.jpg"
+            alt="Laundry Service 1"
+          />
+        </div>
+        <div class="hero-slide">
+          <img
+            src="https://tse3.mm.bing.net/th/id/OIP.jpfs55HR77oC51-DT7HIiwHaE8?w=1024&h=683&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Laundry Service 2"
+          />
+        </div>
+        <div class="hero-slide">
+          <img
+            src="https://vulcanpost.com/wp-content/uploads/2024/04/dobiqueen-malaysia-self-service-laundry-pick-up-7-1024x536.jpg"
+            alt="Laundry Service 3"
+          />
+        </div>
+        <div class="hero-slide">
+          <img
+            src="https://dimalaundry.com/wp-content/uploads/2024/02/How-Does-Expert-Laundry-Service-Prolong-Your-Clothes-Life-2.jpg"
+            alt="Laundry Service 4"
+          />
+        </div>
+      </div>
+
+      <!-- Floating blobs -->
+      <!-- <div class="absolute top-20 left-10 w-72 h-72 bg-white/30 rounded-full floating-blob" style="animation-delay: 0s; z-index: 1;"></div>
+  <div class="absolute bottom-20 right-10 w-96 h-96 bg-purple-300/40 rounded-full floating-blob" style="animation-delay: 1s; z-index: 1;"></div> -->
+      <div
+        class="absolute top-20 left-10 w-72 h-72 bg-white floating-blob"
+        style="animation-delay: 0s; z-index: 2"
+      ></div>
+      <div
+        class="absolute bottom-20 right-10 w-96 h-96 bg-purple-300 floating-blob"
+        style="animation-delay: 1s; z-index: 2"
+      ></div>
+
+      <!-- Content Section -->
+      <div
+        class="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center justify-between gap-10"
+      >
+        <!-- Left Content -->
+        <div class="md:w-1/2">
+          <div
+            class="inline-block bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8"
+          >
+            <span class="text-sm font-semibold text-white"
+              >⭐ Rated 4.9/5 by 10,000+ customers</span
+            >
+          </div>
+
+          <h1
+            class="text-5xl md:text-6xl font-extrabold mb-6 text-white leading-tight animate-fade-in"
+          >
+            Professional Laundry & Dry Cleaning
+          </h1>
+
+          <p
+            class="text-xl md:text-2xl mb-10 text-blue-50 leading-relaxed animate-fade-in"
+            style="animation-delay: 0.1s"
+          >
+            We pick up, clean, and deliver your clothes right to your
+            doorstep—fresh, clean, and on your schedule.
+          </p>
+
+          <div
+            class="flex flex-col sm:flex-row gap-4 animate-fade-in"
+            style="animation-delay: 0.2s"
+          >
+            <button
+              id="schedule-pickup-btn"
+              class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition shadow-2xl hover:shadow-3xl hover:scale-105"
+            >
+              Schedule a Pickup →
+            </button>
+            <button
+              id="learn-more-btn"
+              class="bg-transparent border-2 border-white text-white hover:bg-white/20 px-8 py-4 rounded-xl font-bold text-lg transition backdrop-blur-sm"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Image -->
+        <div
+          class="md:w-1/2 flex justify-center animate-fade-in"
+          style="animation-delay: 0.3s"
+        >
+          <img
+            src="./img/front.png"
+            alt="Laundry Service"
+            class="rounded-3xl shadow-2xl w-full max-w-xs transform hover:scale-105 transition-transform duration-300"
+          />
+        </div>
+      </div>
+      <div class="hero-dots">
+        <span class="hero-dot active" onclick="currentSlide(0)"></span>
+        <span class="hero-dot" onclick="currentSlide(1)"></span>
+        <span class="hero-dot" onclick="currentSlide(2)"></span>
+        <span class="hero-dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section
+      class="py-8 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-600 text-white relative overflow-hidden"
+    >
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="transform hover:scale-110 transition">
+            <div
+              class="stat-number text-4xl md:text-5xl font-extrabold"
+              data-target="10000"
+            >
+              0
+            </div>
+            <p class="text-blue-100 text-lg font-semibold mt-1">
+              Happy Customers
+            </p>
+          </div>
+
+          <div class="transform hover:scale-110 transition">
+            <div
+              class="stat-number text-4xl md:text-5xl font-extrabold"
+              data-target="50000"
+            >
+              0
+            </div>
+            <p class="text-blue-100 text-lg font-semibold mt-1">
+              Orders Completed
+            </p>
+          </div>
+
+          <div class="transform hover:scale-110 transition">
+            <div
+              class="stat-number text-4xl md:text-5xl font-extrabold"
+              data-target="15"
+            >
+              0
+            </div>
+            <p class="text-blue-100 text-lg font-semibold mt-1">
+              Years Experience
+            </p>
+          </div>
+
+          <div class="transform hover:scale-110 transition">
+            <div
+              class="stat-number text-4xl md:text-5xl font-extrabold"
+              data-target="4.9"
+            >
+              0
+            </div>
+            <p class="text-blue-100 text-lg font-semibold mt-1">
+              Average Rating
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🌟 Main Hero Section -->
+    <section
+      class="min-h-screen bg-white flex items-center justify-center py-16 px-6"
+    >
+      <div class="max-w-7xl w-full mx-auto">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center"
+        >
+          <!-- Left Content -->
+          <div class="space-y-8 order-2 lg:order-1">
+            <!-- Decorative Diamonds -->
+            <div class="flex gap-3">
+              <div class="w-6 h-6 bg-gray-400 rotate-45"></div>
+              <div class="w-6 h-6 bg-gray-400 rotate-45"></div>
+              <div class="w-6 h-6 bg-gray-400 rotate-45"></div>
+              <div class="w-6 h-6 bg-gray-400 rotate-45"></div>
+            </div>
+
+            <!-- Main Heading -->
+            <h1
+              class="text-4xl sm:text-5xl lg:text-5xl font-bold text-black leading-tight"
+            >
+              People's<br class="hidden sm:block" />
+              <span class="text-black">First Choice</span
+              ><br class="hidden sm:block" />
+              in Cleaning
+            </h1>
+
+            <!-- Description -->
+            <p
+              class="text-gray-700 text-base sm:text-lg leading-relaxed max-w-md"
+            >
+              We bring freshness and care to every wash — combining technology
+              and expertise for spotless results every time.
+            </p>
+
+            <!-- Read More Button -->
+            <a href="./pages/service.html">
+              <button
+                class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2.5 rounded-lg font-semibold transition shadow-lg hover:shadow-xl"
+              >
+                Read more
+              </button>
+            </a>
+          </div>
+
+          <!-- Right Image -->
+          <div
+            class="relative h-96 sm:h-[450px] lg:h-full flex items-center justify-center order-1 lg:order-2"
+          >
+            <div
+              class="absolute inset-0 bg-gray-200 rounded-3xl opacity-70 transform -skew-y-3"
+            ></div>
+            <div
+              class="relative z-10 w-full h-full flex items-center justify-center px-4"
+            >
+              <img
+                src="https://i2.obozrevatel.com/gallery/2024/4/9/satisfied-bearded-red-haired-man-makes-okay-gesture-shows-approval-sig.jpg"
+                alt="Professional Cleaning Service"
+                class="w-full h-full object-cover rounded-2xl shadow-xl"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🧺 WELCOME TO TUB SECTION -->
+    <section
+      class="relative w-full max-w-7xl mx-auto px-6 py-20 overflow-hidden"
+    >
+      <!-- Decorative Backgrounds -->
+      <div
+        class="absolute top-10 left-0 w-80 h-80 bg-gray-200 rounded-lg -z-10"
+      ></div>
+      <div
+        class="absolute bottom-10 right-0 w-60 h-60 bg-gray-200 rounded-lg -z-10"
+      ></div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- Left Side -->
+        <div class="space-y-8">
+          <h2 class="text-4xl font-bold">
+            WELCOME TO <br /><span class="text-blue-900">TUB</span>
+          </h2>
+          <img
+            src="https://thumbs.dreamstime.com/b/man-woman-couple-washing-clothes-smelling-towel-laundry-room-264101883.jpg"
+            alt="Laundry Folded Towels"
+            class="rounded-xl shadow-lg w-full max-w-sm"
+          />
+        </div>
+
+        <!-- Right Side -->
+        <div class="space-y-8">
+          <p class="text-gray-600 text-lg leading-relaxed">
+            At TUB, we provide world-class laundry and dry-cleaning services
+            designed for busy lifestyles. From delicate fabrics to everyday
+            wear, we treat your clothes with care and perfection.
+          </p>
+
+          <!-- Read More Button (same style & spacing) -->
+          <a href="./pages/service.html">
+            <button
+              class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 py-2.5 rounded-lg font-semibold transition shadow-lg hover:shadow-xl"
+            >
+              Read more
+            </button>
+          </a>
+
+          <img
+            src="https://img.freepik.com/free-photo/clean-towels-iron_144627-28119.jpg"
+            alt="Ironed Towels"
+            class="rounded-xl shadow-md w-56 ml-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="py-16 md:py-24 bg-white">
+      <div
+        class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-12 items-center"
+      >
+        <!-- Left -->
+        <div class="flex-1 text-center md:text-left">
+          <h1
+            class="text-4xl md:text-5xl font-extrabold text-blue-900 mb-6 font-poppins"
+          >
+            TUB Laundry – Clean Clothes, Confident You.
+          </h1>
+          <hr class="border-t-2 border-blue-900 w-24 mx-auto md:mx-0 mb-6" />
+          <p class="mb-6 text-lg text-gray-700">
+            At <span class="font-semibold text-blue-900">TUB Laundry</span>, we
+            bring premium garment care to your doorstep. From everyday wear to
+            delicate fabrics, our eco-conscious process keeps your clothes
+            fresh, clean, and perfectly cared for. Enjoy laundry that’s fast,
+            gentle, and reliable — because you deserve nothing less.
+          </p>
+          <p class="mb-6 text-blue-900 font-semibold">
+            Trusted by thousands of happy customers – we’re here to simplify
+            your laundry life!
+          </p>
+          <button
+            onclick="scrollToSection('services')"
+            class="bg-blue-900 hover:bg-blue-700 transition text-white font-bold rounded-full py-3 px-8 shadow"
+          >
+            <i class="fas fa-calendar-check mr-2"></i>Schedule Pickup
+          </button>
+        </div>
+
+        <!-- Features -->
+        <div class="grid grid-cols-2 gap-6 flex-1 w-full">
+          <div
+            class="bg-white rounded-xl p-6 shadow hover:shadow-lg text-center flex flex-col items-center"
+          >
+            <span
+              class="w-14 h-14 flex items-center justify-center rounded-full bg-blue-50 mb-2 text-blue-900"
+            >
+              <i class="fas fa-recycle fa-2x"></i>
+            </span>
+            <h3 class="font-bold">Eco-Smart Machines</h3>
+            <p class="text-sm text-gray-600">
+              Powerful performance with planet-friendly care.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl p-6 shadow hover:shadow-lg text-center flex flex-col items-center"
+          >
+            <span
+              class="w-14 h-14 flex items-center justify-center rounded-full bg-blue-50 mb-2 text-blue-900"
+            >
+              <i class="fas fa-tshirt fa-2x"></i>
+            </span>
+            <h3 class="font-bold">Fabric Care Experts</h3>
+            <p class="text-sm text-gray-600">
+              Every fabric treated with expert precision.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl p-6 shadow hover:shadow-lg text-center flex flex-col items-center"
+          >
+            <span
+              class="w-14 h-14 flex items-center justify-center rounded-full bg-blue-50 mb-2 text-blue-900"
+            >
+              <i class="fas fa-cogs fa-2x"></i>
+            </span>
+            <h3 class="font-bold">Advanced Technology</h3>
+            <p class="text-sm text-gray-600">
+              Modern machines for cleaner, faster results.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl p-6 shadow hover:shadow-lg text-center flex flex-col items-center"
+          >
+            <span
+              class="w-14 h-14 flex items-center justify-center rounded-full bg-blue-50 mb-2 text-blue-900"
+            >
+              <i class="fas fa-leaf fa-2x"></i>
+            </span>
+            <h3 class="font-bold">Sustainable Detergents</h3>
+            <p class="text-sm text-gray-600">
+              Gentle on fabrics, gentle on nature.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl md:text-4xl font-extrabold text-blue-900 font-poppins mb-4"
+          >
+            We Pick, Wash, and Deliver – TUB Laundry Keeps It Simple!
+          </h2>
+          <p class="text-gray-700 max-w-2xl mx-auto">
+            With <span class="font-semibold text-blue-900">TUB Laundry</span>,
+            laundry day is stress-free. From quick doorstep pickups to
+            professional cleaning and on-time delivery, our process ensures your
+            clothes stay spotless, fresh, and ready to wear — every time.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10">
+          <div
+            class="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center"
+          >
+            <span
+              class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-900 text-white mb-3"
+            >
+              <i class="fas fa-mobile-alt fa-2x"></i>
+            </span>
+            <h3 class="font-bold mb-1">Book Easily</h3>
+            <p class="text-sm text-gray-600">
+              Schedule pickups in just a few taps.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center"
+          >
+            <span
+              class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-900 text-white mb-3"
+            >
+              <i class="fas fa-home fa-2x"></i>
+            </span>
+            <h3 class="font-bold mb-1">Quick Pickup</h3>
+            <p class="text-sm text-gray-600">
+              We collect your laundry right from your doorstep.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center"
+          >
+            <span
+              class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-900 text-white mb-3"
+            >
+              <i class="fas fa-tint fa-2x"></i>
+            </span>
+            <h3 class="font-bold mb-1">Deep Cleaning</h3>
+            <p class="text-sm text-gray-600">
+              Premium care for every type of fabric.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow p-6 flex flex-col items-center text-center"
+          >
+            <span
+              class="w-16 h-16 flex items-center justify-center rounded-full bg-blue-900 text-white mb-3"
+            >
+              <i class="fas fa-truck fa-2x"></i>
+            </span>
+            <h3 class="font-bold mb-1">On-Time Delivery</h3>
+            <p class="text-sm text-gray-600">
+              Neatly packed, fresh clothes at your door.
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button
+            class="bg-blue-900 hover:bg-blue-700 transition text-white font-bold rounded-full py-3 px-8 shadow inline-block"
+          >
+            Schedule Pickup
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl md:text-4xl font-extrabold text-blue-900 font-poppins mb-4"
+          >
+            Fast, Fresh & Reliable Laundry – Right at Your Doorstep
+          </h2>
+          <p class="text-gray-700 max-w-3xl mx-auto">
+            With <span class="font-semibold text-blue-900">TUB Laundry</span>,
+            enjoy free doorstep pickup and delivery for all eligible orders.
+            Choose your preferred time slot, and our team handles the rest.
+            Whether you need same-day service or standard delivery, we make
+            clean clothes effortless and convenient.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
+          <div
+            class="bg-white rounded-xl shadow p-8 flex flex-col items-center text-center"
+          >
+            <span
+              class="w-20 h-20 flex items-center justify-center rounded-full bg-blue-900 text-white mb-4"
+            >
+              <i class="fas fa-clock fa-2x"></i>
+            </span>
+            <h3 class="font-bold mb-2">Standard Delivery</h3>
+            <p class="text-sm text-gray-600">
+              Your laundry, fresh and folded, within 48–72 hours.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow p-8 flex flex-col items-center text-center"
+          >
+            <span
+              class="w-20 h-20 flex items-center justify-center rounded-full bg-blue-900 text-white mb-4"
+            >
+              <i class="fas fa-bolt fa-2x"></i>
+            </span>
+            <h3 class="font-bold mb-2">Express Delivery</h3>
+            <p class="text-sm text-gray-600">
+              Need it fast? Get your laundry cleaned and delivered in just 24
+              hours.
+            </p>
+          </div>
+          <div class="text-center">
+            <span class="text-7xl md:text-8xl text-blue-900 block"
+              ><i class="fas fa-motorcycle"></i
+            ></span>
+            <p class="mt-2 font-bold text-blue-900 text-lg">
+              Fast & Reliable Service
+            </p>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <button
+            class="bg-blue-900 hover:bg-blue-700 transition text-white font-bold rounded-full py-3 px-8 shadow"
+          >
+            Schedule Pickup
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section with Process Flow -->
+    <section id="about" class="py-16 bg-white">
+      <div
+        class="max-w-6xl mx-auto rounded-xl shadow-lg border border-blue-900 overflow-hidden bg-white"
+      >
+        <div class="flex flex-col md:flex-row">
+          <!-- About Left -->
+          <div class="w-full md:w-1/2 p-8 flex flex-col justify-center">
+            <h2
+              class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 font-poppins"
+            >
+              TUB Laundry – Redefining Fabric Care Across India
+            </h2>
+            <p class="text-gray-700 text-base mb-3">
+              <span class="font-semibold text-blue-900">TUB Laundry</span>
+              brings modern laundry solutions to your neighborhood, offering
+              expert cleaning, ironing, and dry cleaning services designed
+              around convenience and quality. Our team ensures every garment is
+              handled with precision and care.
+            </p>
+            <p class="text-gray-700 text-base mb-3">
+              Book your
+              <span class="font-semibold text-blue-900"
+                >pickup, ironing, or dry cleaning</span
+              >
+              in seconds through our site or by calling
+              <span class="font-semibold text-blue-900">+91-8650865586</span>.
+              With expansion plans across 100+ cities, TUB is setting new
+              standards for fabric care excellence.
+            </p>
+            <p class="text-gray-700 text-base mb-6">
+              Looking to partner with a growing brand? Join our
+              <span class="font-semibold text-blue-900"
+                >TUB Franchise Program</span
+              >
+              and be part of India’s next-generation laundry revolution with
+              end-to-end support, training, and growth opportunities.
+            </p>
+            <button
+              class="mt-4 bg-blue-900 hover:bg-blue-700 transition text-white text-lg font-bold rounded-full py-3 px-8 focus:outline-none shadow"
+            >
+              Schedule Pickup
+            </button>
+          </div>
+
+          <!-- Process Flow Right -->
+          <div class="w-full md:w-1/2 bg-white border-l border-blue-900">
+            <div
+              class="bg-blue-900 text-white font-poppins text-2xl font-extrabold py-5 text-center tracking-wide"
+            >
+              Our Laundry Process
+            </div>
+            <div class="p-6 md:p-10 space-y-12">
+              <!-- Step 1 -->
+              <div class="flex justify-between items-start relative">
+                <div class="flex flex-col items-center w-1/2">
+                  <div
+                    class="w-14 h-14 rounded-full bg-blue-900 flex items-center justify-center text-white text-2xl mb-2"
+                  >
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <div class="text-lg font-extrabold text-blue-900 mb-1">
+                    Pre-Wash Check
+                  </div>
+                  <div class="text-gray-700 text-center text-sm">
+                    Spot inspection and gentle stain treatment.
+                  </div>
+                </div>
+                <div
+                  class="absolute top-7 left-[24%] w-[52%] h-0.5 bg-blue-900 z-0"
+                ></div>
+                <div class="flex flex-col items-center w-1/2">
+                  <div
+                    class="w-14 h-14 rounded-full bg-blue-900 flex items-center justify-center text-white text-2xl mb-2"
+                  >
+                    <i class="fas fa-soap"></i>
+                  </div>
+                  <div class="text-lg font-extrabold text-blue-900 mb-1">
+                    Wash
+                  </div>
+                  <div class="text-gray-700 text-center text-sm">
+                    Advanced machines with eco-safe detergents.
+                  </div>
+                </div>
+              </div>
+              <!-- Step 2 -->
+              <div class="flex justify-between items-start relative">
+                <div class="flex flex-col items-center w-1/2">
+                  <div
+                    class="w-14 h-14 rounded-full bg-blue-900 flex items-center justify-center text-white text-2xl mb-2"
+                  >
+                    <i class="fas fa-fire"></i>
+                  </div>
+                  <div class="text-lg font-extrabold text-blue-900 mb-1">
+                    Steam Iron
+                  </div>
+                  <div class="text-gray-700 text-center text-sm">
+                    Wrinkle-free finish with professional steam press.
+                  </div>
+                </div>
+                <div
+                  class="absolute top-7 left-[24%] w-[52%] h-0.5 bg-blue-900 z-0"
+                ></div>
+                <div class="flex flex-col items-center w-1/2">
+                  <div
+                    class="w-14 h-14 rounded-full bg-blue-900 flex items-center justify-center text-white text-2xl mb-2"
+                  >
+                    <i class="fas fa-wind"></i>
+                  </div>
+                  <div class="text-lg font-extrabold text-blue-900 mb-1">
+                    Drying
+                  </div>
+                  <div class="text-gray-700 text-center text-sm">
+                    Quick-dry technology to protect fabric quality.
+                  </div>
+                </div>
+              </div>
+              <!-- Step 3 -->
+              <div class="flex justify-between items-start relative">
+                <div class="flex flex-col items-center w-1/2">
+                  <div
+                    class="w-14 h-14 rounded-full bg-blue-900 flex items-center justify-center text-white text-2xl mb-2"
+                  >
+                    <i class="fas fa-check-circle"></i>
+                  </div>
+                  <div class="text-lg font-extrabold text-blue-900 mb-1">
+                    Quality Check
+                  </div>
+                  <div class="text-gray-700 text-center text-sm">
+                    Final inspection to ensure perfection.
+                  </div>
+                </div>
+                <div
+                  class="absolute top-7 left-[24%] w-[52%] h-0.5 bg-blue-900 z-0"
+                ></div>
+                <div class="flex flex-col items-center w-1/2">
+                  <div
+                    class="w-14 h-14 rounded-full bg-blue-900 flex items-center justify-center text-white text-2xl mb-2"
+                  >
+                    <i class="fas fa-box"></i>
+                  </div>
+                  <div class="text-lg font-extrabold text-blue-900 mb-1">
+                    Packaging
+                  </div>
+                  <div class="text-gray-700 text-center text-sm">
+                    Neatly packed and ready for delivery.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl md:text-6xl font-black text-gray-900 mb-6">
+            Our Premium Services
+          </h2>
+          <p class="text-2xl text-gray-600 max-w-3xl mx-auto">
+            Professional laundry solutions tailored to your needs
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <!-- Service 1: Wash & Fold -->
+          <div
+            class="service-card bg-gradient-to-br from-blue-50 to-white rounded-3xl p-8 shadow-xl border-2 border-blue-100"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=600&h=400&fit=crop"
+                alt="Wash & Fold Service"
+                class="service-image"
+              />
+              <div class="image-overlay">Wash & Fold</div>
+            </div>
+            <!-- <div class="bg-blue-600 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+            <i class="fas fa-tshirt text-white text-3xl"></i>
+          </div> -->
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Wash & Fold</h3>
+            <p class="text-gray-600 mb-6 text-lg">
+              Professional washing, drying, and folding with eco-friendly
+              detergents. Your clothes treated with care.
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-3xl font-black text-blue-600"
+                >₹50<span class="text-lg text-gray-500">/kg</span></span
+              >
+              <!-- <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold transition">
+              Book Now
+            </button> -->
+            </div>
+          </div>
+
+          <!-- Service 2: Dry Cleaning -->
+          <div
+            class="service-card bg-gradient-to-br from-green-50 to-white rounded-3xl p-8 shadow-xl border-2 border-green-100"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1489274495757-95c7c837b101?w=600&h=400&fit=crop"
+                alt="Dry Cleaning Service"
+                class="service-image"
+              />
+              <div class="image-overlay">Dry Cleaning</div>
+            </div>
+            <!-- <div class="bg-green-600 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+            <i class="fas fa-soap text-white text-3xl"></i>
+          </div> -->
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Dry Cleaning</h3>
+            <p class="text-gray-600 mb-6 text-lg">
+              Expert dry cleaning for delicate fabrics and special occasion
+              wear. Premium quality guaranteed.
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-3xl font-black text-green-600"
+                >₹150<span class="text-lg text-gray-500">/item</span></span
+              >
+              <!-- <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg font-semibold transition">
+              Book Now
+            </button> -->
+            </div>
+          </div>
+
+          <!-- Service 3: Stain Removal -->
+          <div
+            class="service-card bg-gradient-to-br from-purple-50 to-white rounded-3xl p-8 shadow-xl border-2 border-purple-100"
+          >
+            <div class="relative">
+              <img
+                src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?w=600&h=400&fit=crop"
+                alt="Stain Removal Service"
+                class="service-image"
+              />
+              <div class="image-overlay">Stain Removal</div>
+            </div>
+            <!-- <div class="bg-purple-600 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+            <i class="fas fa-droplet text-white text-3xl"></i>
+          </div> -->
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Stain Removal</h3>
+            <p class="text-gray-600 mb-6 text-lg">
+              Advanced treatment for tough stains like wine, grease, and ink.
+              Restore your clothes to perfection.
+            </p>
+            <div class="flex items-center justify-between">
+              <span class="text-3xl font-black text-purple-600"
+                >₹100<span class="text-lg text-gray-500">/item</span></span
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a
+            href="./pages/service.html"
+            class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-12 py-5 rounded-2xl font-black text-xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition"
+          >
+            View All Services →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Gallery Slider -->
+    <!-- <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl font-black text-gray-900 mb-6">Our Facilities</h2>
+          <p class="text-2xl text-gray-600">
+            State-of-the-art equipment & professional care
+          </p>
+        </div>
+
+        <div class="slider-container rounded-3xl overflow-hidden shadow-2xl">
+          <div class="slider-track" id="slider-track">
+            <div class="slider-item">
+              <img
+                src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=1200&h=600&fit=crop"
+                alt="Laundry Facility 1"
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="slider-item">
+              <img
+                src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?w=1200&h=600&fit=crop"
+                alt="Laundry Facility 2"
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="slider-item">
+              <img
+                src="https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?w=1200&h=600&fit=crop"
+                alt="Laundry Facility 3"
+                class="w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="flex justify-center gap-3 mt-8">
+          <button
+            onclick="changeSlide(0)"
+            class="w-4 h-4 rounded-full bg-blue-600 slider-dot"
+          ></button>
+          <button
+            onclick="changeSlide(1)"
+            class="w-4 h-4 rounded-full bg-gray-300 slider-dot"
+          ></button>
+          <button
+            onclick="changeSlide(2)"
+            class="w-4 h-4 rounded-full bg-gray-300 slider-dot"
+          ></button>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Customer Reviews -->
+    <section class="py-20 bg-white overflow-hidden">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-5xl font-black text-gray-900 mb-6">
+            What Our Customers Say
+          </h2>
+          <p class="text-2xl text-gray-600">
+            Real reviews from happy customers
+          </p>
+        </div>
+
+        <div class="reviews-container reviews-marquee">
+          <div class="reviews-track">
+            <!-- Review 1 -->
+            <div
+              class="bg-gradient-to-br from-white to-blue-50 rounded-3xl p-8 shadow-xl border-2 border-blue-100 review-slide"
+            >
+              <div class="flex items-center mb-6">
+                <img
+                  src="https://ui-avatars.com/api/?name=Priya+Sharma&size=80&background=667eea&color=fff"
+                  alt="Customer"
+                  class="w-16 h-16 rounded-full mr-4"
+                />
+                <div>
+                  <h4 class="font-bold text-xl text-gray-900">Priya Sharma</h4>
+                  <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-700 text-lg leading-relaxed">
+                "Excellent service! My clothes came back spotless and perfectly
+                folded. The pickup and delivery service is so convenient. Highly
+                recommended!"
+              </p>
+            </div>
+
+            <!-- Review 2 (force 5-star) -->
+            <div
+              class="bg-gradient-to-br from-white to-green-50 rounded-3xl p-8 shadow-xl border-2 border-green-100 review-slide"
+            >
+              <div class="flex items-center mb-6">
+                <img
+                  src="https://ui-avatars.com/api/?name=Rahul+Kumar&size=80&background=22c55e&color=fff"
+                  alt="Customer"
+                  class="w-16 h-16 rounded-full mr-4"
+                />
+                <div>
+                  <h4 class="font-bold text-xl text-gray-900">Rahul Kumar</h4>
+                  <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-700 text-lg leading-relaxed">
+                "Best laundry service in the city! Professional staff, quick
+                turnaround, and affordable prices. Been using for 2 years now."
+              </p>
+            </div>
+
+            <!-- Review 3 -->
+            <div
+              class="bg-gradient-to-br from-white to-purple-50 rounded-3xl p-8 shadow-xl border-2 border-purple-100 review-slide"
+            >
+              <div class="flex items-center mb-6">
+                <img
+                  src="https://ui-avatars.com/api/?name=Anjali+Verma&size=80&background=9333ea&color=fff"
+                  alt="Customer"
+                  class="w-16 h-16 rounded-full mr-4"
+                />
+                <div>
+                  <h4 class="font-bold text-xl text-gray-900">Anjali Verma</h4>
+                  <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-700 text-lg leading-relaxed">
+                "They removed a stubborn coffee stain from my favorite shirt!
+                Amazing work. Very satisfied with their stain removal service."
+              </p>
+            </div>
+
+            <!-- Duplicates for seamless loop -->
+            <div
+              class="bg-gradient-to-br from-white to-blue-50 rounded-3xl p-8 shadow-xl border-2 border-blue-100 review-slide"
+            >
+              <div class="flex items-center mb-6">
+                <img
+                  src="https://ui-avatars.com/api/?name=Priya+Sharma&size=80&background=667eea&color=fff"
+                  alt="Customer"
+                  class="w-16 h-16 rounded-full mr-4"
+                />
+                <div>
+                  <h4 class="font-bold text-xl text-gray-900">Priya Sharma</h4>
+                  <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-700 text-lg leading-relaxed">
+                "Excellent service! My clothes came back spotless and perfectly
+                folded. The pickup and delivery service is so convenient. Highly
+                recommended!"
+              </p>
+            </div>
+            <div
+              class="bg-gradient-to-br from-white to-green-50 rounded-3xl p-8 shadow-xl border-2 border-green-100 review-slide"
+            >
+              <div class="flex items-center mb-6">
+                <img
+                  src="https://ui-avatars.com/api/?name=Rahul+Kumar&size=80&background=22c55e&color=fff"
+                  alt="Customer"
+                  class="w-16 h-16 rounded-full mr-4"
+                />
+                <div>
+                  <h4 class="font-bold text-xl text-gray-900">Rahul Kumar</h4>
+                  <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-700 text-lg leading-relaxed">
+                "Best laundry service in the city! Professional staff, quick
+                turnaround, and affordable prices. Been using for 2 years now."
+              </p>
+            </div>
+            <div
+              class="bg-gradient-to-br from-white to-purple-50 rounded-3xl p-8 shadow-xl border-2 border-purple-100 review-slide"
+            >
+              <div class="flex items-center mb-6">
+                <img
+                  src="https://ui-avatars.com/api/?name=Anjali+Verma&size=80&background=9333ea&color=fff"
+                  alt="Customer"
+                  class="w-16 h-16 rounded-full mr-4"
+                />
+                <div>
+                  <h4 class="font-bold text-xl text-gray-900">Anjali Verma</h4>
+                  <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="text-gray-700 text-lg leading-relaxed">
+                "They removed a stubborn coffee stain from my favorite shirt!
+                Amazing work. Very satisfied with their stain removal service."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-16">
+            <h2 class="text-5xl font-black text-gray-900 mb-6">Get In Touch</h2>
+            <p class="text-2xl text-gray-600">
+              Have questions? We'd love to hear from you!
+            </p>
+          </div>
+
+          <div
+            class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border-2 border-blue-100"
+          >
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="space-y-6"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="f9e61c38-d61e-4fc6-af47-ee504c7b6e0b"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Contact Form Submission - Fresh & Clean"
+              />
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://web3forms.com/success"
+              />
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label class="block text-gray-800 font-bold mb-3 text-lg">
+                    <i class="fas fa-user text-blue-600 mr-2"></i>Full Name
+                  </label>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                    class="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-500 focus:border-blue-500 outline-none text-lg font-semibold transition"
+                  />
+                </div>
+
+                <div>
+                  <label class="block text-gray-800 font-bold mb-3 text-lg">
+                    <i class="fas fa-envelope text-green-600 mr-2"></i>Email
+                    Address
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="your.email@example.com"
+                    required
+                    class="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-500 focus:border-blue-500 outline-none text-lg font-semibold transition"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-gray-800 font-bold mb-3 text-lg">
+                  <i class="fas fa-phone text-purple-600 mr-2"></i>Mobile Number
+                </label>
+                <input
+                  type="tel"
+                  name="mobile"
+                  placeholder="+91-XXXXXXXXXX"
+                  required
+                  pattern="[0-9+\-\s]+"
+                  class="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-500 focus:border-blue-500 outline-none text-lg font-semibold transition"
+                />
+              </div>
+
+              <div>
+                <label class="block text-gray-800 font-bold mb-3 text-lg">
+                  <i class="fas fa-message text-orange-600 mr-2"></i>Your
+                  Message
+                </label>
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Tell us how we can help you..."
+                  required
+                  class="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-500 focus:border-blue-500 outline-none text-lg font-semibold transition resize-none"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-5 rounded-2xl font-black text-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition"
+              >
+                <i class="fas fa-paper-plane mr-3"></i>Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="py-20 bg-gradient-to-br from-blue-600 to-purple-600">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-5xl font-black text-white mb-6">
+            Visit Our Location
+          </h2>
+          <p class="text-2xl text-blue-100">We're here to serve you!</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div
+            class="bg-white/10 backdrop-blur-md rounded-3xl p-10 border-2 border-white/20"
+          >
+            <h3 class="text-3xl font-black text-white mb-8">Contact Details</h3>
+
+            <div class="space-y-6">
+              <div class="flex items-start gap-5">
+                <div
+                  class="bg-white/20 w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-xl text-white mb-2">Address</h4>
+                  <p class="text-blue-100 text-lg">Gurgaon, Haryana, India</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-5">
+                <div
+                  class="bg-white/20 w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-phone text-white text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-xl text-white mb-2">Phone</h4>
+                  <p class="text-blue-100 text-lg">+91 9662003947</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-5">
+                <div
+                  class="bg-white/20 w-14 h-14 rounded-2xl flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="fas fa-clock text-white text-2xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-xl text-white mb-2">
+                    Working Hours
+                  </h4>
+                  <p class="text-blue-100 text-lg">
+                    Mon - Sat: 8 AM - 8 PM<br />Sunday: 9 AM - 6 PM
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3512.101638928301!2d76.77563887519298!3d28.325525675833845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d41000fe8670d%3A0x7b0a08f0043a22af!2sGraphura%20India%20Private%20Limited!5e0!3m2!1sen!2sin!4v1760724088793!5m2!1sen!2sin"
+              class="w-full h-96 border-0"
+              allowfullscreen=""
+              loading="lazy"
+              title="Fresh & Clean Location"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section
+      class="py-24 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 text-white"
+    >
+      <div class="container mx-auto px-4 text-center">
+        <div class="max-w-3xl mx-auto">
+          <div
+            class="bg-white/20 backdrop-blur-md w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-8 border-4 border-white/30"
+          >
+            <i class="fas fa-envelope-open-text text-6xl"></i>
+          </div>
+          <h2 class="text-5xl md:text-6xl font-black mb-6">Stay Updated!</h2>
+          <p class="text-2xl text-blue-50 mb-10 font-medium">
+            Subscribe to our newsletter for exclusive offers and laundry tips.
+          </p>
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="flex flex-col sm:flex-row gap-5 max-w-xl mx-auto"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="f9e61c38-d61e-4fc6-af47-ee504c7b6e0b"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New Newsletter Subscription - Fresh & Clean"
+            />
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+              class="flex-1 px-8 py-5 rounded-2xl text-gray-900 font-bold text-lg focus:ring-4 focus:ring-yellow-300 outline-none shadow-xl"
+            />
+            <button
+              type="submit"
+              class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-10 py-5 rounded-2xl font-black text-lg transition shadow-xl hover:shadow-2xl transform hover:scale-105"
+            >
+              Subscribe
+            </button>
+          </form>
+          <p class="text-base text-blue-100 mt-6 font-semibold">
+            🎁 Get 20% off your first order!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white py-20"
+    >
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div>
+            <img
+              src="./img/logo.jpg"
+              alt="Fresh & Clean Logo"
+              class="footer-logo object-contain rounded-lg"
+            />
+            <p class="text-gray-400 leading-relaxed text-lg">
+              Professional laundry services delivered to your doorstep.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-black mb-6 text-2xl">Quick Links</h4>
+            <ul class="space-y-4 text-gray-400">
+              <li>
+                <a href="./pages/service.html" class="footer-link text-lg"
+                  ><i class="fas fa-angle-right mr-3"></i>Services</a
+                >
+              </li>
+              <li>
+                <a href="./pages/about.html" class="footer-link text-lg"
+                  ><i class="fas fa-angle-right mr-3"></i>About</a
+                >
+              </li>
+              <li>
+                <a href="./pages/blog.html" class="footer-link text-lg"
+                  ><i class="fas fa-angle-right mr-3"></i>Blog</a
+                >
+              </li>
+              <li>
+                <a href="./pages/Contact.html" class="footer-link text-lg"
+                  ><i class="fas fa-angle-right mr-3"></i>Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-black mb-6 text-2xl">Our Services</h4>
+            <ul class="space-y-4 text-gray-400">
+              <li>
+                <a
+                  href="./services page/service1.html"
+                  class="footer-link text-lg"
+                  ><i class="fas fa-check text-green-500 mr-3"></i>Wash &
+                  Fold</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./services page/service2.html"
+                  class="footer-link text-lg"
+                  ><i class="fas fa-check text-green-500 mr-3"></i>Dry
+                  Cleaning</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./services page/service3.html"
+                  class="footer-link text-lg"
+                  ><i class="fas fa-check text-green-500 mr-3"></i>Stain
+                  Removal</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./services page/service4.html"
+                  class="footer-link text-lg"
+                  ><i class="fas fa-check text-green-500 mr-3"></i>Ironing &
+                  Pressing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./services page/service5.html"
+                  class="footer-link text-lg"
+                  ><i class="fas fa-check text-green-500 mr-3"></i>Pickup &
+                  Delivery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./services page/service6.html"
+                  class="footer-link text-lg"
+                  ><i class="fas fa-check text-green-500 mr-3"></i>Premium
+                  Care</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-black mb-6 text-2xl">Follow Us</h4>
+            <div class="flex gap-4 mb-8">
+              <a
+                href="#"
+                class="w-14 h-14 rounded-full bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center hover:scale-110 transition shadow-lg"
+              >
+                <i class="fab fa-facebook-f text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="w-14 h-14 rounded-full bg-gradient-to-br from-blue-400 to-blue-500 flex items-center justify-center hover:scale-110 transition shadow-lg"
+              >
+                <i class="fab fa-twitter text-2xl"></i>
+              </a>
+              <a
+                href="#"
+                class="w-14 h-14 rounded-full bg-gradient-to-br from-pink-600 to-pink-700 flex items-center justify-center hover:scale-110 transition shadow-lg"
+              >
+                <i class="fab fa-instagram text-2xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t-2 border-gray-700 pt-10 text-center">
+          <p class="text-gray-400 text-lg">
+            &copy; 2025 Fresh & Clean Laundry Services. All rights reserved.
+            <span class="mx-3">|</span>
+            Made with <i class="fas fa-heart text-red-500"></i> in India
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <button id="scroll-top">
+      <i class="fas fa-arrow-up text-xl"></i>
+    </button>
+
+    <!-- WhatsApp Button -->
+    <a
+      href="https://wa.me/+919662003947"
+      target="_blank"
+      style="
+        position: fixed;
+        bottom: 100px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #25d366;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 998;
+      "
+    >
+      <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="text-4xl font-black">Book a Service</h3>
+              <p class="text-blue-100 mt-2 text-lg">
+                Fill in the details below
+              </p>
+            </div>
+            <button
+              id="close-modal"
+              class="text-white hover:text-gray-200 text-4xl transform hover:rotate-90 hover:scale-110 transition"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="f9e61c38-d61e-4fc6-af47-ee504c7b6e0b"
+            />
+            <input
+              type="hidden"
+              name="subject"
+              value="New Booking - Fresh & Clean"
+            />
+
+            <div class="mb-6">
+              <label class="block text-gray-800 font-bold mb-3 text-lg"
+                >Service Type</label
+              >
+              <select
+                id="booking-service"
+                name="service"
+                class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+                required
+              >
+                <option value="">Select a service</option>
+                <option>Wash & Fold</option>
+                <option>Dry Cleaning</option>
+                <option>Stain Removal</option>
+                <option>Premium Care</option>
+              </select>
+            </div>
+
+            <div class="mb-6 grid grid-cols-2 gap-5">
+              <div>
+                <label class="block text-gray-800 font-bold mb-3 text-lg"
+                  >Date</label
+                >
+                <input
+                  type="date"
+                  id="booking-date"
+                  name="date"
+                  class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+                  required
+                />
+              </div>
+              <div>
+                <label class="block text-gray-800 font-bold mb-3 text-lg"
+                  >Time</label
+                >
+                <select
+                  name="time"
+                  class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+                  required
+                >
+                  <option>Morning (8am-12pm)</option>
+                  <option>Afternoon (12pm-4pm)</option>
+                  <option>Evening (4pm-8pm)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <label class="block text-gray-800 font-bold mb-3 text-lg"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                name="name"
+                class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+                required
+              />
+            </div>
+
+            <div class="mb-6 grid grid-cols-2 gap-5">
+              <div>
+                <label class="block text-gray-800 font-bold mb-3 text-lg"
+                  >Phone</label
+                >
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="+91-XXXXXXXXXX"
+                  class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+                  required
+                />
+              </div>
+              <div>
+                <label class="block text-gray-800 font-bold mb-3 text-lg"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="mb-6">
+              <label class="block text-gray-800 font-bold mb-3 text-lg"
+                >Pickup Address</label
+              >
+              <textarea
+                name="address"
+                rows="2"
+                class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+                required
+              ></textarea>
+            </div>
+
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://web3forms.com/success"
+            />
+
+            <button
+              type="submit"
+              class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-6 rounded-2xl font-black text-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition"
+            >
+              Confirm Booking 🎉
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./javascript/home.js"></script>
+</html>
