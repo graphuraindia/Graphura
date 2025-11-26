@@ -53,31 +53,173 @@ scrollTopBtn?.addEventListener("click", () => {
 });
 
 // Modal
+// const bookingModal = document.getElementById("booking-modal");
+
+// function openBookingModal(service = "") {
+//   if (service) document.getElementById("booking-service").value = service;
+//   bookingModal.classList.add("active");
+//   document.body.style.overflow = "hidden";
+// }
+
+// function closeModal() {
+//   bookingModal.classList.remove("active");
+//   document.body.style.overflow = "auto";
+// }
+
+// document.getElementById("close-modal")?.addEventListener("click", closeModal);
+// window.addEventListener("click", (e) => {
+//   if (e.target === bookingModal) closeModal();
+// });
+
+// document
+//   .getElementById("book-now-btn")
+//   ?.addEventListener("click", () => openBookingModal());
+// document.getElementById("mobile-book-now")?.addEventListener("click", () => {
+//   openBookingModal();
+//   document.getElementById("mobile-menu").classList.add("hidden");
+// });
+
+// ------------------ BOOKING MODAL LOGIC -----------------
+// ------------------ BOOKING MODAL LOGIC -----------------
+
 const bookingModal = document.getElementById("booking-modal");
 
+// Open Modal
 function openBookingModal(service = "") {
-  if (service) document.getElementById("booking-service").value = service;
-  bookingModal.classList.add("active");
-  document.body.style.overflow = "hidden";
+  if (service) {
+    const serviceInput = document.getElementById("booking-service");
+    if (serviceInput) serviceInput.value = service;
+  }
+
+  bookingModal?.classList.add("active");
+  document.body.style.overflow = "hidden"; // Prevent background scrolling
 }
 
+// Close Modal
 function closeModal() {
-  bookingModal.classList.remove("active");
+  bookingModal?.classList.remove("active");
   document.body.style.overflow = "auto";
 }
 
+// Close Button
 document.getElementById("close-modal")?.addEventListener("click", closeModal);
+
+// Close Modal on Background Click
 window.addEventListener("click", (e) => {
   if (e.target === bookingModal) closeModal();
 });
 
+// Desktop Book Now Button
 document
   .getElementById("book-now-btn")
   ?.addEventListener("click", () => openBookingModal());
+
+// Mobile Book Now Button
 document.getElementById("mobile-book-now")?.addEventListener("click", () => {
   openBookingModal();
-  document.getElementById("mobile-menu").classList.add("hidden");
+  document.getElementById("mobile-menu")?.classList.add("hidden");
 });
+
+// ------------------ BOOKING FORM → GOOGLE SHEETS -----------------
+
+document
+  .getElementById("booking-form")
+  ?.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const submitBtn = this.querySelector("button[type='submit']");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Booking...";
+
+    const bookingData = {
+      service: this.service.value,
+      date: this.date.value,
+      time: this.time.value,
+      name: this.name.value.trim(),
+      phone: this.phone.value.trim(),
+      email: this.email.value.trim(),
+      address: this.address.value.trim(),
+    };
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbyFX4cWdM3eezflqqy0c7mNu3tzPgr0EmLDm8m3vbqvL7jrEqXeN_2MwIpU-3Pz0U8e/exec",
+        {
+          method: "POST",
+          mode: "no-cors", // ⭐ REQUIRED for Google Sheets
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(bookingData),
+        }
+      );
+
+      alert("🎉 Your booking has been confirmed!");
+      this.reset();
+      closeModal();
+    } catch (error) {
+      alert("❌ Something went wrong while booking. Please try again.");
+      console.error("Booking Error:", error);
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Confirm Booking 🎉";
+  });
+
+// ------------------ PARTNERSHIP FORM → use same CONTACT flow -----------------
+document
+  .getElementById("partnership-form")
+  ?.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const submitBtn = this.querySelector("button[type='submit']");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
+
+    const formData = {
+      name:
+        this.contact_person?.value?.trim() ||
+        this.business_name?.value?.trim() ||
+        "",
+      email:
+        this.email?.value?.trim() ||
+        this.partnership_email?.value?.trim() ||
+        "",
+      phone:
+        this.phone?.value?.trim() ||
+        this.partnership_phone?.value?.trim() ||
+        "",
+      subject: this.partnership_type?.value || "Partnership Inquiry",
+      message:
+        this.message?.value?.trim() ||
+        this.partnership_message?.value?.trim() ||
+        "",
+    };
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbyFX4cWdM3eezflqqy0c7mNu3tzPgr0EmLDm8m3vbqvL7jrEqXeN_2MwIpU-3Pz0U8e/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      // Match contact flow success popup
+      alert("Your message has been submitted successfully! 🎉");
+      this.reset();
+    } catch (error) {
+      alert("❌ Something went wrong while submitting. Please try again.");
+      console.error("Partnership Form Error:", error);
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Submit Partnership Inquiry 🤝";
+  });
 
 // Stats Counter
 function animateStats() {
@@ -150,3 +292,58 @@ const today = new Date().toISOString().split("T")[0];
 document.getElementById("booking-date")?.setAttribute("min", today);
 
 console.log("🚀 Fresh & Clean About Page Loaded!");
+
+// ------------------ PARTNERSHIP FORM → use same CONTACT flow -----------------
+document
+  .getElementById("partnership-form")
+  ?.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const submitBtn = this.querySelector("button[type='submit']");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
+
+    const formData = {
+      name:
+        this.contact_person?.value?.trim() ||
+        this.business_name?.value?.trim() ||
+        "",
+      email:
+        this.email?.value?.trim() ||
+        this.partnership_email?.value?.trim() ||
+        "",
+      phone:
+        this.phone?.value?.trim() ||
+        this.partnership_phone?.value?.trim() ||
+        "",
+      subject: this.partnership_type?.value || "Partnership Inquiry",
+      message:
+        this.message?.value?.trim() ||
+        this.partnership_message?.value?.trim() ||
+        "",
+    };
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbyFX4cWdM3eezflqqy0c7mNu3tzPgr0EmLDm8m3vbqvL7jrEqXeN_2MwIpU-3Pz0U8e/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      // Match contact flow success popup
+      alert("Your message has been submitted successfully! 🎉");
+      this.reset();
+    } catch (error) {
+      alert("❌ Something went wrong while submitting. Please try again.");
+      console.error("Partnership Form Error:", error);
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Submit Partnership Inquiry 🤝";
+  });

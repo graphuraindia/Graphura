@@ -118,21 +118,21 @@ scrollTopBtn?.addEventListener("click", () => {
 });
 
 // Modal functionality
-const bookingModal = document.getElementById("booking-modal");
+// const bookingModal = document.getElementById("booking-modal");
 
-function openBookingModal(service = "") {
-  if (service) {
-    document.getElementById("booking-service").value = service;
-    document.getElementById("hidden-service").value = service;
-  }
-  bookingModal.classList.add("active");
-  document.body.style.overflow = "hidden";
-}
+// function openBookingModal(service = "") {
+//   if (service) {
+//     document.getElementById("booking-service").value = service;
+//     document.getElementById("hidden-service").value = service;
+//   }
+//   bookingModal.classList.add("active");
+//   document.body.style.overflow = "hidden";
+// }
 
-function closeModal() {
-  bookingModal.classList.remove("active");
-  document.body.style.overflow = "auto";
-}
+// function closeModal() {
+//   bookingModal.classList.remove("active");
+//   document.body.style.overflow = "auto";
+// }
 
 // Modal close button
 document.getElementById("close-modal")?.addEventListener("click", closeModal);
@@ -167,3 +167,150 @@ const today = new Date().toISOString().split("T")[0];
 document.getElementById("booking-date")?.setAttribute("min", today);
 
 console.log("🚀 Fresh & Clean Services Page - Complete with Hero Slider!");
+
+// ------------------ BOOKING MODAL LOGIC -----------------
+// ------------------ BOOKING MODAL LOGIC -----------------
+
+const bookingModal = document.getElementById("booking-modal");
+
+// Open Modal
+function openBookingModal(service = "") {
+  if (service) {
+    const serviceInput = document.getElementById("booking-service");
+    if (serviceInput) serviceInput.value = service;
+  }
+
+  bookingModal?.classList.add("active");
+  document.body.style.overflow = "hidden"; // Prevent background scrolling
+}
+
+// Close Modal
+function closeModal() {
+  bookingModal?.classList.remove("active");
+  document.body.style.overflow = "auto";
+}
+
+// Close Button
+document.getElementById("close-modal")?.addEventListener("click", closeModal);
+
+// Close Modal on Background Click
+window.addEventListener("click", (e) => {
+  if (e.target === bookingModal) closeModal();
+});
+
+// Desktop Book Now Button
+document
+  .getElementById("book-now-btn")
+  ?.addEventListener("click", () => openBookingModal());
+
+// Mobile Book Now Button
+document.getElementById("mobile-book-now")?.addEventListener("click", () => {
+  openBookingModal();
+  document.getElementById("mobile-menu")?.classList.add("hidden");
+});
+
+// ------------------ BOOKING FORM → GOOGLE SHEETS -----------------
+
+document
+  .getElementById("booking-form")
+  ?.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const submitBtn = this.querySelector("button[type='submit']");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Booking...";
+
+    const bookingData = {
+      service: this.service.value,
+      date: this.date.value,
+      time: this.time.value,
+      name: this.name.value.trim(),
+      phone: this.phone.value.trim(),
+      email: this.email.value.trim(),
+      address: this.address.value.trim(),
+    };
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbyFX4cWdM3eezflqqy0c7mNu3tzPgr0EmLDm8m3vbqvL7jrEqXeN_2MwIpU-3Pz0U8e/exec",
+        {
+          method: "POST",
+          mode: "no-cors", // ⭐ REQUIRED for Google Sheets
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(bookingData),
+        }
+      );
+
+      alert("🎉 Your booking has been confirmed!");
+      this.reset();
+      closeModal();
+    } catch (error) {
+      alert("❌ Something went wrong while booking. Please try again.");
+      console.error("Booking Error:", error);
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Confirm Booking 🎉";
+  });
+
+// ------------------ SERVICE INQUIRY FORM → GOOGLE SHEETS -----------------
+document
+  .getElementById("service-inquiry-form")
+  ?.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const submitBtn = this.querySelector("button[type='submit']");
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      const prevText = submitBtn.textContent;
+      submitBtn.textContent = "Sending...";
+    }
+
+    const data = {
+      name:
+        this.name?.value?.trim() ||
+        document.getElementById("service_name")?.value?.trim() ||
+        "",
+      email:
+        this.email?.value?.trim() ||
+        document.getElementById("service_email")?.value?.trim() ||
+        "",
+      phone:
+        this.phone?.value?.trim() ||
+        document.getElementById("service_phone")?.value?.trim() ||
+        "",
+      subject:
+        this.service_interest?.value ||
+        document.getElementById("service_interest")?.value ||
+        "Service Inquiry",
+      message:
+        this.message?.value?.trim() ||
+        document.getElementById("service_message")?.value?.trim() ||
+        "",
+    };
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbyFX4cWdM3eezflqqy0c7mNu3tzPgr0EmLDm8m3vbqvL7jrEqXeN_2MwIpU-3Pz0U8e/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+        }
+      );
+
+      alert("Your message has been submitted successfully! 🎉");
+      this.reset();
+    } catch (err) {
+      alert("❌ Something went wrong while submitting. Please try again.");
+      console.error("Service Inquiry Error:", err);
+    }
+
+    if (submitBtn) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = prevText || "Send Inquiry 📧";
+    }
+  });

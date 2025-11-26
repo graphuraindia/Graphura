@@ -168,7 +168,7 @@
               id="mobile-book-now"
               class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-xl font-bold shadow-xl"
             >
-              📅 Book Now
+              📞 Get in touch
             </button>
           </li>
         </ul>
@@ -220,6 +220,8 @@
           <div class="flex flex-col sm:flex-row gap-4">
             <button
               id="schedule-pickup-btn"
+              type="button"
+              onclick="openBookingModal('Pickup & Delivery')"
               class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition shadow-2xl hover:shadow-3xl hover:scale-105"
             >
               Schedule a Pickup →
@@ -246,6 +248,7 @@
     </section> -->
 
     <section
+      id="home"
       class="hero-section relative overflow-hidden bg-blue-600 text-white py-20"
     >
       <div class="hero-slider">
@@ -253,24 +256,32 @@
           <img
             src="https://www.laundrywala.in/wp-content/uploads/2025/02/On-demand-laundry-services.jpg"
             alt="Laundry Service 1"
+            decoding="async"
+            fetchpriority="high"
           />
         </div>
         <div class="hero-slide">
           <img
             src="https://tse3.mm.bing.net/th/id/OIP.jpfs55HR77oC51-DT7HIiwHaE8?w=1024&h=683&rs=1&pid=ImgDetMain&o=7&rm=3"
             alt="Laundry Service 2"
+            loading="lazy"
+            decoding="async"
           />
         </div>
         <div class="hero-slide">
           <img
             src="https://vulcanpost.com/wp-content/uploads/2024/04/dobiqueen-malaysia-self-service-laundry-pick-up-7-1024x536.jpg"
             alt="Laundry Service 3"
+            loading="lazy"
+            decoding="async"
           />
         </div>
         <div class="hero-slide">
           <img
             src="https://dimalaundry.com/wp-content/uploads/2024/02/How-Does-Expert-Laundry-Service-Prolong-Your-Clothes-Life-2.jpg"
             alt="Laundry Service 4"
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </div>
@@ -321,6 +332,7 @@
           >
             <button
               id="schedule-pickup-btn"
+              onclick="openBookingModal('Pickup & Delivery')"
               class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-xl font-bold text-lg transition shadow-2xl hover:shadow-3xl hover:scale-105"
             >
               Schedule a Pickup →
@@ -553,12 +565,12 @@
             Trusted by thousands of happy customers – we’re here to simplify
             your laundry life!
           </p>
-          <button
+          <!-- <button
             onclick="scrollToSection('services')"
             class="bg-blue-900 hover:bg-blue-700 transition text-white font-bold rounded-full py-3 px-8 shadow"
           >
             <i class="fas fa-calendar-check mr-2"></i>Schedule Pickup
-          </button>
+          </button> -->
         </div>
 
         <!-- Features -->
@@ -692,11 +704,11 @@
         </div>
 
         <div class="text-center">
-          <button
+          <!-- <button
             class="bg-blue-900 hover:bg-blue-700 transition text-white font-bold rounded-full py-3 px-8 shadow inline-block"
           >
             Schedule Pickup
-          </button>
+          </button> -->
         </div>
       </div>
     </section>
@@ -758,11 +770,11 @@
         </div>
 
         <div class="text-center mt-12">
-          <button
+          <!-- <button
             class="bg-blue-900 hover:bg-blue-700 transition text-white font-bold rounded-full py-3 px-8 shadow"
           >
             Schedule Pickup
-          </button>
+          </button> -->
         </div>
       </div>
     </section>
@@ -805,11 +817,14 @@
               and be part of India’s next-generation laundry revolution with
               end-to-end support, training, and growth opportunities.
             </p>
-            <button
-              class="mt-4 bg-blue-900 hover:bg-blue-700 transition text-white text-lg font-bold rounded-full py-3 px-8 focus:outline-none shadow"
-            >
-              Schedule Pickup
-            </button>
+            <a href="./pages/service.html" aria-label="View Services">
+              <button
+                class="mt-4 bg-blue-900 hover:bg-blue-700 transition text-white text-lg font-bold rounded-full py-3 px-8 focus:outline-none shadow"
+                type="button"
+              >
+                Schedule Pickup
+              </button>
+            </a>
           </div>
 
           <!-- Process Flow Right -->
@@ -1279,27 +1294,7 @@
           <div
             class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border-2 border-blue-100"
           >
-            <form
-              action="https://api.web3forms.com/submit"
-              method="POST"
-              class="space-y-6"
-            >
-              <input
-                type="hidden"
-                name="access_key"
-                value="f9e61c38-d61e-4fc6-af47-ee504c7b6e0b"
-              />
-              <input
-                type="hidden"
-                name="subject"
-                value="New Contact Form Submission - Fresh & Clean"
-              />
-              <input
-                type="hidden"
-                name="redirect"
-                value="https://web3forms.com/success"
-              />
-
+            <form id="contact-form" class="space-y-6">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label class="block text-gray-800 font-bold mb-3 text-lg">
@@ -1335,12 +1330,28 @@
                 </label>
                 <input
                   type="tel"
-                  name="mobile"
+                  name="phone"
                   placeholder="+91-XXXXXXXXXX"
                   required
                   pattern="[0-9+\-\s]+"
                   class="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-500 focus:border-blue-500 outline-none text-lg font-semibold transition"
                 />
+              </div>
+
+              <div>
+                <label class="block text-gray-800 font-bold mb-3 text-lg">
+                  <i class="fas fa-heading text-orange-600 mr-2"></i>Subject
+                </label>
+                <select
+                  name="inquiry_subject"
+                  class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+                >
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Service Request">Service Request</option>
+                  <option value="Franchise / Partnership">
+                    Franchise / Partnership
+                  </option>
+                </select>
               </div>
 
               <div>
@@ -1361,7 +1372,7 @@
                 type="submit"
                 class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-5 rounded-2xl font-black text-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition"
               >
-                <i class="fas fa-paper-plane mr-3"></i>Send Message
+                <i class="fas fa-paper-plane mr-3"></i>Send Message 📤
               </button>
             </form>
           </div>
@@ -1460,25 +1471,9 @@
             Subscribe to our newsletter for exclusive offers and laundry tips.
           </p>
           <form
-            action="https://api.web3forms.com/submit"
-            method="POST"
+            id="subscribe-form"
             class="flex flex-col sm:flex-row gap-5 max-w-xl mx-auto"
           >
-            <input
-              type="hidden"
-              name="access_key"
-              value="f9e61c38-d61e-4fc6-af47-ee504c7b6e0b"
-            />
-            <input
-              type="hidden"
-              name="subject"
-              value="New Newsletter Subscription - Fresh & Clean"
-            />
-            <input
-              type="hidden"
-              name="redirect"
-              value="https://web3forms.com/success"
-            />
             <input
               type="email"
               name="email"
@@ -1680,18 +1675,8 @@
         </div>
 
         <div class="modal-body">
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input
-              type="hidden"
-              name="access_key"
-              value="f9e61c38-d61e-4fc6-af47-ee504c7b6e0b"
-            />
-            <input
-              type="hidden"
-              name="subject"
-              value="New Booking - Fresh & Clean"
-            />
-
+          <!-- UPDATED BOOKING FORM (GOOGLE SHEETS SUBMISSION) -->
+          <form id="booking-form">
             <div class="mb-6">
               <label class="block text-gray-800 font-bold mb-3 text-lg"
                 >Service Type</label
@@ -1703,6 +1688,7 @@
                 required
               >
                 <option value="">Select a service</option>
+                <option>Pickup & Delivery</option>
                 <option>Wash & Fold</option>
                 <option>Dry Cleaning</option>
                 <option>Stain Removal</option>
@@ -1789,12 +1775,6 @@
               ></textarea>
             </div>
 
-            <input
-              type="hidden"
-              name="redirect"
-              value="https://web3forms.com/success"
-            />
-
             <button
               type="submit"
               class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-6 rounded-2xl font-black text-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition"
@@ -1806,5 +1786,6 @@
       </div>
     </div>
   </body>
+
   <script src="./javascript/home.js"></script>
 </html>

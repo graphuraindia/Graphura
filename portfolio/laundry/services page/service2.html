@@ -856,19 +856,7 @@
         </div>
 
         <div class="modal-body">
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input
-              type="hidden"
-              name="access_key"
-              value="f9e61c38-d61e-4fc6-af47-ee504c7b6e0b"
-            />
-            <input
-              type="hidden"
-              name="subject"
-              value="New Booking - Fresh & Clean"
-            />
-            <input type="hidden" name="service" id="hidden-service" />
-
+          <form id="booking-form">
             <div class="mb-6">
               <label class="block text-gray-800 font-bold mb-3 text-lg"
                 >Service Type</label
@@ -968,11 +956,7 @@
               ></textarea>
             </div>
 
-            <input
-              type="hidden"
-              name="redirect"
-              value="https://web3forms.com/success"
-            />
+            <!-- submission handled by ../javascript/contact.js -->
 
             <button
               type="submit"
@@ -985,5 +969,6 @@
       </div>
     </div>
   </body>
+  <script src="../javascript/contact.js"></script>
   <script src="../javascript/service2.js"></script>
 </html>

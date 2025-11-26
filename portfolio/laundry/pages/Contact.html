@@ -333,7 +333,7 @@
                 </div>
                 <div>
                   <h4 class="font-bold text-xl text-gray-800 mb-2">Email</h4>
-                  <p class="text-gray-600 text-lg">info@graphura.com</p>
+                  <p class="text-gray-600 text-lg">info@graphura.in</p>
                   <p class="text-sm text-gray-500 mt-1">
                     We reply within 24 hours
                   </p>
@@ -412,137 +412,109 @@
           </div>
 
           <!-- Contact Form -->
-          <div class="animate-fade-in" style="animation-delay: 0.2s">
-            <div
-              class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8 border-2 border-blue-200 shadow-2xl"
-            >
-              <h3 class="text-3xl font-bold text-gray-800 mb-6">
-                Send Us a Message
-              </h3>
+         <div class="animate-fade-in" style="animation-delay: 0.2s">
+  <div
+    class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-3xl p-8 border-2 border-blue-200 shadow-2xl"
+  >
+    <h3 class="text-3xl font-bold text-gray-800 mb-6">
+      Send Us a Message
+    </h3>
 
-              <!-- Contact Form with Web3Forms -->
-              <form
-                action="https://api.web3forms.com/submit"
-                method="POST"
-                id="contact-form"
-              >
-                <input
-                  type="hidden"
-                  name="access_key"
-                  value="f9e61c38-d61e-4fc6-af47-ee504c7b6e0b"
-                />
-                <input
-                  type="hidden"
-                  name="subject"
-                  value="Contact Form Submission - Fresh & Clean"
-                />
-                <input
-                  type="hidden"
-                  name="from_name"
-                  value="Fresh & Clean Contact"
-                />
-
-                <div class="mb-6">
-                  <label
-                    for="name"
-                    class="block text-gray-700 font-bold mb-3 text-lg"
-                    >Full Name *</label
-                  >
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    class="w-full px-5 py-4 rounded-xl border-2 border-gray-300 bg-white text-gray-900 focus:ring-4 focus:ring-blue-500 outline-none text-lg transition"
-                  />
-                </div>
-
-                <div class="mb-6">
-                  <label
-                    for="email"
-                    class="block text-gray-700 font-bold mb-3 text-lg"
-                    >Email Address *</label
-                  >
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    class="w-full px-5 py-4 rounded-xl border-2 border-gray-300 bg-white text-gray-900 focus:ring-4 focus:ring-blue-500 outline-none text-lg transition"
-                  />
-                </div>
-
-                <div class="mb-6">
-                  <label
-                    for="phone"
-                    class="block text-gray-700 font-bold mb-3 text-lg"
-                    >Phone Number *</label
-                  >
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    required
-                    class="w-full px-5 py-4 rounded-xl border-2 border-gray-300 bg-white text-gray-900 focus:ring-4 focus:ring-blue-500 outline-none text-lg transition"
-                  />
-                </div>
-
-                <div class="mb-6">
-                  <label
-                    for="subject"
-                    class="block text-gray-700 font-bold mb-3 text-lg"
-                    >Subject *</label
-                  >
-                  <select
-                    id="subject"
-                    name="inquiry_subject"
-                    required
-                    class="w-full px-5 py-4 rounded-xl border-2 border-gray-300 bg-white text-gray-900 focus:ring-4 focus:ring-blue-500 outline-none text-lg transition"
-                  >
-                    <option value="">Select a subject</option>
-                    <option>General Inquiry</option>
-                    <option>Service Question</option>
-                    <option>Pricing Information</option>
-                    <option>Complaint</option>
-                    <option>Feedback</option>
-                    <option>Partnership Opportunity</option>
-                    <option>Other</option>
-                  </select>
-                </div>
-
-                <div class="mb-6">
-                  <label
-                    for="message"
-                    class="block text-gray-700 font-bold mb-3 text-lg"
-                    >Your Message *</label
-                  >
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    required
-                    class="w-full px-5 py-4 rounded-xl border-2 border-gray-300 bg-white text-gray-900 focus:ring-4 focus:ring-blue-500 outline-none text-lg transition"
-                  ></textarea>
-                </div>
-
-                <input
-                  type="hidden"
-                  name="redirect"
-                  value="https://web3forms.com/success"
-                />
-
-                <button
-                  type="submit"
-                  class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-5 rounded-xl font-extrabold text-xl transition shadow-lg hover:shadow-2xl transform hover:scale-105"
-                >
-                  Send Message 📤
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
+    <!-- NEW CONTACT FORM (Google Sheets Submission) -->
+    <form id="contact-form">
+      <div class="mb-6">
+        <label
+          for="name"
+          class="block text-gray-700 font-bold mb-3 text-lg"
+          >Full Name *</label
+        >
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          class="w-full px-5 py-4 rounded-xl border-2 border-gray-300 bg-white text-gray-900 focus:ring-4 focus:ring-blue-500 outline-none text-lg transition"
+        />
       </div>
-    </section>
+
+      <div class="mb-6">
+        <label
+          for="email"
+          class="block text-gray-700 font-bold mb-3 text-lg"
+          >Email Address *</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          class="w-full px-5 py-4 rounded-xl border-2 border-gray-300 bg-white text-gray-900 focus:ring-4 focus:ring-blue-500 outline-none text-lg transition"
+        />
+      </div>
+
+      <div class="mb-6">
+        <label
+          for="phone"
+          class="block text-gray-700 font-bold mb-3 text-lg"
+          >Phone Number *</label
+        >
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          required
+          class="w-full px-5 py-4 rounded-xl border-2 border-gray-300 bg-white text-gray-900 focus:ring-4 focus:ring-blue-500 outline-none text-lg transition"
+        />
+      </div>
+
+      <div class="mb-6">
+        <label
+          for="subject"
+          class="block text-gray-700 font-bold mb-3 text-lg"
+          >Subject *</label
+        >
+        <select
+          id="subject"
+          name="inquiry_subject"
+          required
+          class="w-full px-5 py-4 rounded-xl border-2 border-gray-300 bg-white text-gray-900 focus:ring-4 focus:ring-blue-500 outline-none text-lg transition"
+        >
+          <option value="">Select a subject</option>
+          <option>General Inquiry</option>
+          <option>Service Question</option>
+          <option>Pricing Information</option>
+          <option>Complaint</option>
+          <option>Feedback</option>
+          <option>Partnership Opportunity</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="mb-6">
+        <label
+          for="message"
+          class="block text-gray-700 font-bold mb-3 text-lg"
+          >Your Message *</label
+        >
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          required
+          class="w-full px-5 py-4 rounded-xl border-2 border-gray-300 bg-white text-gray-900 focus:ring-4 focus:ring-blue-500 outline-none text-lg transition"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-5 rounded-xl font-extrabold text-xl transition shadow-lg hover:shadow-2xl transform hover:scale-105"
+      >
+        Send Message 📤
+      </button>
+    </form>
+  </div>
+</div>
+</section>
 
     <!-- Map Section -->
     <section class="py-12 bg-gray-50">
@@ -794,150 +766,120 @@
     </a>
 
     <!-- Booking Modal -->
-    <div id="booking-modal" class="modal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div class="flex justify-between items-center">
-            <div>
-              <h3 class="text-4xl font-black">Book a Service</h3>
-              <p class="text-blue-100 mt-2 text-lg">
-                Fill in the details below
-              </p>
-            </div>
-            <button
-              id="close-modal"
-              class="text-white hover:text-gray-200 text-4xl transform hover:rotate-90 hover:scale-110 transition"
+<div id="booking-modal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="flex justify-between items-center">
+        <div>
+          <h3 class="text-4xl font-black">Book a Service</h3>
+          <p class="text-blue-100 mt-2 text-lg">Fill in the details below</p>
+        </div>
+        <button
+          id="close-modal"
+          class="text-white hover:text-gray-200 text-4xl transform hover:rotate-90 hover:scale-110 transition"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+    <div class="modal-body">
+      <!-- UPDATED BOOKING FORM (GOOGLE SHEETS SUBMISSION) -->
+      <form id="booking-form">
+        
+        <div class="mb-6">
+          <label class="block text-gray-800 font-bold mb-3 text-lg">Service Type</label>
+          <select
+            id="booking-service"
+            name="service"
+            class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+            required
+          >
+            <option value="">Select a service</option>
+            <option>Wash & Fold</option>
+            <option>Dry Cleaning</option>
+            <option>Stain Removal</option>
+            <option>Premium Care</option>
+          </select>
+        </div>
+
+        <div class="mb-6 grid grid-cols-2 gap-5">
+          <div>
+            <label class="block text-gray-800 font-bold mb-3 text-lg">Date</label>
+            <input
+              type="date"
+              id="booking-date"
+              name="date"
+              class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-gray-800 font-bold mb-3 text-lg">Time</label>
+            <select
+              name="time"
+              class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+              required
             >
-              <i class="fas fa-times"></i>
-            </button>
+              <option>Morning (8am-12pm)</option>
+              <option>Afternoon (12pm-4pm)</option>
+              <option>Evening (4pm-8pm)</option>
+            </select>
           </div>
         </div>
 
-        <div class="modal-body">
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input
-              type="hidden"
-              name="access_key"
-              value="f9e61c38-d61e-4fc6-af47-ee504c7b6e0b"
-            />
-            <input
-              type="hidden"
-              name="subject"
-              value="New Booking - Fresh & Clean"
-            />
-
-            <div class="mb-6">
-              <label class="block text-gray-800 font-bold mb-3 text-lg"
-                >Service Type</label
-              >
-              <select
-                id="booking-service"
-                name="service"
-                class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
-                required
-              >
-                <option value="">Select a service</option>
-                <option>Wash & Fold</option>
-                <option>Dry Cleaning</option>
-                <option>Stain Removal</option>
-                <option>Premium Care</option>
-              </select>
-            </div>
-
-            <div class="mb-6 grid grid-cols-2 gap-5">
-              <div>
-                <label class="block text-gray-800 font-bold mb-3 text-lg"
-                  >Date</label
-                >
-                <input
-                  type="date"
-                  id="booking-date"
-                  name="date"
-                  class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
-                  required
-                />
-              </div>
-              <div>
-                <label class="block text-gray-800 font-bold mb-3 text-lg"
-                  >Time</label
-                >
-                <select
-                  name="time"
-                  class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
-                  required
-                >
-                  <option>Morning (8am-12pm)</option>
-                  <option>Afternoon (12pm-4pm)</option>
-                  <option>Evening (4pm-8pm)</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="mb-6">
-              <label class="block text-gray-800 font-bold mb-3 text-lg"
-                >Full Name</label
-              >
-              <input
-                type="text"
-                name="name"
-                class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
-                required
-              />
-            </div>
-
-            <div class="mb-6 grid grid-cols-2 gap-5">
-              <div>
-                <label class="block text-gray-800 font-bold mb-3 text-lg"
-                  >Phone</label
-                >
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="+91-XXXXXXXXXX"
-                  class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
-                  required
-                />
-              </div>
-              <div>
-                <label class="block text-gray-800 font-bold mb-3 text-lg"
-                  >Email</label
-                >
-                <input
-                  type="email"
-                  name="email"
-                  class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
-                  required
-                />
-              </div>
-            </div>
-
-            <div class="mb-6">
-              <label class="block text-gray-800 font-bold mb-3 text-lg"
-                >Pickup Address</label
-              >
-              <textarea
-                name="address"
-                rows="2"
-                class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
-                required
-              ></textarea>
-            </div>
-
-            <input
-              type="hidden"
-              name="redirect"
-              value="https://web3forms.com/success"
-            />
-
-            <button
-              type="submit"
-              class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-6 rounded-2xl font-black text-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition"
-            >
-              Confirm Booking 🎉
-            </button>
-          </form>
+        <div class="mb-6">
+          <label class="block text-gray-800 font-bold mb-3 text-lg">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+            required
+          />
         </div>
-      </div>
+
+        <div class="mb-6 grid grid-cols-2 gap-5">
+          <div>
+            <label class="block text-gray-800 font-bold mb-3 text-lg">Phone</label>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="+91-XXXXXXXXXX"
+              class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-gray-800 font-bold mb-3 text-lg">Email</label>
+            <input
+              type="email"
+              name="email"
+              class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="mb-6">
+          <label class="block text-gray-800 font-bold mb-3 text-lg">Pickup Address</label>
+          <textarea
+            name="address"
+            rows="2"
+            class="w-full px-6 py-4 border-2 rounded-xl focus:ring-4 focus:ring-blue-500 outline-none text-lg font-semibold"
+            required
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-6 rounded-2xl font-black text-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition"
+        >
+          Confirm Booking 🎉
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
     </div>
   </body>
   <script src="../javascript/contact.js"></script>

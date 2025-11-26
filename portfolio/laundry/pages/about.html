@@ -134,7 +134,7 @@
               id="mobile-book-now"
               class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-4 rounded-xl font-bold shadow-xl"
             >
-              📅 Book Now
+              📞 Get in touch
             </button>
           </li>
         </ul>
@@ -655,24 +655,8 @@
             us.
           </p>
 
-          <!-- Partnership Form with Web3Forms -->
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input
-              type="hidden"
-              name="access_key"
-              value="f9e61c38-d61e-4fc6-af47-ee504c7b6e0b"
-            />
-            <input
-              type="hidden"
-              name="subject"
-              value="Partnership Inquiry - Fresh & Clean"
-            />
-            <input
-              type="hidden"
-              name="from_name"
-              value="Fresh & Clean Partnership"
-            />
-
+          <!-- Partnership Form → send to same Google Sheets endpoint and show booking popup -->
+          <form id="partnership-form" class="space-y-4">
             <div class="mb-6">
               <label class="block text-gray-700 font-bold mb-2"
                 >Business/Organization Name</label
@@ -680,6 +664,7 @@
               <input
                 type="text"
                 name="business_name"
+                id="business_name"
                 required
                 class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
               />
@@ -693,6 +678,7 @@
                 <input
                   type="text"
                   name="contact_person"
+                  id="contact_person"
                   required
                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
                 />
@@ -702,6 +688,7 @@
                 <input
                   type="email"
                   name="email"
+                  id="partnership_email"
                   required
                   class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
                 />
@@ -715,6 +702,7 @@
               <input
                 type="tel"
                 name="phone"
+                id="partnership_phone"
                 required
                 class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
               />
@@ -726,6 +714,7 @@
               >
               <select
                 name="partnership_type"
+                id="partnership_type"
                 required
                 class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
               >
@@ -744,17 +733,12 @@
               >
               <textarea
                 name="message"
+                id="partnership_message"
                 rows="5"
                 required
                 class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-blue-500 focus:outline-none"
               ></textarea>
             </div>
-
-            <input
-              type="hidden"
-              name="redirect"
-              value="https://web3forms.com/success"
-            />
 
             <button
               type="submit"
@@ -947,18 +931,7 @@
         </div>
 
         <div class="modal-body">
-          <form action="https://api.web3forms.com/submit" method="POST">
-            <input
-              type="hidden"
-              name="access_key"
-              value="f9e61c38-d61e-4fc6-af47-ee504c7b6e0b"
-            />
-            <input
-              type="hidden"
-              name="subject"
-              value="New Booking - Fresh & Clean"
-            />
-
+          <form id="booking-form">
             <div class="mb-6">
               <label class="block text-gray-800 font-bold mb-3 text-lg"
                 >Service Type</label
@@ -1056,12 +1029,6 @@
               ></textarea>
             </div>
 
-            <input
-              type="hidden"
-              name="redirect"
-              value="https://web3forms.com/success"
-            />
-
             <button
               type="submit"
               class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-6 rounded-2xl font-black text-2xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition"
@@ -1072,8 +1039,6 @@
         </div>
       </div>
     </div>
-
-    <script></script>
   </body>
   <script src="../javascript/about.js"></script>
 </html>

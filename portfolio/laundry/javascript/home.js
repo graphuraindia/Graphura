@@ -37,10 +37,9 @@ const $ = (s, r = document) => r.querySelector(s);
 const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
 
 // Page Loader
-window.addEventListener("load", () => {
-  setTimeout(() => $("#page-loader").classList.add("hidden"), 1800);
+document.addEventListener("DOMContentLoaded", () => {
+  $("#page-loader")?.classList.add("hidden");
   animateStats();
-  startSlider();
 });
 
 // Mobile Menu
@@ -49,32 +48,32 @@ $("#mobile-menu-button").addEventListener("click", () => {
 });
 
 // Modal
-const bookingModal = $("#booking-modal");
+// const bookingModal = $("#booking-modal");
 
-function openBookingModal(service = "") {
-  if (service) $("#booking-service").value = service;
-  bookingModal.classList.add("active");
-  document.body.style.overflow = "hidden";
-}
+// function openBookingModal(service = "") {
+//   if (service) $("#booking-service").value = service;
+//   bookingModal.classList.add("active");
+//   document.body.style.overflow = "hidden";
+// }
 
-function closeModal() {
-  bookingModal.classList.remove("active");
-  document.body.style.overflow = "auto";
-}
+// function closeModal() {
+//   bookingModal.classList.remove("active");
+//   document.body.style.overflow = "auto";
+// }
 
-$("#close-modal")?.addEventListener("click", closeModal);
-window.addEventListener("click", (e) => {
-  if (e.target === bookingModal) closeModal();
-});
+// $("#close-modal")?.addEventListener("click", closeModal);
+// window.addEventListener("click", (e) => {
+//   if (e.target === bookingModal) closeModal();
+// });
 
-$("#book-now-btn")?.addEventListener("click", () => openBookingModal());
-$("#mobile-book-now")?.addEventListener("click", () => {
-  openBookingModal();
-  $("#mobile-menu").classList.add("hidden");
-});
-$("#schedule-pickup-btn")?.addEventListener("click", () =>
-  openBookingModal("Pickup & Delivery")
-);
+// $("#book-now-btn")?.addEventListener("click", () => openBookingModal());
+// $("#mobile-book-now")?.addEventListener("click", () => {
+//   openBookingModal();
+//   $("#mobile-menu").classList.add("hidden");
+// });
+// $("#schedule-pickup-btn")?.addEventListener("click", () =>
+//   openBookingModal("Pickup & Delivery")
+// );
 
 // Learn More Button Scroll
 $("#learn-more-btn")?.addEventListener("click", () => {
@@ -184,3 +183,171 @@ const today = new Date().toISOString().split("T")[0];
 $("#booking-date")?.setAttribute("min", today);
 
 console.log("🚀 Fresh & Clean Laundry Website Loaded!");
+
+// ------------------ BOOKING MODAL LOGIC -----------------
+// ------------------ BOOKING MODAL LOGIC -----------------
+
+const bookingModal = document.getElementById("booking-modal");
+
+// Open Modal
+function openBookingModal(service = "") {
+  if (service) {
+    const serviceInput = document.getElementById("booking-service");
+    if (serviceInput) serviceInput.value = service;
+  }
+
+  bookingModal?.classList.add("active");
+  document.body.style.overflow = "hidden"; // Prevent background scrolling
+}
+
+// Close Modal
+function closeModal() {
+  bookingModal?.classList.remove("active");
+  document.body.style.overflow = "auto";
+}
+
+// Close Button
+document.getElementById("close-modal")?.addEventListener("click", closeModal);
+
+// Close Modal on Background Click
+window.addEventListener("click", (e) => {
+  if (e.target === bookingModal) closeModal();
+});
+
+// Desktop Book Now Button
+document
+  .getElementById("book-now-btn")
+  ?.addEventListener("click", () => openBookingModal());
+
+// Mobile Book Now Button
+document.getElementById("mobile-book-now")?.addEventListener("click", () => {
+  openBookingModal();
+  document.getElementById("mobile-menu")?.classList.add("hidden");
+});
+
+// ------------------ BOOKING FORM → GOOGLE SHEETS -----------------
+
+document
+  .getElementById("booking-form")
+  ?.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const submitBtn = this.querySelector("button[type='submit']");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Booking...";
+
+    const bookingData = {
+      service: this.service.value,
+      date: this.date.value,
+      time: this.time.value,
+      name: this.name.value.trim(),
+      phone: this.phone.value.trim(),
+      email: this.email.value.trim(),
+      address: this.address.value.trim(),
+    };
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbyFX4cWdM3eezflqqy0c7mNu3tzPgr0EmLDm8m3vbqvL7jrEqXeN_2MwIpU-3Pz0U8e/exec",
+        {
+          method: "POST",
+          mode: "no-cors", // ⭐ REQUIRED for Google Sheets
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(bookingData),
+        }
+      );
+
+      alert("🎉 Your booking has been confirmed!");
+      this.reset();
+      closeModal();
+    } catch (error) {
+      alert("❌ Something went wrong while booking. Please try again.");
+      console.error("Booking Error:", error);
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Confirm Booking 🎉";
+  });
+
+// ------------------ CONTACT FORM → GOOGLE SHEETS (Home) -----------------
+document
+  .getElementById("contact-form")
+  ?.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const submitBtn = this.querySelector("button[type='submit']");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending...";
+
+    const formData = {
+      name: this.name.value.trim(),
+      email: this.email.value.trim(),
+      phone: this.phone.value.trim(),
+      subject: this.inquiry_subject?.value || "General Inquiry",
+      message: this.message.value.trim(),
+    };
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbyFX4cWdM3eezflqqy0c7mNu3tzPgr0EmLDm8m3vbqvL7jrEqXeN_2MwIpU-3Pz0U8e/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      alert("Your message has been submitted successfully! 🎉");
+      this.reset();
+    } catch (error) {
+      alert("❌ Something went wrong while submitting. Please try again.");
+      console.error("Form Error:", error);
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Send Message 📤";
+  });
+
+// ------------------ NEWSLETTER SUBSCRIBE → GOOGLE SHEETS -----------------
+document
+  .getElementById("subscribe-form")
+  ?.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const submitBtn = this.querySelector("button[type='submit']");
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Subscribing...";
+
+    const payload = {
+      email: this.email.value.trim(),
+      topic: "Newsletter",
+    };
+
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbyFX4cWdM3eezflqqy0c7mNu3tzPgr0EmLDm8m3vbqvL7jrEqXeN_2MwIpU-3Pz0U8e/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      alert("🎉 Thanks — you've been subscribed!");
+      this.reset();
+    } catch (error) {
+      alert("❌ Subscription failed. Please try again.");
+      console.error("Subscribe Error:", error);
+    }
+
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Subscribe";
+  });
