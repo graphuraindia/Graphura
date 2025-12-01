@@ -1,0 +1,140 @@
+/* THEME VARIABLES */
+:root {
+  --navy: #0B1A33;
+  --gold: #D4AF37;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+/* BASIC LAYOUT HELPERS (if not already in your main CSS) */
+.services-section {
+  padding: 80px 0;
+  background: linear-gradient(
+    180deg,
+    rgba(11, 26, 51, 0.02),
+    rgba(0, 0, 0, 0.03)
+  );
+}
+
+.container {
+  width: min(1200px, 100% - 40px);
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  color: var(--navy);
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--black);
+  opacity: 0.75;
+  max-width: 650px;
+  margin: 0 auto 40px;
+}
+
+/* GRID: 5 × 2 ON DESKTOP */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr)); /* 5 columns */
+  gap: 24px;
+}
+
+/* CARD STYLE */
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--white);
+  border: 1px solid var(--gold);
+  border-radius: 18px;
+  padding: 22px 24px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  text-decoration: none;
+  color: var(--black);
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease;
+  opacity: 0;                 /* for scroll animation */
+  transform: translateY(20px);/* for scroll animation */
+}
+
+.service-card.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+  border-color: var(--gold);
+}
+
+.service-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+  color: var(--navy);
+}
+
+.service-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.service-card li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* Gold bullet like in your example */
+.service-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--gold);
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+   (480, 768, 992 as you wanted)
+========================= */
+
+/* max-width: 992px → 3 columns */
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* max-width: 768px → 2 columns */
+@media (max-width: 768px) {
+  .services-section {
+    padding: 60px 0;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* max-width: 480px → 1 column */
+@media (max-width: 480px) {
+  .services-section {
+    padding: 50px 0;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 20px 18px;
+  }
+}

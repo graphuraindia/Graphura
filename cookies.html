@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookies - Graphura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Figtree:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/midnight.css" />
+    <link rel="stylesheet" href="css/cookie.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html" aria-label="Graphura Home">
+            <img src="image/bg removed.png" alt="Graphura Logo" />
+          </a>
+          <div
+            class="navbar-toggle"
+            aria-label="Toggle Menu"
+            aria-expanded="false"
+            role="button"
+            tabindex="0"
+          >
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <div class="navbar-menu" data-menu>
+          <ul class="navbar-nav" role="menubar" aria-label="Primary Navigation">
+            <li role="none">
+              <a role="menuitem" href="index.html" class="active">Home</a>
+            </li>
+
+            <!-- Services Dropdown menu -->
+            <li class="nav-dropdown" role="none">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                role="menuitem"
+                aria-haspopup="true"
+                aria-expanded="false"
+                tabindex="0"
+              >
+                Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </a>
+              <ul
+                class="dropdown-menu"
+                role="menu"
+                aria-label="Services submenu"
+              >
+                <li role="none">
+                  <a role="menuitem" href="services/seo.html">SEO Services</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/smm.html"
+                    >Social Media Marketing</a
+                  >
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/smo.html"
+                    >Social Media Optimization</a
+                  >
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/Flyers.html">Flyers</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/cw.html">Content Writing</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/Thumbnail.html"
+                    >Thumbnail Design</a
+                  >
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/banner.html"
+                    >Banner Design</a
+                  >
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/logo.html">Logo Design</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/card.html"
+                    >Business Card Design</a
+                  >
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/poster.html"
+                    >Poster Design</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li role="none">
+              <a role="menuitem" href="about.html">About Us</a>
+            </li>
+            <li role="none">
+              <a role="menuitem" href="./Portfolio.html">Portfolio</a>
+            </li>
+            <li role="none"><a role="menuitem" href="blog.html">Blog</a></li>
+            <li role="none">
+              <a role="menuitem" href="contact.html" >Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- ==========================
+     COOKIE POLICY HERO SECTION
+=========================== -->
+    <section class="cookie-section">
+      <div class="cookie-contain">
+        <h1 class="cookie-title">Cookie Policy</h1>
+        <p class="cookie-subtitle">How Graphura uses cookies</p>
+        <span class="cookie-updated">Updated on 4 November 2025</span>
+      </div>
+    </section>
+
+    <!-- ==========================
+     COOKIE POLICY MAIN SECTION
+=========================== -->
+    <section class="cookie-container">
+      <!-- ========== LEFT SIDEBAR ========= -->
+      <aside class="cookie-sidebar">
+        <ul>
+          <li onclick="scrollToSection('intro')">Introduction</li>
+          <li onclick="scrollToSection('what-are-cookies')">
+            What Are Cookies
+          </li>
+          <li onclick="scrollToSection('types')">Types of Cookies We Use</li>
+          <li onclick="scrollToSection('third-party')">Third-Party Cookies</li>
+          <li onclick="scrollToSection('choices')">Your Cookie Choices</li>
+          <li onclick="scrollToSection('consent')">Consent & Legal Basis</li>
+          <li onclick="scrollToSection('retention')">
+            How Long We Keep Cookies
+          </li>
+          <li onclick="scrollToSection('security')">Security</li>
+          <li onclick="scrollToSection('children')">Children</li>
+          <li onclick="scrollToSection('changes')">Changes to This Policy</li>
+          <li onclick="scrollToSection('contact')">Contact Us</li>
+        </ul>
+      </aside>
+
+      <!-- ========== RIGHT CONTENT ========= -->
+      <div class="cookie-content">
+        <h2 id="intro">Introduction</h2>
+        <p>
+          This Cookie Policy explains how Graphura India Private Limited uses
+          cookies and similar tracking technologies on our website. Cookies help
+          us improve site performance, personalize content, analyze traffic, and
+          support essential website functions.
+        </p>
+
+        <h2 id="what-are-cookies">What Are Cookies</h2>
+        <p>
+          Cookies are small text files stored on your device when you visit a
+          website. They help the website function properly, remember your
+          preferences, and understand how you interact with our pages.
+        </p>
+        <h2 id="types">Types of Cookies We Use</h2>
+
+        <div class="cookie-table-wrapper">
+          <table class="cookie-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Purpose</th>
+                <th>Example Cookies</th>
+                <th>Retention</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Essential / Strictly Necessary</td>
+                <td>
+                  Required for the website to function (session management,
+                  security, login state).
+                </td>
+                <td>sessionid, csrftoken, wp-settings-*</td>
+                <td>Session or up to 1 year</td>
+              </tr>
+
+              <tr>
+                <td>Performance & Analytics</td>
+                <td>
+                  Measure site usage and performance to help us improve the site
+                  (non-identifying).
+                </td>
+                <td>_ga, _gid, _gat (Google Analytics)</td>
+                <td>_ga: 2 years<br />_gid: 24 hours</td>
+              </tr>
+
+              <tr>
+                <td>Functional</td>
+                <td>Remember preferences (language, region, UI settings).</td>
+                <td>lang, pref</td>
+                <td>6 months – 2 years</td>
+              </tr>
+
+              <tr>
+                <td>Marketing & Advertising</td>
+                <td>
+                  Deliver relevant ads, limit ad frequency, measure campaigns.
+                </td>
+                <td>_fbp, fr, IDE, NID</td>
+                <td>3 months – 2 years</td>
+              </tr>
+
+              <tr>
+                <td>Social Media</td>
+                <td>Enable sharing and login via social networks.</td>
+                <td>fblo_..., li_sugr</td>
+                <td>Varies by provider</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          Note: Cookie names above are examples. Active cookies on your device
+          may differ based on the services you use on our website.
+        </p>
+
+        <h2 id="third-party">Third-Party Cookies & Data Sharing</h2>
+        <p>
+          We allow trusted third parties such as Google Analytics, Google Ads,
+          Meta, and LinkedIn to set cookies for analytics, advertising, and
+          social media features. These providers process data according to their
+          own privacy policies.
+        </p>
+        <p>
+          Examples of third parties we work with include: Google, Meta/Facebook,
+          LinkedIn, Social sharing tools, Email marketing platforms.
+        </p>
+
+        <h2 id="choices">Your Cookie Choices</h2>
+        <p>You have full control over how cookies are used:</p>
+
+        <h3>A. Use our Cookie Preference Tool</h3>
+        <p>
+          If shown on the site, you can allow or block categories such as
+          Analytics or Marketing.
+        </p>
+
+        <h3>B. Manage your browser settings</h3>
+        <p>
+          You can block or delete cookies directly from your browser. Examples:
+          Chrome → Privacy & security → Cookies, Safari → Manage Website Data,
+          etc.
+        </p>
+
+        <h3>C. Opt-out from tracking</h3>
+        <p>
+          Tools such as Google Analytics Opt-Out Browser Add-on let you disable
+          analytics tracking.
+        </p>
+
+        <h3>D. Clear Cookies</h3>
+        <p>
+          Clearing cookies logs you out of most websites and removes saved
+          preferences.
+        </p>
+
+        <h2 id="consent">Consent & Legal Basis</h2>
+        <p>
+          For non-essential cookies, we rely on user consent (required under
+          GDPR). For essential cookies, we rely on legitimate interest to
+          operate the website.
+        </p>
+
+        <h2 id="retention">How Long We Keep Cookies</h2>
+        <p>
+          Retention varies by cookie type. Some last only for the session, while
+          others last months or years as listed in the table above.
+        </p>
+
+        <h2 id="security">Security</h2>
+        <p>
+          Cookies do not contain sensitive personal data. We follow strict
+          technical and organizational measures to protect all data collected
+          through cookies.
+        </p>
+
+        <h2 id="children">Children</h2>
+        <p>
+          Our website is not intended for children under 13, and we do not
+          knowingly collect their data. Parents may contact us to remove any
+          information.
+        </p>
+
+        <h2 id="changes">Changes to This Cookie Policy</h2>
+        <p>
+          We may update this Cookie Policy to reflect legal, technological, or
+          operational changes. The updated date will be shown at the top.
+        </p>
+
+        <h2 id="contact">Contact Us</h2>
+        <p>
+          Graphura India Private Limited Patudi, Gurugram, Haryana — 122503
+          Email: support@graphura.in Website: https://graphura.in
+        </p>
+      </div>
+    </section>
+
+    <!-- ==========================
+     Smooth Scroll Script
+=========================== -->
+    <script>
+      function scrollToSection(id) {
+        const el = document.getElementById(id);
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    </script>
+
+    <!-- Footer -->
+     <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <img
+              class="footer-img"
+              src="./image/Graphura-logo-white.png"
+              alt="graphura logo"
+            />
+            <p>
+              Your trusted digital marketing partner helping businesses grow
+              their online presence and reach their target audience effectively.
+            </p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/share/19nKAMTopZ/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://share.google/w9KeZZ72v8KQxGpFn"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/graphura-india-private-limited/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/graphura.in?igsh=MXNqNmtidzljNDJlag=="
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./services/seo.html">Services</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./internship.html">Internship</a></li>
+
+              <li><a href="./career.html">Career </a></li>
+              <li><a href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-services">
+            <h4>Our Services</h4>
+            <ul>
+              <li role="none">
+                <a role="menuitem" href="services/seo.html">SEO Services</a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/smm.html"
+                  >Social Media Marketing</a
+                >
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/smo.html"
+                  >Social Media Optimization</a
+                >
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/Flyers.html">Flyers</a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/cw.html">Content Writing</a>
+              </li>
+
+                 <img src="./image/Footer/razorpay.jpg" alt="Razorpay-Logo" style="width: 230px; height: 85px; margin-top: 0.5rem;">
+               </ul>
+
+           
+            </ul>
+
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Graphura India Private Limited, near RSF, Pataudi, Gurgaon, Haryana 122503
+              </li>
+              <li><i class="fas fa-phone"></i> +91 7378021327</li>
+
+              <li><i class="fas fa-envelope"></i> support@graphura.in</li>
+
+          
+<div style="display: grid;grid-template-columns: repeat(2, 1fr); gap: 10px;">
+              <img src="./image/Footer/skill india.jpg" alt="Skill India" style="height: 88px;" /> 
+            <img src="./image/Footer/startup.png" alt="startup india" style="height: 88px; width: 150px;">
+            </div>
+            </ul>
+          </div>
+        </div>
+      <div class="footer-bottom">
+          <p>
+            &copy; 2025 Graphura India Private Limited. All Rights Reserved.
+          </p>
+          <ul>
+            <li><a href="./privacy.html">Privacy Policy</a></li>
+            <li><a href="./Term&condition.html">Terms of Service</a></li>
+            <li><a href="./cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-chat">
+      <a href="https://wa.me/+917378021327" target="_blank" class="chat-btn">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.querySelector(".navbar-toggle");
+        const menu = document.querySelector(".navbar-nav");
+        const cont = document.querySelector(".container");
+        const dropdownToggles = document.querySelectorAll(
+          ".nav-dropdown > .dropdown-toggle"
+        );
+        let flag = 0;
+
+        // Mobile menu toggle
+        toggle.addEventListener("click", () => {
+          document.body.classList.toggle("menu-open");
+        });
+        toggle.addEventListener("click", () => {
+          if (flag === 0) {
+            cont.style.flexWrap = "wrap";
+          } else {
+            cont.style.flexWrap = "nowrap";
+          }
+          flag = 1 - flag;
+          menu.classList.toggle("active");
+          toggle.classList.toggle("active");
+          // const expanded = toggle.getAttribute("aria-expanded") === "true";
+          toggle.setAttribute("aria-expanded", !expanded);
+        });
+
+        // Dropdown toggle for mobile
+        dropdownToggles.forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            if (window.innerWidth <= 900) {
+              e.preventDefault();
+              const dropdownMenu = btn.nextElementSibling;
+              dropdownMenu.classList.toggle("active");
+              const expanded = btn.getAttribute("aria-expanded") === "true";
+
+              btn.setAttribute("aria-expanded", !expanded);
+            }
+          });
+        });
+      }) 
+    </script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

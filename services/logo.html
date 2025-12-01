@@ -1,319 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Logo Design Services - Graphura</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Logo Design Services - Graphura</title>
 
-  <!-- Fonts & Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Figtree:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Figtree:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/navbar.css">
-  <link rel="stylesheet" href="../css/footer.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/midnight.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
 
-</head>
-<body>
 
-<!-- Navbar -->
-<nav class="navbar">
-  <div class="container">
-    <div class="navbar-brand">
-      <a href="../index.html" aria-label="Graphura Home">
-        <img src="../image/bg removed.png" alt="Graphura Logo" />
-      </a>
-    </div>
-    <div class="navbar-menu">
-      <ul class="navbar-nav" role="menubar" aria-label="Primary Navigation">
-        <li role="none">
-          <a role="menuitem" href="../index.html">Home</a>
-        </li>
-
-        <!-- Services Dropdown menu -->
-        <li class="nav-dropdown" role="none">
-          <a
-            href="#"
-            class="dropdown-toggle"
-            role="menuitem"
-            aria-haspopup="true"
+    <link rel="shortcut icon" href="../image/Graphura-favicon.png" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="../index.html" aria-label="Graphura Home">
+            <img src="../image/bg removed.png" alt="Graphura Logo" />
+          </a>
+          <div
+            class="navbar-toggle"
+            aria-label="Toggle Menu"
             aria-expanded="false"
+            role="button"
             tabindex="0"
           >
-            Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
-          </a>
-          <ul class="dropdown-menu" role="menu" aria-label="Services submenu">
-            <li role="none"><a role="menuitem" href="seo.html">SEO Services</a></li>
-            <li role="none"><a role="menuitem" href="smm.html">Social Media Marketing</a></li>
-            <li role="none"><a role="menuitem" href="smo.html">Social Media Optimization</a></li>
-            <li role="none"><a role="menuitem" href="Flyers.html">Flyers</a></li>
-            <li role="none"><a role="menuitem" href="cw.html">Content Writing</a></li>
-            <li role="none"><a role="menuitem" href="Thumbnail.html">Thumbnail Design</a></li>
-            <li role="none"><a role="menuitem" href="banner.html">Banner Design</a></li>
-            <li role="none"><a role="menuitem" href="logo.html" class="active">Logo Design</a></li>
-            <li role="none"><a role="menuitem" href="card.html">Business Card Design</a></li>
-            <li role="none"><a role="menuitem" href="poster.html">Poster Design</a></li>
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <div class="navbar-menu">
+          <ul class="navbar-nav" role="menubar" aria-label="Primary Navigation">
+            <li role="none">
+              <a role="menuitem" href="../index.html" class="active">Home</a>
+            </li>
+
+            <!-- Services Dropdown menu -->
+            <li class="nav-dropdown" role="none">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                role="menuitem"
+                aria-haspopup="true"
+                aria-expanded="false"
+                tabindex="0"
+              >
+                Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </a>
+              <ul
+                class="dropdown-menu"
+                role="menu"
+                aria-label="Services submenu"
+              >
+                <li role="none">
+                  <a role="menuitem" href="seo.html">SEO Services</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="smm.html">Social Media Marketing</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="smo.html"
+                    >Social Media Optimization</a
+                  >
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="Flyers.html">Flyers</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="cw.html">Content Writing</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="Thumbnail.html">Thumbnail Design</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="banner.html">Banner Design</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="logo.html">Logo Design</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="card.html">Business Card Design</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="poster.html">Poster Design</a>
+                </li>
+              </ul>
+            </li>
+
+            <li role="none">
+              <a role="menuitem" href="../about.html">About Us</a>
+            </li>
+                <li role="none">
+              <a role="menuitem" href="../portfolio.html">Portfolio</a>
+            </li>
+            <li role="none"><a role="menuitem" href="../blog.html">Blog</a></li>
+            <li role="none">
+              
+                 <a role="menuitem" href="../contact.html" >Contact Us</a>
+            </li>
           </ul>
-        </li>
-
-        <li role="none"><a role="menuitem" href="../about.html">About Us</a></li>
-        <li role="none"><a role="menuitem" href="../blog.html">Blog</a></li>
-        <li role="none">
-          <a role="menuitem" href="../contact.html" class="btn btn-primary" style="color: #fff;">Contact Us</a>
-        </li>
-      </ul>
-      <div class="navbar-toggle" aria-label="Toggle Menu" aria-expanded="false" role="button" tabindex="0">
-        <i class="fas fa-bars"></i>
-      </div>
-    </div>
-  </div>
-</nav>
-
-
-<!-- Hero Section -->
-<section class="hero">
-  <!-- Animated Background Particles -->
-  <div class="particles-container">
-    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
-    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
-    <div class="particle"></div><div class="particle"></div><div class="particle"></div>
-    <div class="particle"></div>
-  </div>
-
-  <!-- Floating Icons -->
-  <div class="floating-elements">
-    <div class="floating-icon" data-speed="2">
-      <i class="fas fa-drafting-compass"></i>
-    </div>
-    <div class="floating-icon" data-speed="1.5">
-      <i class="fas fa-pen-nib"></i>
-    </div>
-    <div class="floating-icon" data-speed="2.5">
-      <i class="fas fa-shapes"></i>
-    </div>
-    <div class="floating-icon" data-speed="1.8">
-      <i class="fas fa-paint-brush"></i>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1 class="hero-title">
-          <span class="title-line">Professional & Creative</span>
-          <span class="title-highlight">Logo Design Services</span>
-          <span class="title-line">Build Your Brand Identity</span>
-        </h1>
-        <div class="hero-buttons">
-          <a href="../contact.html" class="btn btn-accent btn-glow">
-            <span>Get Free Consultation</span> <i class="fas fa-comments"></i>
-          </a>
-          <a href="#logo-packages" class="btn btn-outline btn-outline-glow">
-            <span>View Logo Packages</span> <i class="fas fa-arrow-down"></i>
-          </a>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="hero-image-container">
-          <div class="hero-image">
-            <img src="../image/bg removed.png" alt="Logo Design Services Graphura">
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              <span class="title-line">Unique & Memorable</span>
+              <span class="title-highlight"> Logos That Define</span>
+              <span class="title-line">Your Brand</span>
+            </h1>
+
+               <p class="hero-subtitle" style="margin-bottom: 3rem;">
+          Our creative team crafts meaningful, <span class="highlight">  modern, and timeless logo designs</span>  that authentically represent your brand identity.</p>
+
+
+
+            <div class="hero-buttons">
+              <a href="../contact.html" class="btn btn-accent btn-glow">
+                <span>Get Free Consultation</span>
+                <i class="fas fa-comments"></i>
+              </a>
+              <a href="#logo-packages" class="btn btn-outline btn-outline-glow">
+                <span>View Logo Packages</span>
+                <i class="fas fa-arrow-down"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-image-container">
+              <div class="hero-image">
+                <img
+                  src="../image/bg removed.png"
+                  alt="Logo Design Services Graphura"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Why Choose Our Logo Design -->
-<section class="why-choose-us">
-  <div class="container why-content">
-    <div class="why-benefits">
-      <h2>Why Choose Our Logo Design?</h2>
-      <div class="benefit-item">
-        <i class="fas fa-pen-nib"></i>
-        <h3>Unique Designs</h3>
-        <p>We create custom logos that represent your brand's unique identity.</p>
-      </div>
-      <div class="benefit-item">
-        <i class="fas fa-lightbulb"></i>
-        <h3>Creative Process</h3>
-        <p>Our designers follow a strategic approach to craft memorable logos.</p>
-      </div>
-      <div class="benefit-item">
-        <i class="fas fa-layer-group"></i>
-        <h3>Multiple Formats</h3>
-        <p>Receive your logo in various file formats for all use cases.</p>
-      </div>
-      <div class="benefit-item">
-        <i class="fas fa-sync-alt"></i>
-        <h3>Revisions Included</h3>
-        <p>We offer revisions to ensure you get the perfect logo for your brand.</p>
-      </div>
-    </div>
-    <div class="why-details">
-      <h3>Our Approach</h3>
-      <p>We believe a logo is the visual foundation of your brand identity. Our design process focuses on creating logos that are not only visually appealing but also meaningful and representative of your brand values.</p>
-      <p>We work closely with you to understand your vision and translate it into a professional logo that makes a lasting impression.</p>
-    </div>
-  </div>
-</section>
-
-<!-- Logo Pricing Plans -->
-<section id="logo-packages" class="packages-section">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">Logo Design Packages</h2>
-      <p class="section-subtitle">Choose a logo package that matches your branding needs</p>
-      <div class="section-decoration">
-        <div class="decoration-line"></div>
-        <div class="decoration-dot"></div>
-        <div class="decoration-line"></div>
-      </div>
-    </div>
-
-    <div class="packages-grid">
-      <!-- Basic -->
-      <div class="package-card">
-        <h3>Basic</h3>
-        <div class="price">₹999<span></span></div>
-        <ul class="features">
-          <li><i class="fas fa-check"></i> 2D flat logo design</li>
-          <li><i class="fas fa-check"></i> Simple shapes & colors</li>
-          <li><i class="fas fa-check"></i> No special effects</li>
-          <li><i class="fas fa-check"></i> Flyer included</li>
-        </ul>
-        <a href="../contact.html" class="btn btn-accent">Get Started</a>
-      </div>
-
-      <!-- Standard -->
-      <div class="package-card popular">
-        <div class="popular-badge">Most Popular</div>
-        <h3>Standard</h3>
-        <div class="price">₹1,999<span></span></div>
-        <ul class="features">
-          <li><i class="fas fa-check"></i> Semi-3D logo design</li>
-          <li><i class="fas fa-check"></i> Shadows & layering effects</li>
-          <li><i class="fas fa-check"></i> Enhanced branding details</li>
-          <li><i class="fas fa-check"></i> Flyer included</li>
-        </ul>
-        <a href="../contact.html" class="btn btn-accent">Get Started</a>
-      </div>
-
-      <!-- Premium -->
-      <div class="package-card">
-        <h3>Premium</h3>
-        <div class="price">₹2,999<span></span></div>
-        <ul class="features">
-          <li><i class="fas fa-check"></i> Full 3D or high-detail logo</li>
-          <li><i class="fas fa-check"></i> Lighting & depth effects</li>
-          <li><i class="fas fa-check"></i> Maximum branding impact</li>
-          <li><i class="fas fa-check"></i> Flyer included</li>
-        </ul>
-        <a href="../contact.html" class="btn btn-accent">Get Started</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- CTA for Logo Design -->
-<section class="services-cta">
-  <div class="container">
-    <div class="cta-content">
-      <h3>Ready to Build Your Brand with a Professional Logo?</h3>
-      <p>Partner with Graphura and get a custom logo designed to represent your brand's identity and values. Let's create something memorable together!</p>
-      <div class="cta-buttons">
-        <a href="../contact.html" class="btn btn-glow">
-          <span>Get Custom Logo</span>
-          <i class="fas fa-drafting-compass"></i>
-        </a>
-        <a href="../services.html" class="btn btn-outline">
-          <span>View All Services</span>
-          <i class="fas fa-arrow-right"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Floating Elements -->
-  <div class="floating-elements-cta">
-    <div class="floating-element">
-      <i class="fas fa-drafting-compass"></i>
-    </div>
-    <div class="floating-element">
-      <i class="fas fa-shapes"></i>
-    </div>
-    <div class="floating-element">
-      <i class="fas fa-pen-nib"></i>
-    </div>
-  </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-content">
-      <div class="footer-about">
-        <h3>Graphura</h3>
-        <p>Your trusted digital marketing partner helping businesses grow their online presence and reach their target audience effectively.</p>
-        <div class="footer-social">
-          <a href="https://www.facebook.com/share/19nKAMTopZ/"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://share.google/w9KeZZ72v8KQxGpFn"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/company/graphura-india-private-limited/"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.instagram.com/graphura.in?igsh=MXNqNmtidzljNDJlag=="><i class="fab fa-instagram"></i></a>
+    <!-- Why Choose Our Logo Design -->
+    <section class="why-choose-us">
+       <div class="why-details">
+          <h3>Our Approach</h3>
+          <p style="font-weight: bold;">
+            We believe a logo is the visual foundation of your brand identity.
+            Our design process focuses on creating logos that are not only
+            visually appealing but also meaningful and representative of your
+            brand values.
+          </p>
+          <p style="font-weight: bold;">
+            We work closely with you to understand your vision and translate it
+            into a professional logo that makes a lasting impression.
+          </p>
         </div>
-      </div>
-      <div class="footer-links">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../services.html">Services</a></li>
-          <li><a href="../about.html">About Us</a></li>
-          <li><a href="../branding.html">Branding</a></li>
-          <li><a href="../blog.html">Blog</a></li>
-          <li><a href="../contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-services">
-        <h4>Our Services</h4>
-        <ul>
-      <li role="none"><a role="menuitem" href="services/seo.html">SEO Services</a></li>
-                            <li role="none"><a role="menuitem" href="services/smm.html">Social Media Marketing</a></li>
-                            <li role="none"><a role="menuitem" href="services/smo.html">Social Media Optimization</a></li>
-                            <li role="none"><a role="menuitem" href="services/Flyers.html">Flyers</a></li>
-                            <li role="none"><a role="menuitem" href="services/cw.html">Content Writing</a></li>
-        </ul>
-      </div>
-      <div class="footer-contact">
-        <h4>Contact Us</h4>
-        <ul>
-          <li><i class="fas fa-map-marker-alt"></i> Gurgaon, Haryana, India</li>
-          <li><i class="fas fa-phone"></i> +91 7378021327</li>
-          <li><i class="fas fa-envelope"></i> official@graphura.in</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Graphura India Private Limited. All Rights Reserved.</p>
-      <ul>
-        <li><a href="../privacy.html">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Cookie Policy</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
+      <!-- <div class="container why-content">
+        <div class="why-benefits">
+          <h2>Why Choose Our Logo Design?</h2>
+          <div class="benefit-item">
+            <i class="fas fa-pen-nib"></i>
+            <h3>Unique Designs</h3>
+            <p>
+              We create custom logos that represent your brand's unique
+              identity.
+            </p>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-lightbulb"></i>
+            <h3>Creative Process</h3>
+            <p>
+              Our designers follow a strategic approach to craft memorable
+              logos.
+            </p>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-layer-group"></i>
+            <h3>Multiple Formats</h3>
+            <p>Receive your logo in various file formats for all use cases.</p>
+          </div>
+          <div class="benefit-item">
+            <i class="fas fa-sync-alt"></i>
+            <h3>Revisions Included</h3>
+            <p>
+              We offer revisions to ensure you get the perfect logo for your
+              brand.
+            </p>
+          </div>
+        </div> -->
+        <!-- <div class="why-details">
+          <h3>Our Approach</h3>
+          <p>
+            We believe a logo is the visual foundation of your brand identity.
+            Our design process focuses on creating logos that are not only
+            visually appealing but also meaningful and representative of your
+            brand values.
+          </p>
+          <p>
+            We work closely with you to understand your vision and translate it
+            into a professional logo that makes a lasting impression.
+          </p>
+        </div> -->
+         <h2 class="seo-title">Why Choose Our Logo Design?</h2>
 
-<!-- WhatsApp Chat Button -->
-<div class="whatsapp-chat">
-    <a href="https://wa.me/+917378021327" target="_blank" class="chat-btn">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+<div class="seo-grid">
+
+  <!-- LEFT COLUMN -->
+  <div class="seo-column">
+
+    <div class="seo-card">
+      <i class="fas fa-pen-nib"></i>
+      <h3>Unique Designs</h3>
+      <p>We create custom logos that represent your brand's unique
+              identity.</p>
+    </div>
+
+    <div class="seo-card">
+      <i class="fas fa-layer-group"></i>
+      <h3>Creative Process</h3>
+      <p>Our designers follow a strategic approach to craft memorable
+              logos.</p>
+    </div>
+
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="seo-column">
+
+    <div class="seo-card">
+      <i class="fas fa-layer-group"></i>
+      <h3>Multiple Formats</h3>
+      <p>Receive your logo in various file formats for all use cases..</p>
+    </div>
+
+    <div class="seo-card">
+      <i class="fas fa-sync-alt"></i>
+      <h3 class="pm">Revisions Included</h3>
+      <p>We offer revisions to ensure you get the perfect logo for your
+              brand.</p>
+    </div>
+
+  </div>
+
 </div>
 
-<script src="../js/script.js"></script>
-</body>
+ 
+</div>
+
+      </div>
+      </div>
+    </section>
+
+    <!-- Logo Pricing Plans -->
+    <section id="logo-packages" class="packages-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Logo Design Packages</h2>
+          <p class="section-subtitle">
+            Choose a logo package that matches your branding needs
+          </p>
+          <div class="section-decoration">
+            <div class="decoration-line"></div>
+            <div class="decoration-dot"></div>
+            <div class="decoration-line"></div>
+          </div>
+        </div>
+
+        <div class="packages-grid">
+          <!-- Basic -->
+          <div class="package-card">
+            <h3>Basic</h3>
+            <div class="price">₹999<span></span></div>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> 2D flat logo design</li>
+              <li><i class="fas fa-check"></i> Simple shapes & colors</li>
+              <li><i class="fas fa-check"></i> No special effects</li>
+              <li><i class="fas fa-check"></i> Flyer included</li>
+            </ul>
+            <a href="../contact.html" class="btn btn-accent">Get Started</a>
+          </div>
+
+          <!-- Standard -->
+          <div class="package-card popular">
+            <div class="popular-badge">Most Popular</div>
+            <h3>Standard</h3>
+            <div class="price">₹1,999<span></span></div>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Semi-3D logo design</li>
+              <li><i class="fas fa-check"></i> Shadows & layering effects</li>
+              <li><i class="fas fa-check"></i> Enhanced branding details</li>
+              <li><i class="fas fa-check"></i> Flyer included</li>
+            </ul>
+            <a href="../contact.html" class="btn btn-accent">Get Started</a>
+          </div>
+
+          <!-- Premium -->
+          <div class="package-card">
+            <h3>Premium</h3>
+            <div class="price">₹2,999<span></span></div>
+            <ul class="features">
+              <li><i class="fas fa-check"></i> Full 3D or high-detail logo</li>
+              <li><i class="fas fa-check"></i> Lighting & depth effects</li>
+              <li><i class="fas fa-check"></i> Maximum branding impact</li>
+              <li><i class="fas fa-check"></i> Flyer included</li>
+            </ul>
+            <a href="../contact.html" class="btn btn-accent">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA for Logo Design -->
+    <section class="services-cta"style="margin-bottom: 40px;">
+      <div class="container">
+        <div class="cta-content">
+          <h3>Ready to Build Your Brand with a Professional Logo?</h3>
+          <p>
+            Partner with Graphura and get a custom logo designed to represent
+            your brand's identity and values. Let's create something memorable
+            together!
+          </p>
+          <div class="cta-buttons">
+            <a href="../contact.html" class="btn btn-accent" style="background-color: #d4af37;">
+              <span>Get Custom Logo</span>
+              <i class="fas fa-drafting-compass"></i>
+            </a>
+            <a href="../services.html" class="btn btn-outline">
+              <span>View All Services</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating Elements -->
+      <!-- <div class="floating-elements-cta">
+        <div class="floating-element">
+          <i class="fas fa-drafting-compass"></i>
+        </div>
+        <div class="floating-element">
+          <i class="fas fa-shapes"></i>
+        </div>
+        <div class="floating-element">
+          <i class="fas fa-pen-nib"></i>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <img
+              class="footer-img"
+              src="../image/Graphura-logo-white.png"
+              alt="graphura logo"
+            />
+            <p>
+              Your trusted digital marketing partner helping businesses grow
+              their online presence and reach their target audience effectively.
+            </p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/share/19nKAMTopZ/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://share.google/w9KeZZ72v8KQxGpFn"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/graphura-india-private-limited/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/graphura.in?igsh=MXNqNmtidzljNDJlag=="
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="seo.html">Services</a></li>
+              <li><a href="../about.html">About Us</a></li>
+   <li><a href="../internship.html">Internship</a></li>
+              <li><a href="../career.html">Career </a></li>
+              <li><a href="../blog.html">Blog</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-services">
+            <h4>Our Services</h4>
+            <ul>
+              <li role="none">
+                <a role="menuitem" href="./seo.html">SEO Services</a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="./smm.html">Social Media Marketing</a>
+              </li>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="./smo.html">Social Media Optimization</a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="./Flyers.html">Flyers</a>
+              </li>
+           
+              <li role="none">
+                <a role="menuitem" href="./cw.html">Content Writing</a>
+              </li>
+              <!-- <img src="../image/Footer/mca.png" alt="MCA" style="width: 200px; margin-top: 10px;"> -->
+               <img src="../image/Footer/razorpay.jpg" alt="Razorpay-Logo" style="width: 230px; height: 85px; margin-top: 0.5rem;">
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>Graphura India Private Limited, near RSF, Pataudi, Gurgaon, Haryana 122503
+              </li>
+              <li><i class="fas fa-phone"></i> +91 7378021327</li>
+              <li><i class="fas fa-envelope"></i> <a href="mailto:support@graphura.in" style="color :aliceblue">support@graphura.in</a></li>
+              <!-- <img src="../image/Footer/skill india.jpg" alt="Skill India" style="height: 4.5rem; width: 230px;"/> 
+           
+             <img src="../image/Footer/startup.png" alt="startup india" style="height: 5rem; width: 230px; padding-top: 0.5rem;"/> -->
+             <div style="display: grid;grid-template-columns: repeat(2, 1fr); gap: 10px;">
+              <img src="../image/Footer/skill india.jpg" alt="Skill India" style="height: 88px;" /> 
+            <img src="../image/Footer/startup.png" alt="startup india" style="height: 88px; width: 230px;">
+            </div>
+              <!-- <div style="display: grid;grid-template-columns: repeat(2, 1fr); gap: 10px;">
+              <img src="../image/Footer/skill india.jpg" alt="Skill India" > 
+            <img src="../image/Footer/startup.png" alt="startup india" style="height: 88px;">
+            </div>
+            <img src="../image/Footer/razorpay.jpg" alt="Razorpay-Logo" style="width: 290px; height: 60px; margin-top: 0.5rem;"> -->
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Graphura India Private Limited. All Rights Reserved.
+          </p>
+          <ul>
+    <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../Term&condition.html">Terms of Service</a></li>
+            <li><a href="../cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-chat">
+      <a href="https://wa.me/+917378021327" target="_blank" class="chat-btn">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.querySelector(".navbar-toggle");
+        const menu = document.querySelector(".navbar-nav");
+        const cont = document.querySelector(".container");
+        const dropdownToggles = document.querySelectorAll(
+          ".nav-dropdown > .dropdown-toggle"
+        );
+        let flag = 0;
+
+        // Mobile menu toggle
+        toggle.addEventListener("click", () => {
+          document.body.classList.toggle("menu-open");
+        });
+        toggle.addEventListener("click", () => {
+          if (flag === 0) {
+            cont.style.flexWrap = "wrap";
+          } else {
+            cont.style.flexWrap = "nowrap";
+          }
+          flag = 1 - flag;
+          menu.classList.toggle("active");
+          toggle.classList.toggle("active");
+          // const expanded = toggle.getAttribute("aria-expanded") === "true";
+          toggle.setAttribute("aria-expanded", !expanded);
+        });
+
+        // Dropdown toggle for mobile
+        dropdownToggles.forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            if (window.innerWidth <= 900) {
+              e.preventDefault();
+              const dropdownMenu = btn.nextElementSibling;
+              dropdownMenu.classList.toggle("active");
+              const expanded = btn.getAttribute("aria-expanded") === "true";
+
+              btn.setAttribute("aria-expanded", !expanded);
+            }
+          });
+        });
+      });
+    </script>
+
+    <script src="../js/script.js"></script>
+  </body>
 </html>

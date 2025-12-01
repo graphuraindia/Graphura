@@ -1,323 +1,635 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact Us - Graphura</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Figtree:wght@400&display=swap"
-        rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Figtree:wght@400&display=swap"
+      rel="stylesheet"
     />
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/midnight.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/footer.css" />
-</head>
-<body>
+
+    <link rel="shortcut icon" href="./image/Graphura-favicon.png" type="image/x-icon">
+    <style>
+      /* faq service grid */
+      .faq-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+    </style>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="container">
-            <div class="navbar-brand">
-                <a href="index.html" aria-label="Graphura Home">
-                    <img src="image/bg removed.png" alt="Graphura Logo" />
-                </a>
-            </div>
-            <div class="navbar-menu">
-                <ul class="navbar-nav" role="menubar" aria-label="Primary Navigation">
-                    <li role="none">
-                        <a role="menuitem" href="index.html">Home</a>
-                    </li>
-
-                    <!-- Services Dropdown menu -->
-                    <li class="nav-dropdown" role="none">
-                        <a
-                            href="#"
-                            class="dropdown-toggle"
-                            role="menuitem"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                            tabindex="0"
-                        >
-                            Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
-                        </a>
-                        <ul class="dropdown-menu" role="menu" aria-label="Services submenu">
-                            <li role="none"><a role="menuitem" href="services/seo.html">SEO Services</a></li>
-                            <li role="none"><a role="menuitem" href="services/smm.html">Social Media Marketing</a></li>
-                            <li role="none"><a role="menuitem" href="services/smo.html">Social Media Optimization</a></li>
-                            <li role="none"><a role="menuitem" href="services/Flyers.html">Flyers</a></li>
-                            <li role="none"><a role="menuitem" href="services/cw.html">Content Writing</a></li>
-                            <li role="none"><a role="menuitem" href="services/Thumbnail.html">Thumbnail Design</a></li>
-                            <li role="none"><a role="menuitem" href="services/banner.html">Banner Design</a></li>
-                            <li role="none"><a role="menuitem" href="services/logo.html">Logo Design</a></li>
-                            <li role="none"><a role="menuitem" href="services/card.html">Business Card Design</a></li>
-                            <li role="none"><a role="menuitem" href="services/poster.html">Poster Design</a></li>
-                        </ul>
-                    </li>
-
-                    <li role="none"><a role="menuitem" href="about.html">About Us</a></li>
-                    <li role="none"><a role="menuitem" href="blog.html">Blog</a></li>
-                    <li role="none">
-                        <a role="menuitem" href="contact.html" class="btn btn-primary active" style="color: #fff;">Contact Us</a>
-                    </li>
-                </ul>
-                <div class="navbar-toggle" aria-label="Toggle Menu" aria-expanded="false" role="button" tabindex="0">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html" aria-label="Graphura Home">
+            <img src="image/bg removed.png" alt="Graphura Logo" />
+          </a>
+          <div
+            class="navbar-toggle"
+            aria-label="Toggle Menu"
+            aria-expanded="false"
+            role="button"
+            tabindex="0"
+          >
+            <i class="fas fa-bars"></i>
+          </div>
         </div>
+        <div class="navbar-menu">
+          <ul class="navbar-nav" role="menubar" aria-label="Primary Navigation">
+            <li role="none">
+              <a role="menuitem" href="index.html" class="active">Home</a>
+            </li>
+
+            <!-- Services Dropdown menu -->
+            <li class="nav-dropdown" role="none">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                role="menuitem"
+                aria-haspopup="true"
+                aria-expanded="false"
+                tabindex="0"
+              >
+                Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </a>
+              <ul
+                class="dropdown-menu"
+                role="menu"
+                aria-label="Services submenu"
+              >
+                <li role="none">
+                  <a role="menuitem" href="services/seo.html">SEO Services</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/smm.html"
+                    >Social Media Marketing</a
+                  >
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/smo.html"
+                    >Social Media Optimization</a
+                  >
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/Flyers.html">Flyers</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/cw.html">Content Writing</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/Thumbnail.html"
+                    >Thumbnail Design</a
+                  >
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/banner.html"
+                    >Banner Design</a
+                  >
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/logo.html">Logo Design</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/card.html"
+                    >Business Card Design</a
+                  >
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="services/poster.html"
+                    >Poster Design</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li role="none">
+              <a role="menuitem" href="about.html">About Us</a>
+            </li>
+            <li role="none">
+              <a role="menuitem" href="portfolio.html">Portfolio</a>  
+            
+              
+          </li>
+            </li>
+            <li role="none"><a role="menuitem" href="blog.html">Blog</a></li>
+            <li role="none">
+            
+              <a role="menuitem" href="contact.html" >Contact Us</a>
+          </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="mobile-dropdown">
-                <a href="#" class="mobile-dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
-                <ul class="mobile-dropdown-menu">
-                    <li><a href="services/seo.html">SEO Services</a></li>
-                    <li><a href="services/smm.html">Social Media Marketing</a></li>
-                    <li><a href="services/smo.html">Social Media Optimization</a></li>
-                    <li><a href="services/digital-advertising.html">Digital Advertising</a></li>
-                    <li><a href="services/brand-strategy.html">Brand Strategy</a></li>
-                </ul>
-            </li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="branding.html">Branding</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact.html" class="active">Contact Us</a></li>
-        </ul>
-    </div>
-
     <!-- Contact Hero Section -->
-    <section class="hero contact-hero">
-        <!-- Animated Background Particles -->
-        <div class="particles-container">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-        </div>
-        
-       <!-- Floating Elements -->
-<div class="floating-elements">
-  <div class="floating-icon" data-speed="2">
-    <i class="fas fa-envelope"></i>
-  </div>
-  <div class="floating-icon" data-speed="1.5">
-    <i class="fas fa-phone"></i>
-  </div>
-  <div class="floating-icon" data-speed="2.5">
-    <i class="fas fa-map-marker-alt"></i>
-  </div>
-  <div class="floating-icon" data-speed="1.8">
-    <i class="fas fa-comments"></i>
-  </div>
-</div>
+  <section class="hero">
 
-<!-- Contact Hero Section -->
-<div class="contact-hero">
-  <div class="container">
-    <div class="hero-content">
-      
-      <!-- LEFT SIDE -->
-      <div class="hero-text">
-        <h1 class="hero-title">
-          <span class="title-line">Get in Touch</span>
-          <span class="title-highlight">With Graphura</span>
-          <span class="title-line">Start Your Journey</span>
-        </h1>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            
 
-        <!-- Stats after Title -->
-        <div class="hero-stats">
-          <div class="stat-item">
-            <span class="stat-number" data-target="24">0</span>
-            <span class="stat-label">Hours Response Time</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="500">0</span>
-            <span class="stat-label">Happy Clients</span>
-          </div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="100">0</span>
-            <span class="stat-label">% Free Consultation</span>
-          </div>
-        </div>
-      </div>
+            <h1 class="hero-title">
+              <span class="title-line">Get In Touch</span>
+              <span class="title-highlight">With Graphura</span>
+              <span class="title-line">Start Your Journey</span>
+            </h1>
 
-      <!-- RIGHT SIDE -->
-      <div class="hero-visual">
-        <div class="hero-image-container">
-          <div class="hero-image">
-            <!-- Graphura logo -->
-            <img src="image/bg removed.png" alt="Graphura Logo">
-          </div>
-          <div class="image-glow"></div>
-          <div class="floating-cards">
-            <div class="floating-card card-1">
-              <i class="fas fa-headset"></i>
-              <span>24/7 Support</span>
+            <p class="hero-subtitle">
+              We don't just create campaigns, we create
+              <span class="highlight">digital revolutions</span>
+              that skyrocket your business to new heights.
+              <!-- <span class="typing-text"></span> -->
+            </p>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-target="24">0</span>
+                <span class="stat-label">Hours Response</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="500">0</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="100">0</span>
+                <span class="stat-label">100% Free consultation</span>
+              </div>
             </div>
-            <div class="floating-card card-2">
-              <i class="fas fa-clock"></i>
-              <span>Quick Response</span>
+
+            <div class="hero-buttons">
+              <a href="./services/banner.html" class="btn btn-accent btn-glow">
+                <span>Explore Services</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#contact" class="btn btn-outline btn-outline-glow">
+                <span>Get Free Consultation</span>
+                <i class="fas fa-phone"></i>
+              </a>
             </div>
-            <div class="floating-card card-3">
-              <i class="fas fa-handshake"></i>
-              <span>Free Consultation</span>
+          </div>
+             <div class="hero-visual">
+            <div class="hero-image-container">
+              <div class="hero-image">
+                <img
+                  src="image/bg removed.png"
+                  alt="Graphura Digital Marketing"
+                />
+              </div>
+              <div class="image-glow"></div>
+              <div class="floating-cards">
+                <div class="floating-card card-1">
+                  <i class="fas fa-headset"></i>
+                  <span>24/7 Support</span>
+                </div>
+                <div class="floating-card card-2">
+                  <i class="fas fa-clock"></i>
+                  <span>Quick Response</span>
+                </div>
+                <div class="floating-card card-3">
+                  <i class="fas fa-handshake"></i>
+                  <span>Free Consultation</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-    </div>
-  </div>
-</div>
-
-        
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <div class="scroll-text">Scroll to contact us</div>
-            <div class="scroll-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-        </div>
     </section>
 
-     <section id="contact" class="section contact">
-    <div class="container">
+
+
+
+    <section id="contact" class="section contact">
+      <div class="container">
         <h2 class="section-title">Schedule a Meeting</h2>
-        <div class="contact-content" style="display: flex; flex-wrap: wrap; gap: 40px;">
-            <!-- Calendar iframe - Now on the LEFT side -->
-            <div style="flex: 1; min-width: 300px; order: 1;">
-                <iframe src="calendar.html" style="width: 100%; height: 600px; border: none; border-radius: 12px;"></iframe>
+        <div
+          class="contact-content"
+          style="display: flex; flex-wrap: wrap; gap: 40px"
+        >
+          <!-- Calendar iframe - Now on the LEFT side -->
+          <div style="flex: 1; min-width: 300px; order: 1">
+            <iframe
+              src="calendar.html"
+              style="
+                width: 100%;
+                height: 600px;
+                border: none;
+                border-radius: 12px;
+              "
+            ></iframe>
+          </div>
+
+          <!-- Contact Info - Now on the RIGHT side -->
+          <div class="contact-info" style="flex: 1; min-width: 300px; order: 2">
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="info-content">
+                <h3>Our Office</h3>
+                <p> Graphura India Private Limited, near RSF, Pataudi, Gurgaon, Haryana 122503</p>
+              </div>
             </div>
-            
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="info-content">
+                <h3>Phone</h3>
+                <p>
+                  <a href="tel:+919876543210">+91 7378021327</a>
+                </p>
+                <p>Mon-Fri: 10:00 AM - 5:00 PM</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="info-content">
+                <h3>Email</h3>
+                <p>
+                  <a href="mailto:support@graphura.com">support@graphura.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="contact-social">
+              <h3>Follow Us</h3>
+              <div class="social-links">
+                <a href="https://www.facebook.com/share/19nKAMTopZ/"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a href="https://share.google/w9KeZZ72v8KQxGpFn"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/graphura-india-private-limited/"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/graphura.in?igsh=MXNqNmtidzljNDJlag=="
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <!-- FAQ Section -->
-    <section class="section faq-section">
-        <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <p class="section-subtitle">Get answers to common questions about our services</p>
-            
-            <div class="faq-accordion">
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        How quickly can you start working on my project?
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We can typically start your project within 1-2 business days after our initial consultation and agreement. For urgent projects, we offer expedited onboarding within 24 hours.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        What information do you need to get started?
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We'll need details about your business goals, target audience, current digital presence, and any specific requirements. We'll guide you through this during our consultation call.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        Do you offer custom packages?
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Absolutely! We understand every business is unique. We can create custom packages tailored to your specific needs and budget requirements.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false">
-                        What is your response time for support?
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We typically respond to all inquiries within 24 hours during business days. For urgent matters, our priority support clients receive responses within 2-4 hours.</p>
-                    </div>
-                </div>
+   <!-- FAQ Section -->
+<section class="section faq-section">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <p class="section-subtitle">
+      Get answers to common questions about our services
+    </p>
+
+    <div class="faq-accordion">
+
+      <!-- FAQ 1 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What is Graphura and what services does your company provide?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Graphura is a Branding, Marketing, and Custom Software Development Private Limited Company working with clients across India, the UK, the Middle East, and other global markets. Our mission is to help businesses build strong brand identities and powerful digital ecosystems that grow sustainably.
+            <br><br>
+            <strong>We offer a complete range of services under one roof:</strong>
+          </p>
+
+          <!-- Services Table (matches the image you sent) -->
+          <div class="faq-services-grid">
+            <div class="service-column">
+              <h4>Branding & Design</h4>
+              <ul>
+                <li>Logo & Brand Identity Systems</li>
+                <li>Corporate Stationery & Brand Kits</li>
+                <li>UI/UX for Websites and Apps</li>
+                <li>Advertising Creatives & Print Media</li>
+              </ul>
             </div>
+
+            <div class="service-column">
+              <h4>Marketing</h4>
+              <ul>
+                <li>Social Media Management</li>
+                <li>Performance Marketing (Google & Meta Ads)</li>
+                <li>SEO & Content Strategy</li>
+                <li>Lead Generation & Automation</li>
+              </ul>
+            </div>
+
+            <div class="service-column">
+              <h4>Technology & Development</h4>
+              <ul>
+                <li>Custom Web Applications</li>
+                <li>Mobile Apps (Android, iOS & Hybrid)</li>
+                <li>SaaS Platforms & Business Dashboards</li>
+                <li>CRM / ERP / E-Commerce Systems</li>
+              </ul>
+            </div>
+          </div>
+
+          <p>
+            This integrated approach ensures that your brand visuals, messaging, marketing funnels, and software tools work together — instead of functioning separately. The result is a strong, consistent and scalable brand presence.
+          </p>
         </div>
-    </section>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Who are your ideal clients and industries you work with?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Graphura works with a wide range of clients — from solo entrepreneurs to large multi-location companies. We commonly serve:
+            <br><br>
+            • Startups preparing for launch or investor presentations<br>
+            • Businesses undergoing rebranding or expansion<br>
+            • E-commerce brands & online service companies<br>
+            • Healthcare, Education, Fintech, Hospitality & Retail<br>
+            • Real estate agencies, consultants & tech innovators<br>
+            • UK-based SMEs needing offshore creative & development support
+            <br><br>
+            Our experience with both Indian and international market behavior helps us design brands and digital journeys that work globally.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What software and digital platforms do you develop?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            We develop high-performance, scalable business software tailored to your operations. Our development expertise includes:
+            <br><br>
+            • Web Portals & SaaS Products<br>
+            • CRM, ERP & HRM Solutions<br>
+            • Mobile Applications (Consumer & Enterprise)<br>
+            • E-commerce & Subscription Platforms<br>
+            • Real-time Dashboards & Workflow Automation
+            <br><br>
+            <strong>Tech Stack:</strong><br>
+            Front-end: React, Next.js, Vue, Angular<br>
+            Back-end: Node.js, Python (Django / FastAPI), PHP (Laravel)<br>
+            Mobile: Flutter, React Native, Swift, Kotlin<br>
+            Cloud: AWS, DigitalOcean, GCP, Azure
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do you provide monthly marketing and content support?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            Yes — we offer ongoing monthly marketing retainers. Our services include:
+            <br><br>
+            • Monthly content calendar & strategy<br>
+            • Designs for Instagram, LinkedIn, Facebook & more<br>
+            • Ad campaign setup & optimization<br>
+            • Analytics reporting & insights<br>
+            • Landing page & funnel optimization
+            <br><br>
+            Our focus is not just posting — but improving visibility, trust, and conversions.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How does Graphura work with international clients (UK & Global)?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+            We provide smooth global collaboration through:
+            <br><br>
+            • Time-zone aligned weekly review calls<br>
+            • Project dashboards (Trello / Notion / Jira / Asana)<br>
+            • Design collaboration via Figma<br>
+            • Secure billing through Wise, Stripe, PayPal<br>
+            • NDAs and confidentiality agreements when required
+            <br><br>
+            We are experienced in clear business communication, which global clients appreciate.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <h3>Graphura</h3>
-                    <p>Your trusted digital marketing partner helping businesses grow their online presence and reach their target audience effectively.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-services">
-                    <h4>Our Services</h4>
-                    <ul>
-                     <li role="none"><a role="menuitem" href="services/seo.html">SEO Services</a></li>
-                            <li role="none"><a role="menuitem" href="services/smm.html">Social Media Marketing</a></li>
-                            <li role="none"><a role="menuitem" href="services/smo.html">Social Media Optimization</a></li>
-                            <li role="none"><a role="menuitem" href="services/Flyers.html">Flyers</a></li>
-                            <li role="none"><a role="menuitem" href="services/cw.html">Content Writing</a></li>
-                    </ul>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact Us</h4>
-                    <ul>
-                        <li><i class="fas fa-map-marker-alt"></i> Gurgaon, Haryana, India</li>
-                        <li><i class="fas fa-phone"></i> +91 7378021327</li>
-                        <li><i class="fas fa-envelope"></i> official@graphura.in</li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <img
+              class="footer-img"
+              src="./image/Graphura-logo-white.png"
+              alt=""
+            />
+            <p>
+              Your trusted digital marketing partner helping businesses grow
+              their online presence and reach their target audience effectively.
+            </p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Graphura India Private Limited. All Rights Reserved.</p>
-                <ul>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                </ul>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="./services/seo.html">Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="./internship.html">Internship</a></li>
+
+              <li><a href="career.html">Career</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-services">
+            <h4>Our Services</h4>
+            <ul>
+              <li role="none">
+                <a role="menuitem" href="services/seo.html">SEO Services</a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/smm.html"
+                  >Social Media Marketing</a
+                >
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/smo.html"
+                  >Social Media Optimization</a
+                >
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/Flyers.html">Flyers</a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/cw.html">Content Writing</a>
+              </li>
+
+             <!-- <img src="../image/Footer/mca.png" alt="MCA" style="width: 200px; margin-top: 10px;"> -->
+              <img src="./image/Footer/razorpay.jpg" alt="Razorpay-Logo" style="width: 230px; height: 85px; margin-top: 0.5rem;">
+
+             <!-- <img src="./image/Footer/mca.png" alt="MCA" style="width: 200px; margin-top: 10px;"> -->
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Graphura India Private Limited, near RSF, Pataudi, Gurgaon, Haryana 122503
+              </li>
+              <li><i class="fas fa-phone"></i> +91 7378021327</li>
+               <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:support @graphura.in" style="color :aliceblue">support@graphura.in</a>
+              </li>
+<div style="display: grid;grid-template-columns: repeat(2, 1fr); gap: 10px;">
+              <img src="./image/Footer/skill india.jpg" alt="Skill India" style="height: 88px;" /> 
+            <img src="./image/Footer/startup.png" alt="startup india" style="height: 88px; width: 150px;">
             </div>
+              <!-- <img src="../image/Footer/skill india.jpg" alt="Skill India" style="height: 4.5rem; width: 230px;"/> 
+           
+             <img src="../image/Footer/startup.png" alt="startup india" style="height: 5rem; width: 230px; padding-top: 0.5rem;"/> -->
+          <!-- <div style="display: grid;grid-template-columns: repeat(2, 1fr); gap: 10px;">
+              <img src="../image/Footer/skill india.jpg" alt="Skill India" /> 
+            <img src="../image/Footer/startup.png" alt="startup india" style="height: 88px;">
+            </div>
+            <img src="../image/Footer/razorpay.jpg" alt="Razorpay-Logo" style="width: 290px; height: 60px; margin-top: 0.5rem;"> -->
+
+          <!-- <div style="display: grid;grid-template-columns: repeat(2, 1fr); gap: 10px;">
+              <img src="./image/Footer/skill india.jpg" alt="Skill India" /> 
+            <img src="./image/Footer/startup.png" alt="startup india" style="height: 88px;">
+            </div>
+            <img src="./image/Footer/razorpay.jpg" alt="Razorpay-Logo" style="width: 290px; height: 60px; margin-top: 0.5rem;"> -->
+
+            </ul>
+          </div>
         </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Graphura India Private Limited. All Rights Reserved.
+          </p>
+          <ul>
+            <li><a href="./privacy.html">Privacy Policy</a></li>
+            <li><a href="./Term&condition.html">Terms of Service</a></li>
+            <li><a href="./cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
-   <!-- WhatsApp Chat Button -->
-<div class="whatsapp-chat">
-    <a href="https://wa.me/+917378021327" target="_blank" class="chat-btn">
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-chat">
+      <a href="https://wa.me/+917378021327" target="_blank" class="chat-btn">
         <i class="fab fa-whatsapp"></i>
-    </a>
-</div>
+      </a>
+    </div>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.querySelector(".navbar-toggle");
+        const menu = document.querySelector(".navbar-nav");
+        const cont = document.querySelector(".container");
+        const dropdownToggles = document.querySelectorAll(
+          ".nav-dropdown > .dropdown-toggle"
+        );
+        let flag = 0;
+
+        // Mobile menu toggle
+        toggle.addEventListener("click", () => {
+          document.body.classList.toggle("menu-open");
+        });
+        toggle.addEventListener("click", () => {
+          if (flag === 0) {
+            cont.style.flexWrap = "wrap";
+          } else {
+            cont.style.flexWrap = "nowrap";
+          }
+          flag = 1 - flag;
+          menu.classList.toggle("active");
+          toggle.classList.toggle("active");
+          // const expanded = toggle.getAttribute("aria-expanded") === "true";
+          toggle.setAttribute("aria-expanded", !expanded);
+        });
+
+        // Dropdown toggle for mobile
+        dropdownToggles.forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            if (window.innerWidth <= 900) {
+              e.preventDefault();
+              const dropdownMenu = btn.nextElementSibling;
+              dropdownMenu.classList.toggle("active");
+              const expanded = btn.getAttribute("aria-expanded") === "true";
+
+              btn.setAttribute("aria-expanded", !expanded);
+            }
+          });
+        });
+      });
+      // faq accordion
+      document.querySelectorAll(".faq-item").forEach((item) => {
+        const question = item.querySelector(".faq-question");
+
+        question.addEventListener("click", () => {
+          const openItem = document.querySelector(".faq-item.active");
+
+          if (openItem && openItem !== item) {
+            openItem.classList.remove("active");
+            openItem.querySelector(".faq-answer").style.maxHeight = null;
+          }
+
+          item.classList.toggle("active");
+
+          const answer = item.querySelector(".faq-answer");
+
+          if (item.classList.contains("active")) {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+          } else {
+            answer.style.maxHeight = null;
+          }
+        });
+      });
+    </script>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

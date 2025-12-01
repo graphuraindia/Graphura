@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Figtree:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/midnight.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/portfolio.css">
+
+
+    <link rel="shortcut icon" href="./image/Graphura-favicon.png" type="image/x-icon">
+
+     <style>
+      /* html {
+           scroll-behavior: smooth;
+         }
+
+
+
+          @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    } */
+     </style>
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container" style="flex-wrap: wrap;">
+        <div class="navbar-brand">
+          <a href="../index.html" aria-label="Graphura Home">
+            <img src="./image/bg removed.png" alt="Graphura Logo" />
+          </a>
+          <div
+            class="navbar-toggle"
+            aria-label="Toggle Menu"
+            aria-expanded="false"
+            role="button"
+            tabindex="0"
+          >
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <div class="navbar-menu">
+          <ul class="navbar-nav" role="menubar" aria-label="Primary Navigation">
+            <li role="none">
+              <a role="menuitem" href="./index.html" class="active">Home</a>
+            </li>
+
+            <!-- Services Dropdown menu -->
+            <li class="nav-dropdown" role="none">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                role="menuitem"
+                aria-haspopup="true"
+                aria-expanded="false"
+                tabindex="0"
+              >
+                Services <i class="fas fa-chevron-down" aria-hidden="true"></i>
+              </a>
+              <ul
+                class="dropdown-menu"
+                role="menu"
+                aria-label="Services submenu"
+              >
+                <li role="none">
+                  <a role="menuitem" href="./services/seo.html">SEO Services</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="./services/smm.html">Social Media Marketing</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="./services/smo.html"
+                    >Social Media Optimization</a
+                  >
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="./services/Flyers.html">Flyers</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="./services/cw.html">Content Writing</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="./services/Thumbnail.html">Thumbnail Design</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="./services/banner.html">Banner Design</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="./services/logo.html" >Logo Design</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="./services/card.html">Business Card Design</a>
+                </li>
+                <li role="none">
+                  <a role="menuitem" href="./services/poster.html">Poster Design</a>
+                </li>
+              </ul>
+            </li>
+
+            <li role="none">
+              <a role="menuitem" href="./about.html">About Us</a>
+            </li>
+            <li role="none">
+              <a role="menuitem" href="./Portfolio.html">Portfolio</a>
+            </li>
+            <li role="none"><a role="menuitem" href="./blog.html">Blog</a></li>
+            <li role="none">
+              <a role="menuitem" href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+        <!-- Portfolio hero section -->
+
+        <!-- <div class="Portfolio-container">
+        <div class="blog-hero-content">
+          <div class="blog-hero-text">
+            <div class="blog-hero-badge"></div>
+            <h1 class="blog-hero-title">
+              <span class="title-line">Transforming</span>
+              <span class="title-highlight">Visions Into</span>
+              <span class="title-line">Strategy</span>
+            </h1>
+            <p class="blog-hero-subtitle">
+              We partner with growth-oriented businesses to optimize .
+              <span class="highlight typing-text">processes & drive results.</span>
+            </p>
+
+            <div class="blog-hero-stats">
+              <div class="stat-item">
+                <span class="stat-number">470+</span>
+                <span class="stat-label">Total Companies</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">394+</span>
+                <span class="stat-label">Internships</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">5.57 LPA</span>
+                <span class="stat-label">Average Package</span>
+              </div>
+            </div>
+
+            <div class="blog-hero-buttons">
+              <a href="#projects" class="btn btn-glow">
+                <span>See Projects</span>
+                <i class="fas fa-arrow-down"></i>
+              </a> -->
+
+              <!-- <a href="#projects" class="btn-view-projects">See Projects</a> -->
+              <!-- <a href="./contact.html" class="btn btn-outline-glow">
+                <span>Subscribe</span>
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="blog-hero-visual">
+            <div class="blog-hero-image-container">
+              <div class="blog-hero-image">
+                <img src="image/bg removed.png" alt="Graphura Blog Insights" />
+              </div>
+              <div class="image-glow"></div>
+            </div> -->
+
+            <!-- Floating Cards -->
+             <!-- <div class="floating-cards">
+              <div class="floating-card card-1">
+                <i class="fas fa-chart-line"></i>
+                <span>React.js</span>
+              </div>
+              <div class="floating-card card-2">
+                <i class="fas fa-hashtag"></i>
+                <span>Java</span>
+              </div>
+              <div class="floating-card card-3">
+                <i class="fas fa-paint-brush"></i>
+                <span>MEARN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> - -->
+
+
+
+       <section class="hero">
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            
+
+            <h1 class="hero-title">
+              <span class="title-line">Transforming Your</span>
+              <span class="title-highlight">Visions Into</span>
+              <span class="title-line">Strategy</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              We don't just create campaigns, we create
+              <span class="highlight">digital revolutions</span>
+              that skyrocket your business to new heights.
+              <!-- <span class="typing-text"></span> -->
+            </p>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-target="470" data-suffix="+">0</span>
+                <span class="stat-label">Total Companies</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="394" data-suffix="+">0</span>
+                <span class="stat-label">Internships</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="6" data-suffix="LPA">0</span>
+                <span class="stat-label">Average Package</span>
+              </div>
+            </div>
+
+            <div class="hero-buttons">
+              <a href="services.html" class="btn btn-accent btn-glow">
+                <span>Explore Services</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="./internship.html" class="btn btn-outline btn-outline-glow">
+                <span>Apply Now</span>
+                <i class="fas fa-phone"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image-container">
+              <div class="hero-image">
+                <img
+                  src="image/bg removed.png"
+                  alt="Graphura Digital Marketing"
+                />
+              </div>
+              <div class="image-glow"></div>
+              <div class="floating-cards">
+                <div class="floating-card card-1">
+                  <i class="fas fa-trending-up"></i>
+                  <span>+150% Growth</span>
+                </div>
+                <div class="floating-card card-2">
+                  <i class="fas fa-users"></i>
+                  <span>10K+ Reach</span>
+                </div>
+                <div class="floating-card card-3">
+                  <i class="fas fa-star"></i>
+                  <span>5.0 Rating</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+
+
+   <section id="projects" class="internship-projects section">
+    <h2 style="margin-bottom: -1.4rem;">Projects We Worked On</h2>
+     <div class="section-decoration">
+            <div class="decoration-line"></div>
+            <div class="decoration-dot"></div> 
+            <div class="decoration-line"></div>
+          </div>
+
+
+          <div class="portfolio-btn"> 
+  <ul class="port-menu"> 
+    <li class="port-item"> <a href="#flyers" class="nav-link active">Flyers</a> </li>
+     <li class="port-item"> <a href="#logo-design" class="nav-link"><span>Logo</span> <span>Design</span></a> </li>
+      <li class="port-item"> <a href="#poster" class="nav-link">Poster</a> </li> 
+      <li class="port-item"> <a href="#thumbnail" class="nav-link">Thumbnail</a> </li> 
+      <li class="port-item"> <a href="#Carousel-Comic" class="nav-link">Carousel</a> </li>
+     </ul> </div>
+
+    </div>
+
+
+
+
+    <div class="project-heading">
+     <h3 id="flyers">Flyers</h3>
+      <div class="section-decoration" style="margin-bottom: 1rem; margin-top: 10px;">
+            <div class="decoration-line"></div>
+            <div class="decoration-dot"></div>
+            <div class="decoration-line"></div>
+          </div>
+    </div>
+    <div class="project-grid">
+
+
+      <div class="project-card">
+        <img src="./image/Flyers/1 - Vipassana Chakma.png" alt="Project Two">
+        <!-- <div class="project-card-content">
+          <h3>Landing Page</h3>
+          <p>A landing page for product launch with animations and responsiveness.</p>
+          <a href="#" class="btn">View Demo</a>
+        </div> -->
+      </div>
+        
+      <div class="project-card">
+        <img src="./image/Flyers/2- Vipassana Chakma.png" alt="Project One">
+      </div>
+
+
+      <div class="project-card">
+        <img src="./image/Flyers/3.Your Branding Essentials - Tanush Mukherjee.png" alt="Project One">
+      </div>
+
+
+      <div class="project-card">
+        <img src="./image/Flyers/4.WhatsApp Image 2025-06-26 at 23.33.25.jpeg" alt="Project One">
+      </div>
+
+
+      <div class="project-card">
+        <img src="./image/Flyers/5.WhatsApp Image 2025-06-26 at 23.33.24.jpeg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Flyers/6.WhatsApp Image 2025-06-26 at 23.33.14.jpeg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Flyers/7.WhatsApp Image 2025-06-25 at 23.45.34.jpeg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Flyers/8.WhatsApp Image 2025-05-26 at 12.00.38.jpeg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Flyers/9.WhatsApp Image 2025-05-22 at 17.10.20 (1).jpeg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Flyers/10.WhatsApp Image 2025-05-16 at 12.28.43.jpeg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Flyers/11.WhatsApp Image 2025-05-16 at 12.28.36.jpeg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Flyers/12.income tax day - Vipassana Chakma.png" alt="Project One">
+        <!-- <div class="project-card-content">
+          <h3>Dashboard App</h3>
+          <p>A dashboard for monitoring metrics and analytics (React + Chart JS).</p>
+          <a href="#" class="btn">View Demo</a>
+        </div> -->
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Logo design -->
+
+      <section id="projects" class="internship-projects section">
+    <!-- <h2>Projects we Worked On</h2> -->
+
+    <div class="project-heading">
+     <h3 id="logo-design" style="margin-top: -5.5rem;">Logo Design</h3>
+      <div class="section-decoration" style="margin-bottom: 1rem; margin-top: 10px;">
+            <div class="decoration-line"></div>
+            <div class="decoration-dot"></div>
+            <div class="decoration-line"></div>
+          </div>
+    </div>
+    </div>
+    <div class="project-logo-grid">
+
+
+      <div class="project-logo-card">
+        <img src="./image/Logo/1.1733504141815-removebg-preview.png" alt="Project Two">
+        <!-- <div class="project-card-content">
+          <h3>Landing Page</h3>
+          <p>A landing page for product launch with animations and responsiveness.</p>
+          <a href="#" class="btn">View Demo</a>
+        </div> -->
+      </div>
+        
+      <div class="project-logo-card">
+        <img src="./image/Logo/2.HR Firm.png" alt="Project One">
+      </div>
+
+
+      <div class="project-logo-card">
+        <img src="./image/Logo/3.podcast-logo-2.ai" alt="Project One">
+      </div>
+
+
+      <div class="project-logo-card">
+        <img src="./image/Logo/4.Screenshot__15_-removebg-preview.png" alt="Project One">
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+  <!-- Poster -->
+
+  
+     <section id="projects" class="internship-projects section">
+    <!-- <h2>Projects we Worked On</h2> -->
+
+    <div class="project-heading">
+     <h3 id="poster" style="margin-top: -3.7rem;">Poster</h3>
+      <div class="section-decoration" style="margin-bottom: 1rem; margin-top: 10px;">
+            <div class="decoration-line"></div>
+            <div class="decoration-dot"></div>
+            <div class="decoration-line"></div>
+          </div>
+    </div>
+    </div>
+    <div class="project-grid">
+
+
+      <div class="project-card">
+        <img src="./image/Logo/1.1733504141815-removebg-preview.png" alt="Project Two">
+        <!-- <div class="project-card-content">
+          <h3>Landing Page</h3>
+          <p>A landing page for product launch with animations and responsiveness.</p>
+          <a href="#" class="btn">View Demo</a>
+        </div> -->
+      </div>
+        
+      <div class="project-card">
+        <img src="./image/Poster/1.cr1 - Trisha Mondal.png" alt="Project One">
+      </div>
+
+
+    <div class="project-card">
+        <img src="./image/Poster/2.ef graphura views - Tanush Mukherjee.png" alt="Project One">
+      </div>
+
+     <div class="project-card">
+        <img src="./image/Poster/3.graphura 12.2 - Amlan Das.png" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Poster/4.Graphura Poster - Sujal Kumar Gupta.png" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Poster/5.graphura task - Vipassana Chakma.png" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Poster/6.IMG-20250709-WA0001_1752038682016 - Amlan Das.jpg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Poster/7.IMG-20250806-WA0012 - Trisha Mondal.jpg" alt="Project One">
+      </div>
+
+
+      <div class="project-card">
+        <img src="./image/Poster/8.IMG-20250807-WA0002 - Ariyan Mahanta.jpg" alt="Project One">
+      </div>
+
+
+      <div class="project-card">
+        <img src="./image/Poster/9.IMG-20250810-WA0013(1) - Ariyan Mahanta.jpg" alt="Project One">
+      </div>
+
+
+      <div class="project-card">
+        <img src="./image/Poster/10.rsf internship program (4).jpg" alt="Project One">
+      </div>
+
+
+      <div class="project-card">
+        <img src="./image/Poster/11.MEME promotional posters-04 - JanviJaiswal RenuSharmafoundation.png" alt="Project One">
+      </div>
+
+
+      <div class="project-card">
+        <img src="./image/Poster/12.MEME promotional posters-05 - JanviJaiswal RenuSharmafoundation.png" alt="Project One">
+      </div>
+
+
+      <div class="project-card">
+        <img src="./image/Poster/13.portfolio - flyer.png" alt="Project One">
+      </div>
+
+
+      <div class="project-card">
+        <img src="./image/Poster/14.poster (1).png" alt="Project One">
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!-- Thumbnail -->
+
+
+<section id="projects" class="internship-projects section">
+    <!-- <h2>Projects we Worked On</h2> -->
+
+    <div class="project-heading">
+     <h3 id="thumbnail" style="margin-top: -5.5rem;">Thumbnail</h3>
+      <div class="section-decoration" style="margin-bottom: 1rem; margin-top: 10px;">
+            <div class="decoration-line"></div>
+            <div class="decoration-dot"></div>
+            <div class="decoration-line"></div>
+          </div>
+    </div>
+    </div>
+    <div class="project-grid">
+
+
+      <div class="project-thumb-card">
+        <img src="./image/Thumbnail/1.png" alt="Project Two">
+        <!-- <div class="project-card-content">
+          <h3>Landing Page</h3>
+          <p>A landing page for product launch with animations and responsiveness.</p>
+          <a href="#" class="btn">View Demo</a>
+        </div> -->
+      </div>
+        
+      <div class="project-thumb-card">
+        <img src="./image/Thumbnail/2.png" alt="Project One">
+      </div>
+
+
+    <div class="project-thumb-card">
+        <img src="./image/Thumbnail/3.jpg" alt="Project One">
+      </div>
+
+     <div class="project-thumb-card">
+        <img src="./image/Thumbnail/4.png" alt="Project One">
+      </div>
+
+      <div class="project-thumb-card">
+        <img src="./image/Thumbnail/5.jpg" alt="Project One">
+      </div>
+
+      <div class="project-thumb-card">
+        <img src="./image/Thumbnail/6.png" alt="Project One">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Carousel & Comic -->
+
+<section id="projects" class="internship-projects section">
+    <!-- <h2>Projects we Worked On</h2> -->
+
+    <div class="project-heading">
+     <h3 id="Carousel-Comic" style="margin-top: -6rem;">Carousel</h3>
+      <div class="section-decoration" style="margin-bottom: 1rem; margin-top: 10px;">
+            <div class="decoration-line"></div>
+            <div class="decoration-dot"></div>
+            <div class="decoration-line"></div>
+          </div>
+    </div>
+    </div>
+    <div class="project-grid">
+
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/1.jpg" alt="Project Two">
+        <!-- <div class="project-card-content">
+          <h3>Landing Page</h3>
+          <p>A landing page for product launch with animations and responsiveness.</p>
+          <a href="#" class="btn">View Demo</a>
+        </div> -->
+      </div>
+        
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/2.jpg" alt="Project One">
+      </div>
+
+
+    <div class="project-card">
+        <img src="./image/Carousel & Comic/3.jpg" alt="Project One">
+      </div>
+
+     <div class="project-card">
+        <img src="./image/Carousel & Comic/4.jpg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/5.jpg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/six.png" alt="Project One">
+      </div>
+
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/Seven.jpg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/Eight.jpg" alt="Project One">
+      </div>
+
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/9.jpg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/10.png" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/11.jpg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/12.jpg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/13.png" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/14.jpg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/Fifteen.jpg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/18.png" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/17.jpg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/sixteen.png" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/19.jpg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/20.jpg" alt="Project One">
+      </div>
+
+      <div class="project-card">
+        <img src="./image/Carousel & Comic/21.png" alt="Project One">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  
+
+  <!-- <section class="internship-skills section">
+    <h2>Technologies & Skills</h2>
+    <div class="skills-list">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>API Integration</span>
+      <span>Responsive Design</span>
+    </div>
+  </section>
+
+  <section class="internship-testimonial section">
+    <h2>Mentor Feedback</h2>
+    <div class="testimonial">
+      “Working with [Your Name] was a pleasure. Delivered features ahead of schedule & showed great attention to detail.”
+    </div>
+    <div class="testimonial-footer">— Mentor Name, Senior Developer at XYZ Company</div>
+  </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer" >
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <img
+              class="footer-img"
+              src="./image/Graphura-logo-white.png"
+              alt="graphura logo"
+            />
+            <p>
+              Your trusted digital marketing partner helping businesses grow
+              their online presence and reach their target audience effectively.
+            </p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/share/19nKAMTopZ/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://share.google/w9KeZZ72v8KQxGpFn"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/graphura-india-private-limited/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/graphura.in?igsh=MXNqNmtidzljNDJlag=="
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="./services/seo.html">Services</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="./internship.html">Internship</a></li>
+
+              <li><a href="career.html">Career</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-services">
+            <h4>Our Services</h4>
+            <ul>
+              <li role="none">
+                <a role="menuitem" href="services/seo.html">SEO Services</a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/smm.html"
+                  >Social Media Marketing</a
+                >
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/smo.html"
+                  >Social Media Optimization</a
+                >
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/Flyers.html">Flyers</a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/cw.html">Content Writing</a>
+              </li>
+
+              <!-- <img src="../image/Footer/mca.png" alt="MCA" style="width: 200px; margin-top: 10px;"> -->
+               <img src="./image/Footer/razorpay.jpg" alt="Razorpay-Logo" style="width: 230px; height: 85px; margin-top: 0.5rem;">
+
+              <!-- <img src="./image/Footer/mca.png" alt="MCA" style="width: 200px; margin-top: 10px;"> -->
+
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Graphura India Private Limited, near RSF , Pataudi, Gurgaon, Haryana 122503
+              </li>
+              <li><i class="fas fa-phone"></i> +91 7378021327</li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:support@graphura.in" style="color: aliceblue"
+                  >support@graphura.in</a
+                >
+              </li>
+              <!-- <div style="display: grid;grid-template-columns: repeat(2, 1fr); gap: 10px;"> -->
+
+                <!-- <img src="../image/Footer/skill india.jpg" alt="Skill India" style="height: 4.5rem; width: 230px;"/> 
+           
+             <img src="../image/Footer/startup.png" alt="startup india" style="height: 5rem; width: 230px; padding-top: 0.5rem;"/> -->
+              <!-- <img src="../image/Footer/skill india.jpg" alt="Skill India" /> 
+            <img src="../image/Footer/startup.png" alt="startup india" style="height: 88px;">
+            </div>
+            <img src="../image/Footer/razorpay.jpg" alt="Razorpay-Logo" style="width: 290px; height: 60px; margin-top: 0.5rem;"> -->
+
+              <!-- <img src="./image/Footer/skill india.jpg" alt="Skill India" /> 
+            <img src="./image/Footer/startup.png" alt="startup india" style="height: 88px;">
+            </div>
+            <img src="./image/Footer/razorpay.jpg" alt="Razorpay-Logo" style="width: 290px; height: 60px; margin-top: 0.5rem;"> -->
+            <div style="display: grid;grid-template-columns: repeat(2, 1fr); gap: 10px;">
+              <img src="./image/Footer/skill india.jpg" alt="Skill India" style="height: 88px;" /> 
+            <img src="./image/Footer/startup.png" alt="startup india" style="height: 88px; width: 150px;">
+            </div>
+
+            </ul>
+          </div>
+        </div>
+
+  <div class="footer-bottom">
+          <p>
+            &copy; 2025 Graphura India Private Limited. All Rights Reserved.
+          </p>
+          <ul>
+            <li><a href="./privacy.html">Privacy Policy</a></li>
+            <li><a href="./Term&condition.html">Terms of Service</a></li>
+            <li><a href="./cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+<!-- 
+    WhatsApp Chat Button --> 
+     <div class="whatsapp-chat">
+      <a href="https://wa.me/+917378021327" target="_blank" class="chat-btn">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <script>
+     document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.querySelector(".navbar-toggle");
+        const menu = document.querySelector(".navbar-nav");
+        const cont = document.querySelector(".container");
+        const dropdownToggles = document.querySelectorAll(
+          ".nav-dropdown > .dropdown-toggle"
+        );
+        let flag = 0;
+
+        // Mobile menu toggle
+        toggle.addEventListener("click", () => {
+          document.body.classList.toggle("menu-open");
+        });
+        toggle.addEventListener("click", () => {
+          if (flag === 0) {
+            cont.style.flexWrap = "wrap";
+          } else {
+            cont.style.flexWrap = "nowrap";
+          }
+          flag = 1 - flag;
+          menu.classList.toggle("active");
+          toggle.classList.toggle("active");
+          // const expanded = toggle.getAttribute("aria-expanded") === "true";
+          toggle.setAttribute("aria-expanded", !expanded);
+        });
+
+        // Dropdown toggle for mobile
+        dropdownToggles.forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            if (window.innerWidth <= 900) {
+              e.preventDefault();
+              const dropdownMenu = btn.nextElementSibling;
+              dropdownMenu.classList.toggle("active");
+              const expanded = btn.getAttribute("aria-expanded") === "true";
+
+              btn.setAttribute("aria-expanded", !expanded);
+            }
+          });
+        });
+      }) 
+    </script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

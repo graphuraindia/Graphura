@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* --primary: #1A73E8; */
+  --accent: #ff6f61;
+  --secondary: #0a3d62;
+  --white: #ffffff;
+  --text: #333333;
+  --text-light: #666666;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: black;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: "Figtree", sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  background-color: var(--white);
+  padding-bottom: 50px;
+} */
+
+/* .internship-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.internship-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.internship-hero .duration,
+.internship-hero .role {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.internship-hero .btn-view-projects {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  background-color: var(--accent);
+  color: var(--white);
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+.internship-hero .btn-view-projects:hover {
+  background-color: #0a0f29;
+} */
+
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.internship-details ul {
+  list-style: disc inside;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.internship-details h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.internship-details li {
+  text-align: center;
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+}
+
+#projects h2 {
+  color: #d4af37;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 480px) {
+  #projects h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+
+
+.project-heading h3 {
+  color: black;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin: 1rem;
+}
+
+
+.portfolio-btn .port-menu {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping if screen too narrow */
+  justify-content: center; /* center buttons horizontally, optional */
+  gap: 1rem; /* space between buttons */
+  padding: 0;
+  margin: 2rem auto;
+  list-style: none;
+}
+
+.portfolio-btn .port-item {
+  /* optional: to force each item to shrink/grow */
+  flex: 0 1 auto;
+}
+
+.portfolio-btn .nav-link {
+  display: inline-block; /* ensure link behaves like button-box */
+  padding: 10px 15px;
+  text-align: center;
+  background-color: #fff;
+  color: #0a0f29;
+  border: 2px solid #0a0f29;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.portfolio-btn .nav-link:hover {
+  background-color: #d4af37;
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Optional: adjust padding / font for smaller screens for better fit */
+@media (max-width: 480px) {
+  .portfolio-btn .nav-link {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+}
+
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 1rem;
+  margin: 2rem;
+  /* border: 0.2rem solid ; */
+  /* background-color: palegreen; */
+}
+
+.project-card {
+  height: 270px;
+  width: 270px;
+  border: 2px solid #d4af37;
+  border-radius: 8px;
+  overflow: hidden;
+  /* background-color: palegreen; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-card-content {
+  padding: 1rem;
+}
+
+.project-card-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--secondary);
+}
+
+.project-card-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  line-height: 1.4;
+}
+
+.project-card-content a.btn {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.project-card-content a.btn:hover {
+  background-color: #0f5abf;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.skills-list span {
+  background-color: var(--bg-accent, #f1f3f4);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+.testimonial {
+  background-color: #fafafa;
+  border-left: 4px solid var(--primary);
+  padding: 1.5rem;
+  margin-top: 2rem;
+  font-style: italic;
+  color: var(--text-light);
+}
+
+.testimonial-footer {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .internship-hero h1 {
+    font-size: 2.2rem;
+  }
+  .internship-hero .duration,
+  .internship-hero .role {
+    font-size: 1rem;
+  }
+/* 
+  .section {
+    padding: 2rem 0.5rem;
+  } */
+
+  .project-card-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .skills-list {
+    justify-content: center;
+  }
+}
+.internship-experience {
+  padding: 4rem 0;
+}
+
+.internship-experience h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.internship-experience .internship-details ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.internship-experience .btn {
+  margin-top: 1.5rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .internship-experience h2 {
+    font-size: 1.8rem;
+  }
+}
+
+
+
+
+
+/* Logo design  css*/
+
+.project-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 2fr));
+  gap: 1rem;
+  /* margin-left: 6rem; */
+  align-items: center;
+  padding-left: 1.7rem;
+
+}
+
+.project-logo-card {
+  height: 350px;
+  width: 350px;
+  border: 2px solid #d4af37;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width:380px ){
+
+  .project-logo-card {
+    height: 250px;
+    width: 250px;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+}
+
+  
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ThumbNail */
+
+.project-thumb-card {
+  height: 270px;
+      width: 270px;
+  border: 2px solid #d4af37;
+  border-radius: 8px;
+
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 487px) {
+  /* .project-logo-card {
+    padding-left: 2rem;
+  } */
+  .project-grid {
+    padding-left: 2.4rem;
+  }
+}
+
+@media (max-width: 778px) {
+  .project-logo-grid {
+    padding-left: 10rem;
+  }
+}
+@media (max-width: 572px) {
+  .project-logo-grid {
+    padding-left: 5rem;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    gap: 1rem;
+    margin: 7rem;
+    /* border: 0.2rem solid; */
+    /* background-color: palegreen; */
+  }
+}
+@media (max-width: 474px) {
+    .project-logo-grid {
+        padding-left: 1px;
+        margin-left: 2rem;
+    }
+
+
+  .project-grid {
+    margin: 2rem;
+  }
+}
+/* 
+@media (max-width: 384px) {
+  .project-logo-grid {
+    padding-left: 1rem;
+  } */
+
+@media (max-width: 572px) {
+    .project-logo-grid {
+        padding-left: 5rem;
+    }
+
+    .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    gap: 1rem;
+    margin: 7rem;
+    /* border: 0.2rem solid; */
+    /* background-color: palegreen; */
+}
+}
+
+@media (max-width: 474px){
+  .project-logo-grid{
+    /* margin: 3rem; */
+    padding-left: 0.2rem;
+  }
+
+
+  .project-grid{
+    margin: 3rem;
+    padding-left: 2rem;
+  }
+}
+
+
+@media (max-width: 384px){
+  .project-logo-grid{
+    /* margin: 3rem; */
+    padding-left: 1rem;
+  }
+
+
+  .project-grid{
+    margin: 1rem;
+   
+  }
+}
+  .project-grid {
+    margin: rem;
+    padding: 1rem;
+  }
+
+
+
+
+
+
+
+#projects h2
+
+/* Css Added from my side  */
+
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5; /* Soft White */
+   color: #000;
+  line-height: 1.6;
+  overflow-x: hidden; 
+   padding-top: 80px;
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
+
+ .Portfolio-container {
+  background-color: #0a0f29;
+  padding-left: 4rem;
+  padding-top: 8rem;
+  margin-top: 10rem;
+} 

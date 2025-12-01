@@ -1,0 +1,192 @@
+/* -----------------------------------
+   COLOR VARIABLES (Theme)
+----------------------------------- */
+:root {
+  --royal-gold: #d4af37;
+  --midnight-navy: #0a0f29;
+  --black: #000000;
+  --white: #ffffff;
+}
+.privacy-section {
+  width: 100%;
+  background: var(--midnight-navy);
+  padding: 90px 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--royal-gold);
+}
+
+.privacy-contain {
+  max-width: 900px;
+  margin: auto;
+}
+
+.privacy-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--royal-gold);
+}
+
+.privacy-subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 10px;
+  color: var(--white);
+}
+
+.privacy-updated {
+  margin-top: 15px;
+  display: block;
+  font-size: 0.95rem;
+  color: white;
+}
+
+/* ==========================
+      RESPONSIVE PRIVACY
+=========================== */
+
+@media (max-width: 768px) {
+  .privacy-section {
+    padding: 70px 15px;
+  }
+
+  .privacy-title {
+    font-size: 2.2rem;
+  }
+
+  .privacy-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-title {
+    font-size: 1.9rem;
+  }
+
+  .privacy-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* -----------------------------------
+   MAIN WRAPPER
+----------------------------------- */
+.privacy-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--white);
+  overflow-x: hidden !important;
+}
+
+/* -----------------------------------
+   LEFT SIDEBAR
+----------------------------------- */
+.privacy-sidebar {
+  width: clamp(200px, 22vw, 260px);
+  background: var(--midnight-navy);
+  color: var(--white);
+  padding: 25px 20px;
+  border-right: 2px solid var(--royal-gold);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.privacy-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.privacy-sidebar ul li {
+  margin: 18px 0;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.privacy-sidebar ul li:hover {
+  color: var(--royal-gold);
+  transform: translateX(4px);
+}
+
+/* -----------------------------------
+   RIGHT CONTENT AREA
+----------------------------------- */
+.privacy-content {
+  flex: 1;
+  padding: 40px 35px;
+  background: var(--white);
+}
+
+.privacy-content h2,
+.privacy-content h3,
+.privacy-content h1 {
+  color: var(--midnight-navy);
+  margin-bottom: 20px;
+}
+
+.privacy-content p {
+  color: var(--black);
+  line-height: 1.6;
+  margin-bottom: 18px;
+  font-size: 17px;
+}
+
+/* -----------------------------------
+   CARD STYLES (If using cards)
+----------------------------------- */
+.policy-card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+.policy-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25);
+}
+
+/* -----------------------------------
+   MOBILE & TABLET RESPONSIVE
+----------------------------------- */
+@media (max-width: 992px) {
+  .privacy-content {
+    padding: 30px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .privacy-container {
+    flex-direction: column;
+  }
+
+  .privacy-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 2px solid var(--royal-gold);
+    padding: 20px;
+  }
+
+  .privacy-sidebar ul li {
+    font-size: 16px;
+  }
+
+  .privacy-content {
+    padding: 25px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-content {
+    padding: 20px 15px;
+  }
+}

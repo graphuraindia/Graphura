@@ -1,0 +1,188 @@
+:root {
+    --midnight: #0a0f29;
+    --gold: #d4af37;
+    --white: #ffffff;
+    --black: #000000;
+    --light-bg: #f5f7fb;
+}
+
+/* ================================
+   COOKIE PAGE – UPDATED CSS
+================================ */
+
+/* Match your privacy theme but for cookie page */
+.cookie-section {
+  width: 100%;
+  background: var(--midnight);
+  padding: 90px 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--gold);
+}
+
+.cookie-contain {
+  max-width: 900px;
+  margin: auto;
+}
+
+.cookie-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--gold);
+}
+
+.cookie-subtitle {
+  font-size: 1rem;
+  color: var(--white);
+  margin-top: 10px;
+}
+
+.cookie-updated {
+  margin-top: 15px;
+  display: block;
+  font-size: 0.95rem;
+  color: var(--white);
+}
+
+/* ================================
+   MAIN CONTAINER (COOKIE)
+================================ */
+.cookie-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+/* ================================
+   LEFT SIDEBAR
+================================ */
+.cookie-sidebar {
+  width: clamp(200px, 22vw, 260px);
+  background: var(--midnight);
+  color: var(--white);
+  padding: 25px 20px;
+  border-right: 2px solid var(--gold);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.cookie-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cookie-sidebar ul li {
+  margin: 18px 0;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cookie-sidebar ul li:hover {
+  color: var(--gold);
+  transform: translateX(4px);
+}
+
+/* ================================
+   RIGHT CONTENT
+================================ */
+.cookie-content {
+  flex: 1;
+  padding: 40px 35px;
+  background: var(--white);
+}
+
+.cookie-content h2 {
+  color: var(--midnight);
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+}
+
+.cookie-content p {
+  color: var(--black);
+  line-height: 1.6;
+  margin-bottom: 18px;
+  font-size: 17px;
+}
+
+/* ================================
+   TABLE STYLING (Types of Cookies)
+================================ */
+.cookie-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin: 25px 0;
+}
+
+.cookie-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+  background: var(--white);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.cookie-table th {
+  background: var(--midnight);
+  color: var(--gold);
+  padding: 14px;
+  font-size: 18px;
+  text-align: left;
+  border-bottom: 2px solid var(--gold);
+}
+
+.cookie-table td {
+  padding: 14px;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  font-size: 16px;
+  color: var(--black);
+}
+
+.cookie-table tr:hover {
+  background: rgba(212, 175, 55, 0.08);
+}
+
+/* ================================
+   RESPONSIVE – MOBILE
+================================ */
+@media (max-width: 768px) {
+  .cookie-container {
+    flex-direction: column;
+  }
+
+  .cookie-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 2px solid var(--gold);
+  }
+
+  .cookie-sidebar ul li {
+    font-size: 16px;
+  }
+
+  .cookie-content {
+    padding: 25px 18px;
+  }
+
+  .cookie-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cookie-content {
+    padding: 20px 15px;
+  }
+
+  .cookie-table td,
+  .cookie-table th {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

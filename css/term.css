@@ -1,0 +1,157 @@
+:root {
+    --midnight: #0a0f29;
+    --gold: #d4af37;
+    --white: #ffffff;
+    --black: #000000;
+    --light-bg: #f5f7fb;
+}
+
+
+/*
+  TERMS PAGE –  CSS
+*/
+
+/*
+   HERO SECTION
+*/
+.term-section {
+  width: 100%;
+  background: var(--midnight);
+  padding: 90px 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--gold);
+}
+
+.term-contain {
+  max-width: 900px;
+  margin: auto;
+}
+
+.term-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--gold);
+}
+
+.term-subtitle {
+  font-size: 1rem;
+  color: var(--white);
+  margin-top: 10px;
+}
+
+.term-updated {
+  margin-top: 15px;
+  display: block;
+  font-size: 0.95rem;
+  color: var(--white);
+}
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+.term-container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+/* ================================
+   LEFT SIDEBAR
+================================ */
+.term-sidebar {
+  width: clamp(200px, 22vw, 260px);
+  background: var(--midnight);
+  color: var(--white);
+  padding: 25px 20px;
+  border-right: 2px solid var(--gold);
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.term-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.term-sidebar ul li {
+  margin: 18px 0;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.term-sidebar ul li:hover {
+  color: var(--gold);
+  transform: translateX(4px);
+}
+
+/* ================================
+   RIGHT CONTENT
+================================ */
+.term-content {
+  flex: 1;
+  padding: 40px 35px;
+  background: var(--white);
+}
+
+.term-content h2 {
+  color: var(--midnight);
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+}
+
+.term-content p {
+  color: var(--black);
+  line-height: 1.6;
+  margin-bottom: 18px;
+  font-size: 17px;
+}
+
+.term-content ul {
+  margin-bottom: 18px;
+  padding-left: 20px;
+}
+
+.term-content li {
+  margin-bottom: 8px;
+}
+
+/* ================================
+   RESPONSIVE – MOBILE
+================================ */
+@media (max-width: 768px) {
+  .term-container {
+    flex-direction: column;
+  }
+
+  .term-sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 2px solid var(--gold);
+  }
+
+  .term-sidebar ul li {
+    font-size: 16px;
+  }
+
+  .term-content {
+    padding: 25px 18px;
+  }
+
+  .term-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .term-content {
+    padding: 20px 15px;
+  }
+}

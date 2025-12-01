@@ -1,0 +1,304 @@
+/* General */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* WHY WORK WITH GRAPHURA */
+.why-graphura {
+  background: #faf4e7;
+  padding: 80px 0;
+}
+
+.why-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.why-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.why-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  border: 2px solid #d4a638; /* GOLD BORDER */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.why-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.why-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+/* Department Section */
+.departments {
+  padding: 60px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.dept-title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+/* GRID */
+.dept-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.dept-card {
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 16px;
+  border: 2px solid #d4af37; /* Royal gold border */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+.dept-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Card title */
+.dept-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+/* Card text */
+.dept-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ------------------
+    RESPONSIVE
+------------------- */
+
+/* Tablet: 2 columns */
+@media (max-width: 992px) {
+  .dept-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 600px) {
+  .dept-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dept-title {
+    font-size: 32px;
+  }
+
+  .dept-card {
+    padding: 28px 20px;
+  }
+}
+
+/* Graphura Culture Section */
+/* Graphura Culture Section */
+.graphura-culture {
+  padding: 40px 20px; /* Increased top and bottom padding */
+  background: #0a0f29; /* Dark background */
+  color: white;
+  padding-bottom: 100px;
+  margin-bottom: 2rem;
+}
+
+/* Culture Title */
+.culture-title {
+  font-size: 2.8rem;
+  text-align: center;
+  /* margin-bottom: 40px; */
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #d4af37; /* Golden title */
+  /* text-shadow: 0 0 10px #d4af37; Golden glow effect for title */
+}
+
+/* Culture Description */
+.culture-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* Main Container */
+.culture-container {
+  width: 85%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* Culture Grid (Cards) */
+.culture-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* Culture Cards */
+.culture-card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent; /* Default transparent border */
+  background-clip: padding-box;
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 10px #d4af37; Golden glow shadow */
+  transition: 0.3s ease;
+}
+
+/* Hover Effect on Cards */
+.culture-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15), 0 0 20px #d4af37; /* Adding golden glow on hover */
+}
+
+/* Card Heading */
+.culture-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #0a0f29;
+}
+
+/* Card Text */
+.culture-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  opacity: 0.9;
+}
+
+/* ===================== Responsive Breakpoints ===================== */
+@media (max-width: 1200px) {
+  /* .department-grid {
+    grid-template-columns: repeat(3, 1fr);
+  } */
+  .culture-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  /* .department-title {
+    font-size: 2.4rem;
+  }
+  .department-container {
+    width: 90%;
+  }
+  .department-card {
+    padding: 32px 24px;
+  }
+  .department-card h3 {
+    font-size: 1.25rem;
+  }
+  .department-card p {
+    font-size: 0.95rem;
+  } */
+
+  .culture-title {
+    font-size: 2.4rem;
+  }
+  .culture-container {
+    width: 92%;
+  }
+  .culture-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .culture-card {
+    padding: 26px 22px;
+  }
+  .culture-card h3 {
+    font-size: 1.25rem;
+  }
+  .culture-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .department-grid {
+    grid-template-columns: 1fr;
+  }
+  .department-title {
+    font-size: 2.2rem;
+    margin-bottom: 36px;
+  }
+  .department-card {
+    padding: 26px 20px;
+  } */
+
+  .graphura-culture {
+    padding: 60px 24px; 
+    margin-bottom: 2rem;
+  }
+  .culture-grid {
+    grid-template-columns: 1fr;
+  }
+  .culture-title {
+    font-size: 2.2rem;
+    margin-bottom: 36px;
+  }
+  .culture-card {
+    padding: 24px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* .department-container {
+    width: 95%;
+  } */
+  .culture-container {
+    width: 95%;
+  }
+}
