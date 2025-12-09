@@ -392,47 +392,44 @@ element.style {
   }
 
   .navbar-menu {
-    width: 100%;
+    width: auto;
   }
 
   .navbar-toggle {
-    /* background-color: #1b87d4; */
     display: block;
     font-size: 1.8rem;
     cursor: pointer;
     padding: 0.5rem;
   }
 
+  /* OFF-CANVAS MENU (RIGHT SIDE) */
   .navbar-nav {
+    position: fixed;
+    top: 80px; /* height of navbar */
+    left: 0;
+    height: calc(100vh - 80px);
+    width: 85%;
+    /* max-width: 360px; */
+    background-color: #ffffff;
     flex-direction: column;
-    width: 100%;
-    background-color: var(--white);
-    max-height: 0;
-    overflow: hidden;
-    /* transition: max-height 0.4s ease; */
+    padding: 3rem 1.5rem;
+    gap: 0.5rem;
+    align-items: start;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: -4px 0 15px rgba(0, 0, 0, 0.08);
+    z-index: 999;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 
-  /* Make the mobile menu scrollable */
   .navbar-nav.active {
-    max-height: 60vh;  /*Limit the menu height */
-    overflow-y: auto; /* Enable vertical scrolling */
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: var(--primary) transparent;
-  }
-
-  /* Optional: custom scrollbars for WebKit browsers */
-  .navbar-nav.active::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .navbar-nav.active::-webkit-scrollbar-thumb {
-    background-color: var(--primary);
-    border-radius: 10px;
+    transform: translateX(0);
   }
 
   .navbar-nav li {
-    margin: 0.3rem 0;
-    text-align: center;
+    margin: 0 0;
+    text-align: left;
   }
 
   /* Dropdowns inside mobile menu */
@@ -448,7 +445,6 @@ element.style {
     margin-top: 0.2rem;
   }
 
-  /* Keep dropdown items readable within scroll */
   .dropdown-menu.active {
     display: block;
   }
@@ -467,3 +463,105 @@ element.style {
     transform: rotate(90deg);
   }
 }
+
+.nav-mega {
+  position: relative;
+}
+
+/* Mega Menu Box */
+.mega-menu {
+  position: fixed;
+ right: 0;
+  top: 80px;
+  width: 90%;
+  background: rgba(255, 255, 255, 0.97);
+  padding: 2rem 5vh;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  border-radius: 12px;
+  margin: 0.5rem 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+/* Show on hover (desktop) */
+.nav-mega:hover .mega-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Mega Menu Columns */
+.mega-container {
+  /* width: 100%;
+  max-width: 2000px; */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+/* Headings */
+.mega-column h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+/* List links */
+.mega-column ul li {
+  margin: 0.4rem 0;
+}
+
+.mega-column ul li a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.mega-column ul li a:hover {
+  color: var(--accent);
+}
+
+/* MOBILE DESIGN */
+@media (max-width: 900px) {
+  .mega-menu {
+    position: static;
+    box-shadow: none;
+    transform: none;
+    padding: 1rem 0.5rem;
+    border-radius: 0;
+  }
+
+  .mega-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .mega-menu {
+    display: none;
+  }
+
+  .mega-menu.active {
+    display: block;
+  }
+}
+
+@media (max-width:1424px) {
+  
+  .mega-menu{
+    margin: 0.5rem 1.5rem;
+    width: 90%;
+  }
+}
+@media (max-width:990px) {
+  
+  .mega-menu{
+    margin: 0.5rem 1rem;
+    width: 90%;
+  }
+}
+

@@ -595,6 +595,8 @@
   /* border: 4px solid #d4af37; gold border */
 }
 
+
+
 /* KEEP MAP SIZE SAME (NO CHANGE EXCEPT CENTERED) */
 .contact-map {
   width: 100%; /* map smaller than blue box */
@@ -604,6 +606,8 @@
   overflow: hidden;
   border: 3px solid #d4af37;
 }
+
+
 
 .horizontal-details {
   display: grid;

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application Development (Custom Web Apps) - Graphura India Private Limited</title>
+
+    <link
+      rel="shortcut icon"
+      href="../image/Graphura-favicon.png"
+      type="image/x-icon"
+    />
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Figtree:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/midnight.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/wd1.css" />
+    
+
+     <style>
+      /* faq service grid */
+      .faq-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+    </style>
+    
+</head>
+<body>
+     <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a href="index.html" aria-label="Graphura Home">
+            <img src="../image/bg removed.png" alt="Graphura Logo" />
+          </a>
+          <div
+            class="navbar-toggle"
+            aria-label="Toggle Menu"
+            aria-expanded="false"
+            role="button"
+            tabindex="0"
+          >
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <div class="navbar-menu">
+          <ul class="navbar-nav" role="menubar" aria-label="Primary Navigation">
+            <li role="none">
+              <a role="menuitem" href="../index.html" class="active">Home</a>
+            </li>
+
+            <!-- Services Dropdown menu -->
+            <li class="nav-mega" role="none">
+  <a href="#" class="dropdown-toggle" role="menuitem">
+    Services <i class="fas fa-chevron-down"></i>
+  </a>
+
+  <div class="mega-menu">
+    <div class="mega-container">
+
+      <!-- Branding Services -->
+      <div class="mega-column">
+        <h4>Branding Services</h4>
+        <ul>
+          <li><a href="logo.html">Logo Design</a></li>
+          <li><a href="brand.html">Brand Identity Design</a></li>
+          <li><a href="brand statergy.html">Brand Strategy</a></li>
+          <li><a href="packaging.html">Packaging Design</a></li>
+          <li><a href="card.html">Business Card</a></li>
+          <li><a href="brand voice.html">Brand Voice & Messaging</a></li>
+          <li><a href="Flyers.html">Flyers</a></li>
+          <li><a href="Thumbnail.html">Thumbnail</a></li>
+          <li><a href="poster.html">Poster Design</a></li>
+          <li><a href="cw.html">Content writing</a></li>
+          <li><a href="banner.html">Banner Design</a></li>
+        </ul>
+      </div>
+
+      <!-- Marketing Services -->
+      <div class="mega-column">
+        <h4>Marketing Services</h4>
+        <ul>
+          <li><a href="smm.html">Social Media Marketing (SMM)</a></li>
+          <li><a href="smo.html">Social Media Optimization (SMO)</a></li>
+          <li><a href="seo.html">SEO (Search Engine Optimization)</a></li>
+          <li><a href="google.html">Google Ads Management</a></li>
+          <li><a href="meta.html">Meta Ads Services</a></li>
+          <li><a href="cc.html">Content Creation</a></li> 
+          <li><a href="email.html">Email & WhatsApp Marketing</a></li>
+          <li><a href="leadg.html">Lead Generation Campaigns</a></li>
+          <li><a href="corporate.html">Corporate Presentations</a></li>
+        </ul>
+      </div>
+
+      <!-- Custom Software Services -->
+      <div class="mega-column">
+        <h4>Custom Software Services</h4>
+        <ul>
+          <li><a href="wd.html">Website Development</a></li>
+          <li><a href="wad.html">Web Application Development</a></li>
+          <li><a href="mad.html">Mobile App Development</a></li>
+          <li><a href="crm.html">CRM Development</a></li>
+          <li><a href="erp.html">ERP Development</a></li>
+          <li><a href="dba.html">Dashboard & Automation Tools</a></li>
+          <li><a href="api.html">API Development & Integration</a></li>
+          <li><a href="uiux.html">UI/UX Design Services</a></li>
+          <li><a href="wam.html">Website/App Maintenance</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</li>
+
+            <li role="none">
+              <a role="menuitem" href="../about.html">About Us</a>
+            </li>
+            <li role="none">
+              <a role="menuitem" href="../Portfolio.html">Portfolio</a>
+            </li>
+            <li role="none"><a role="menuitem" href="../blog.html">Blog</a></li>
+            <li role="none">
+              <a role="menuitem" href="../contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+<!-- Hero Section  -->
+
+ <section class="hero">
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            
+
+             <h1 class="hero-title">
+              <span class="title-line">Build Powerful, Secure &</span>
+              <span class="title-highlight">Scalable Web Applications</span>
+              <span class="title-line">for Modern Businesses</span>
+            </h1>
+
+            <p class="hero-subtitle">
+           Graphura builds high‑performance, secure, and scalable <span class="highlight">custom web applications that streamline operations,</span> enhance user experience, and accelerate business growth.
+
+              <!-- <span class="typing-text"></span> -->
+            </p>
+            <!-- <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-target="450">450+</span>
+                <span class="stat-label"> Websites Developed Globally</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="1000">99.9%</span>
+                <span class="stat-label">Uptime & Secure Hosting</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="300">3x</span>
+                <span class="stat-label">Website Speed Optimization</span>
+              </div>
+            </div>        -->
+            <div class="hero-buttons" style="margin-top: 1.4rem;">
+              <a href="../contact.html" class="btn btn-accent btn-glow">
+                <span>Build Your Web App Today </span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="#start" class="btn btn-outline btn-outline-glow">
+                <span> Book a Free Project Consultation</span>
+                <i class="fas fa-phone"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image-container">
+              <div class="hero-image">
+                <img
+                  src="../image/bg removed.png"
+                  alt="Graphura Digital Marketing"
+                />
+              </div>
+              <div class="image-glow"></div>
+             <!-- <div class="floating-cards">
+                <div class="floating-card card-1">
+                  <i class="fas fa-trending-up"></i>
+                  <span>+150% Growth</span>
+                </div>
+                <div class="floating-card card-2">
+                  <i class="fas fa-users"></i>
+                  <span>10K+ Reach</span>
+                </div>
+                <div class="floating-card card-3">
+                  <i class="fas fa-star"></i>
+                  <span>5.0 Rating</span>
+                </div>  -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+    <!-- Why Choose Our Web Application Development Services -->
+    
+    <div class="section">
+      <div class="container">
+        <h2 class="section-title"> Why Choose Our Web Application Development Services?</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card" style=" border-right: 4px solid var(--accent);" style=" border-right: 4px solid var(--accent);">
+            <h4>Latest Technology Stack</h4>
+            <p >We use modern and future-ready frameworks like:</p>
+            <ul class="Custom-development">
+              <li style="list-style-type: disc;">Node.js</li>
+              <li style="list-style-type: disc;">React / Next.js</li>
+              <li style="list-style-type: disc;">MongoDB / MySQL</li>
+              <li style="list-style-type: disc;">Laravel / PHP</li>
+              <li style="list-style-type: disc;">Python / Django</li>
+              <li style="list-style-type: disc;">Firebase</li>
+            </ul>
+    
+          </div>
+          <div class="benefit-card" style=" border-right: 4px solid var(--accent);">
+            <h4> Enterprise-Level Security</h4>
+            <p >We implement:</p>
+            
+             <ul>
+              <li style="list-style-type: disc;">Data encryptio</li>
+              <li style="list-style-type: disc;">Secure APIs</li>
+              <li style="list-style-type: disc;">Role-based access control</li>
+              
+            </ul>
+          </div>
+           <div class="benefit-card" style=" border-right: 4px solid var(--accent);">
+            <h4>  API Integrations</h4>
+            <p>We integrate:</p>
+            
+
+             <ul class="Custom-development">
+              <li style="list-style-type: disc;">CRM</li>
+              <li style="list-style-type: disc;">LMS</li>
+              <li style="list-style-type: disc;">Automation tools</li>
+              <li style="list-style-type: disc;">Payment gateways</li>  
+              <li style="list-style-type: disc;">Internal business systems</li>            
+            </ul>
+
+          </div>
+
+
+
+
+          <div class="benefit-card" style=" border-right: 4px solid var(--accent);">
+            <h4> Custom-Built for Your Business</h4>
+            <p>Every web application is developed from scratch based on your exact workflow, requirements, and goals — not templates.</p>
+          </div>
+
+
+          <div class="benefit-card" style=" border-right: 4px solid var(--accent);">
+            <h4>Perfect UI/UX for Flawless User Experienc</h4>
+            <p>We focus on usability, efficiency, and clean design to keep users engaged..</p>
+          </div>
+
+
+          <div class="benefit-card" style=" border-right: 4px solid var(--accent);">
+            <h4> Scalable Architecture</h4>
+            <p>Your web app grows with your business — no performance issues, even with thousands of users.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Our Approach to Website Development -->
+    <div class="section">
+      <div class="container">
+        <h2 class="section-title">Our Approach to Web Application Development</h2>
+        <div class="benefits-grid">
+          <div class="benefit-card" style=" border-right: 4px solid var(--accent);" style=" border-right: 4px solid var(--accent);">
+            <h4>  Backend & Frontend Development</h4>
+            <p >We build:</p>
+            <ul>
+              <li style="list-style-type: disc;">Secure backend</li>
+              <li style="list-style-type: disc;">Fast frontend</li>
+              <li style="list-style-type: disc;">Real-time functionality</li>
+            </ul>
+    
+          </div>
+          <div class="benefit-card" style=" border-right: 4px solid var(--accent);">
+            <h4>  Testing (Manual + Automated)</h4>
+            <p >We ensure:</p>
+            
+             <ul>
+              <li style="list-style-type: disc;">Speed</li>
+              <li style="list-style-type: disc;">Security</li>
+              <li style="list-style-type: disc;">Bug-free performance</li>
+              
+            </ul>
+          </div>
+           <div class="benefit-card" style=" border-right: 4px solid var(--accent);">
+            <h4>Wireframing & System Architecture</h4>
+            <p>We handle:</p>
+            
+
+             <ul class="Custom-development">
+              <li style="list-style-type: disc;">App screens</li>
+              <li style="list-style-type: disc;">UX flow</li>
+              <li style="list-style-type: disc;">Database structure</li>
+              <li style="list-style-type: disc;">APIs & backend architecture</li>         
+            </ul>
+            
+          </div>
+
+
+          <div class="benefit-card" style=" border-right: 4px solid var(--accent);">
+            <h4> Deployment & Launch</h4>
+            <p>We deploy your web application on:</p>
+            
+
+             <ul class="Custom-development">
+              <li style="list-style-type: disc;">AWS</li>
+              <li style="list-style-type: disc;">DigitalOcean</li>
+              <li style="list-style-type: disc;">Google Cloud</li>
+              <li style="list-style-type: disc;">Custom servers</li>         
+            </ul>
+            
+          </div>
+
+
+
+          <div class="benefit-card" style=" border-right: 4px solid var(--accent);">
+            <h4>Post-Launch Support & Maintenance</h4>
+            <p>Includes:</p>
+            
+
+             <ul class="Custom-development">
+              <li style="list-style-type: disc;">Updates</li>
+              <li style="list-style-type: disc;">Bug fixes</li>
+              <li style="list-style-type: disc;">Feature improvements</li>
+              <li style="list-style-type: disc;">Analytics monitoring</li>         
+            </ul>
+            
+          </div>
+
+
+          <div class="benefit-card" style=" border-right: 4px solid var(--accent);">
+            <h4>UI/UX Design</h4>
+            <p>Modern, intuitive, responsive screens optimized for performance.</p>
+          </div>          
+        </div>
+      </div>
+    </div>
+
+
+
+     <!-- Website Development Services We Offer -->
+    <div class="section">
+      <div class="container">
+        <h2 class="section-title"> Web Application Development Services We Offer</h2>
+        <div class="benefits-grid">
+          <div class="Website-card">
+            <h4>  Custom Web Applications</h4>
+            <p>Tailor-made solutions to match your workflows.</p>
+          </div>
+          <div class="Website-card">
+            <h4> SaaS Application Development</h4>
+            <p>
+             Build subscription-based software products.
+            </p>
+          </div>
+          <div class="Website-card">
+            <h4> CRM Systems</h4>
+            <p>
+             Manage leads, clients, communication, sales & automation.
+
+            </p>
+          </div>
+          <div class="Website-card">
+            <h4> ERP Solutions</h4>
+            <p>End-to-end modules for HR, finance, operations, inventory & more.
+</p>
+          </div>
+          <div class="Website-card">
+            <h4> Customer Portals & Dashboards</h4>
+            <p>Secure login-based systems for users, staff & clients.</p>
+          </div>
+          <div class="Website-card">
+            <h4>  E-commerce Web Applications</h4>
+            <p>Advanced carts, filters, inventory & automated systems.</p>
+          </div>
+
+          <div class="Website-card">
+            <h4>Learning Management Systems (LMS)</h4>
+            <p>Online courses, tests, student dashboards & admin panels.</p>
+          </div>
+
+
+          <div class="Website-card">
+            <h4>  Booking & Appointment Systems</h4>
+            <p>For clinics, service providers, salons, real estate & more.</p>
+          </div>
+
+
+          <div class="Website-card">
+            <h4>Workflow Automation Systems</h4>
+            <p>Reduce manual work with automated digital systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Industries We Build Web Apps For -->
+    <div class="section">
+      <div class="container">
+        <h2 class="section-title">Industries We Build Web Apps For</h2>
+
+       <div class="features-grid">
+         <ul class="features-card">
+            <li>Real Estate</li>
+            <li>Healthcare</li>
+            <li>Education &amp; Ed-Tech</li>
+            <li>Manufacturing</li>
+            <li>Finance</li>
+            <li>Retail &amp; E-commerce</li>
+            <li>Hospitality</li>
+            <li>Logistics</li>
+            <li>IT &amp; Consulting</li>
+            <li>Startups &amp; SaaS</li>
+             <li>IT &amp; Consulting</li>
+            <li>Startups &amp; SaaS</li>
+         </ul>
+         </div>
+        
+      </div>
+    </div>
+
+      <!-- Advanced Features We Offer -->
+    <div class="section">
+      <div class="container">
+        <h2 class="section-title">Advanced Features We Offer</h2>
+
+        <div class="features-grid">
+  <ul class="features-card">
+    <li>Multi-user Role System</li>
+    <li>OTP/Email Login</li>
+    <li>Advanced Admin Dashboard</li>
+    <li>Payment Gateway Integration</li>
+    <li>Invoice &amp; Billing System</li>
+    <li>Real-time Notifications</li>
+    <li>Analytics &amp; Reporting</li>
+    <li>Cloud Storage System</li>
+    <li>AI-based Recommendations</li>
+    <li>Chat &amp; Support System</li>
+    <li>Document Management</li>
+    <li>Marketplace System</li>
+  </ul>
+</div>
+        
+      </div>
+    </div>
+
+        <!-- FAQ -->
+
+
+
+        <section class="section faq-section">
+  <div class="container">
+    <h2 class="section-title">FAQs – Web Application Development
+</h2>
+    <p class="section-subtitle">
+      Get answers to common questions about our services
+    </p>
+
+    <div class="faq-accordion">
+
+      <!-- FAQ 1 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How long does it take to build a web application?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+          A basic application takes 20–30 days, advanced systems take 45–90 days.
+            <br><br>
+          </p>
+
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+         Do you provide hosting & server setup?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+          Yes — we offer complete server deployment and management.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+         Can I request new features in the future?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+         Absolutely. Our apps are fully scalable for future expansions.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+       Will my web application be mobile-friendly?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+           Yes — every app is fully responsive across all devices.
+          </p>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+        Do you sign NDAs?
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-answer">
+          <p>
+        Yes, your idea and data are completely confidential.
+          </p>
+        </div>
+      </div>
+
+
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+          <!-- CTA -->
+  <section class="services-cta" id="start" style="margin-bottom: 40px;">
+    <div class="cta-content">
+
+      <h3>Build a Web Application That Transforms Your Business</h3>
+      <p>From internal automation tools to full-scale SaaS products, we create future-ready web applications that deliver performance, security, and scalability.
+
+      </p>
+      <div class="cta-buttons">
+        <a href="../contact.html" class="btn btn-accent" style="background-color: #d4af37;">
+          <span>Start Your Web App Project Today</span>
+          <i class="fas fa-rocket"></i>
+        </a>
+        <a href="../contact.html" class="btn btn-outline">
+          <span>Talk to Our Development Team</span>
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+    <!-- Navbar -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-about">
+            <img
+              class="footer-img"
+              src="../image/Graphura-logo-white.png"
+              alt="graphura logo"
+            />
+            <p>
+              Your trusted digital marketing partner helping businesses grow
+              their online presence and reach their target audience effectively.
+            </p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/share/19nKAMTopZ/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://share.google/w9KeZZ72v8KQxGpFn"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/graphura-india-private-limited/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/graphura.in?igsh=MXNqNmtidzljNDJlag=="
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../services/seo.html">Services</a></li>
+              <li><a href="../about.html">About Us</a></li>
+              <li><a href="../internship.html">Internship</a></li>
+
+              <li><a href="../career.html">Career </a></li>
+              <li><a href="../blog.html">Blog</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-services">
+            <h4>Our Services</h4>
+            <ul>
+              <li role="none">
+                <a role="menuitem" href="services/seo.html">SEO Services</a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/smm.html"
+                  >Social Media Marketing</a
+                >
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/smo.html"
+                  >Social Media Optimization</a
+                >
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/Flyers.html">Flyers</a>
+              </li>
+              <li role="none">
+                <a role="menuitem" href="services/cw.html">Content Writing</a>
+              </li>
+
+              <!-- <img src="../image/Footer/mca.png" alt="MCA" style="width: 200px; margin-top: 10px;"> -->
+               <img src="../image/Footer/razorpay.jpg" alt="Razorpay-Logo" style="width: 230px; height: 85px; margin-top: 0.5rem;">
+
+
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> Graphura India Private Limited, near RSF , Pataudi, Gurgaon, Haryana 122503
+              </li>
+              <li><i class="fas fa-phone"></i> +91 7378021327</li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:support@graphura.in" style="color: white"
+                  >support@graphura.in</a
+                >
+              </li>
+
+        
+              <div style="display: grid;grid-template-columns: repeat(2, 1fr); gap: 10px;">
+              <img src="../image/Footer/skill india.jpg" alt="Skill India" style="height: 88px;" /> 
+            <img src="../image/Footer/startup.png" alt="startup india" style="height: 88px; width: 150px;">
+            </div>
+
+            </ul>
+          </div>
+        </div>
+         <div class="footer-bottom">
+          <p>
+            &copy; 2025 Graphura India Private Limited. All Rights Reserved.
+          </p>
+          <ul>
+            <li><a href="../privacy.html">Privacy Policy</a></li>
+            <li><a href="../Term&condition.html">Terms of Service</a></li>
+            <li><a href="../cookies.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-chat">
+      <a href="https://wa.me/+917378021327" target="_blank" class="chat-btn">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+
+  const toggle = document.querySelector(".navbar-toggle");
+  const menu = document.querySelector(".navbar-nav");
+  const cont = document.querySelector(".navbar .container");
+  const dropdownToggles = document.querySelectorAll(".nav-dropdown > .dropdown-toggle");
+  const overlay = document.querySelector(".mobile-overlay");
+  const serviceToggle = document.querySelector(".nav-mega .dropdown-toggle");
+  const megaMenu = document.querySelector(".mega-menu");
+
+  let isOpen = false;
+
+  const closeMenu = () => {
+    document.body.classList.remove("menu-open");
+    menu.classList.remove("active");
+    toggle.classList.remove("active");
+    toggle.setAttribute("aria-expanded", "false");
+    cont.style.flexWrap = "nowrap";
+
+    // Close Service Mega Menu
+    if (megaMenu) megaMenu.classList.remove("active");
+
+    // Close all dropdown menus
+    dropdownToggles.forEach((btn) => {
+      const dropdownMenu = btn.nextElementSibling;
+      if (dropdownMenu) dropdownMenu.classList.remove("active");
+      btn.setAttribute("aria-expanded", "false");
+    });
+
+    isOpen = false;
+  };
+
+  // Mobile menu toggle
+  toggle.addEventListener("click", () => {
+    isOpen = !isOpen;
+
+    document.body.classList.toggle("menu-open", isOpen);
+    menu.classList.toggle("active", isOpen);
+    toggle.classList.toggle("active", isOpen);
+    cont.style.flexWrap = isOpen ? "wrap" : "nowrap";
+
+    toggle.setAttribute("aria-expanded", isOpen.toString());
+
+    // 🔥 CLOSE SERVICE DROPDOWN when hamburger is clicked
+    if (megaMenu) megaMenu.classList.remove("active");
+
+    // 🔥 CLOSE ALL DROPDOWNS when hamburger is clicked
+    dropdownToggles.forEach((btn) => {
+      const dropdownMenu = btn.nextElementSibling;
+      if (dropdownMenu) dropdownMenu.classList.remove("active");
+      btn.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  // SERVICE mega menu toggle (mobile)
+  if (serviceToggle && megaMenu) {
+    serviceToggle.addEventListener("click", (e) => {
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
+        megaMenu.classList.toggle("active");
+      }
+    });
+  }
+
+  // Dropdown toggle inside mobile menu
+  dropdownToggles.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
+        const dropdownMenu = btn.nextElementSibling;
+        dropdownMenu.classList.toggle("active");
+
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", (!expanded).toString());
+      }
+    });
+  });
+
+  // Close menu on desktop resize
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 900) {
+      closeMenu();
+    }
+  });
+
+  // Overlay click closes everything
+  if (overlay) {
+    overlay.addEventListener("click", closeMenu);
+  }
+
+});
+
+
+
+
+      // FAQ Section JS
+
+      // faq accordion
+      document.querySelectorAll(".faq-item").forEach((item) => {
+        const question = item.querySelector(".faq-question");
+
+        question.addEventListener("click", () => {
+          const openItem = document.querySelector(".faq-item.active");
+
+          if (openItem && openItem !== item) {
+            openItem.classList.remove("active");
+            openItem.querySelector(".faq-answer").style.maxHeight = null;
+          }
+
+          item.classList.toggle("active");
+
+          const answer = item.querySelector(".faq-answer");
+
+          if (item.classList.contains("active")) {
+            answer.style.maxHeight = answer.scrollHeight + "px";
+          } else {
+            answer.style.maxHeight = null;
+          }
+        });
+      });
+
+    </script>
+    <script src="../js/script.js"></script>
+
+    
+</body>
+</html>

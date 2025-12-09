@@ -118,7 +118,7 @@
               <a role="menuitem" href="about.html">About Us</a>
             </li>
             <li role="none">
-              <a role="menuitem" href="Portfolio.html">Portfolio</a>
+              <a role="menuitem" href="portfolio.html">Portfolio</a>
             </li>
             <li role="none"><a role="menuitem" href="blog.html">Blog</a></li>
             <li role="none">
@@ -434,46 +434,98 @@
     </div>
 
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const toggle = document.querySelector(".navbar-toggle");
-        const menu = document.querySelector(".navbar-nav");
-        const cont = document.querySelector(".container");
-        const dropdownToggles = document.querySelectorAll(
-          ".nav-dropdown > .dropdown-toggle"
-        );
-        let flag = 0;
+       document.addEventListener("DOMContentLoaded", () => {
 
-        // Mobile menu toggle
-        toggle.addEventListener("click", () => {
-          document.body.classList.toggle("menu-open");
-        });
-        toggle.addEventListener("click", () => {
-          if (flag === 0) {
-            cont.style.flexWrap = "wrap";
-          } else {
-            cont.style.flexWrap = "nowrap";
-          }
-          flag = 1 - flag;
-          menu.classList.toggle("active");
-          toggle.classList.toggle("active");
-          // const expanded = toggle.getAttribute("aria-expanded") === "true";
-          toggle.setAttribute("aria-expanded", !expanded);
-        });
+  const toggle = document.querySelector(".navbar-toggle");
+  const menu = document.querySelector(".navbar-nav");
+  const cont = document.querySelector(".navbar .container");
+  const dropdownToggles = document.querySelectorAll(".nav-dropdown > .dropdown-toggle");
+  const overlay = document.querySelector(".mobile-overlay");
+  const serviceToggle = document.querySelector(".nav-mega .dropdown-toggle");
+  const megaMenu = document.querySelector(".mega-menu");
 
-        // Dropdown toggle for mobile
-        dropdownToggles.forEach((btn) => {
-          btn.addEventListener("click", (e) => {
-            if (window.innerWidth <= 900) {
-              e.preventDefault();
-              const dropdownMenu = btn.nextElementSibling;
-              dropdownMenu.classList.toggle("active");
-              const expanded = btn.getAttribute("aria-expanded") === "true";
+  let isOpen = false;
 
-              btn.setAttribute("aria-expanded", !expanded);
-            }
-          });
-        });
-      });
+  const closeMenu = () => {
+    document.body.classList.remove("menu-open");
+    menu.classList.remove("active");
+    toggle.classList.remove("active");
+    toggle.setAttribute("aria-expanded", "false");
+    cont.style.flexWrap = "nowrap";
+
+    // Close Service Mega Menu
+    if (megaMenu) megaMenu.classList.remove("active");
+
+    // Close all dropdown menus
+    dropdownToggles.forEach((btn) => {
+      const dropdownMenu = btn.nextElementSibling;
+      if (dropdownMenu) dropdownMenu.classList.remove("active");
+      btn.setAttribute("aria-expanded", "false");
+    });
+
+    isOpen = false;
+  };
+
+  // Mobile menu toggle
+  toggle.addEventListener("click", () => {
+    isOpen = !isOpen;
+
+    document.body.classList.toggle("menu-open", isOpen);
+    menu.classList.toggle("active", isOpen);
+    toggle.classList.toggle("active", isOpen);
+    cont.style.flexWrap = isOpen ? "wrap" : "nowrap";
+
+    toggle.setAttribute("aria-expanded", isOpen.toString());
+
+    // 🔥 CLOSE SERVICE DROPDOWN when hamburger is clicked
+    if (megaMenu) megaMenu.classList.remove("active");
+
+    // 🔥 CLOSE ALL DROPDOWNS when hamburger is clicked
+    dropdownToggles.forEach((btn) => {
+      const dropdownMenu = btn.nextElementSibling;
+      if (dropdownMenu) dropdownMenu.classList.remove("active");
+      btn.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  // SERVICE mega menu toggle (mobile)
+  if (serviceToggle && megaMenu) {
+    serviceToggle.addEventListener("click", (e) => {
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
+        megaMenu.classList.toggle("active");
+      }
+    });
+  }
+
+  // Dropdown toggle inside mobile menu
+  dropdownToggles.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
+        const dropdownMenu = btn.nextElementSibling;
+        dropdownMenu.classList.toggle("active");
+
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", (!expanded).toString());
+      }
+    });
+  });
+
+  // Close menu on desktop resize
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 900) {
+      closeMenu();
+    }
+  });
+
+  // Overlay click closes everything
+  if (overlay) {
+    overlay.addEventListener("click", closeMenu);
+  }
+
+});
+
     </script>
 
     <script src="./js/script.js"></script>
