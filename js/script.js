@@ -1,4 +1,108 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+  /* ======================================================
+     PORTFOLIO FUNCTIONALITY (FIXED & OPTIMIZED)
+  ====================================================== */
+
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const portfolioItems = document.querySelectorAll('.portfolio-item');
+  const viewMoreBtn = document.querySelector('.view-more-btn');
+  const enlargeButtons = document.querySelectorAll('.enlarge-btn');
+
+  const modal = document.querySelector('.image-modal');
+  const modalClose = document.querySelector('.modal-close');
+  const modalImage = document.querySelector('.modal-image');
+  const modalTitle = document.querySelector('.modal-title');
+  const modalDesc = document.querySelector('.modal-desc');
+
+  let visibleItems = 6;
+  let currentFilter = 'all';
+
+  // Reset scroll on reload
+  window.scrollTo(0, 0);
+
+  // Activate All Projects by default
+  filterButtons.forEach(btn => btn.classList.remove('active'));
+  const allBtn = document.querySelector('.filter-btn[data-filter="all"]');
+  if (allBtn) allBtn.classList.add('active');
+
+  applyFilter();
+
+  // Filter buttons
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      currentFilter = button.dataset.filter;
+      visibleItems = 6;
+      applyFilter();
+    });
+  });
+
+  // View More button
+  if (viewMoreBtn) {
+    viewMoreBtn.addEventListener('click', () => {
+      visibleItems += 6;
+      applyFilter();
+    });
+  }
+
+  function applyFilter() {
+    const filteredItems = Array.from(portfolioItems).filter(item => {
+      return currentFilter === 'all' || item.dataset.category === currentFilter;
+    });
+
+    // Hide all items first
+    portfolioItems.forEach(item => {
+      item.style.display = 'none';
+      item.style.opacity = '0';
+      item.style.transform = 'translateY(20px)';
+    });
+
+    // Show limited items
+    filteredItems.slice(0, visibleItems).forEach((item, index) => {
+      item.style.display = 'block';
+      setTimeout(() => {
+        item.style.opacity = '1';
+        item.style.transform = 'translateY(0)';
+        item.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+      }, index * 80);
+    });
+
+    // Toggle View More
+    if (viewMoreBtn) {
+      viewMoreBtn.style.display =
+        visibleItems < filteredItems.length ? 'inline-block' : 'none';
+    }
+  }
+
+  /* ---------------- IMAGE MODAL ---------------- */
+
+  if (enlargeButtons.length && modal) {
+    enlargeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const card = btn.closest('.portfolio-card');
+        modalImage.src = card.querySelector('img').src;
+        modalTitle.textContent = card.querySelector('.card-title')?.textContent || '';
+        modalDesc.textContent = card.querySelector('.card-desc')?.textContent || '';
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+  }
+
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+  }
+
+  if (modalClose) modalClose.addEventListener('click', closeModal);
+  if (modal) modal.addEventListener('click', e => e.target === modal && closeModal());
+  document.addEventListener('keydown', e => e.key === 'Escape' && closeModal());
+
+});
+
   /* ------------------------ Hero Section Animations ------------------------ */
 
   // Counter Animation for Hero Stats
@@ -480,11 +584,8 @@ document.addEventListener("DOMContentLoaded", function () {
     el.style.transition = "opacity 0.6s ease, transform 0.6s ease";
     animationObserver.observe(el);
   });
-});
-/* ------------------------ Mobile Menu Toggle ------------------------ */
 
-
-// privacy html scroll 
+/* ------------------------ Privacy Policy Scroll ------------------------ */
 
 const sections = document.querySelectorAll("main section");
 const navLinks = document.querySelectorAll(".policy-sidebar a");
@@ -504,5 +605,3 @@ window.addEventListener("scroll", () => {
     }
   });
 });
-
-
