@@ -114,12 +114,13 @@ body {
 }
 
 /* =========================
-   GRID
+   PORTFOLIO GRID
 ========================= */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
+  align-items: stretch;
 }
 
 /* =========================
@@ -132,6 +133,7 @@ body {
   box-shadow: 0 10px 30px var(--shadow);
   display: flex;
   flex-direction: column;
+  height: 100%;
   transition: var(--transition);
 }
 
@@ -139,10 +141,13 @@ body {
   transform: translateY(-8px);
 }
 
-/* IMAGE */
+/* =========================
+   IMAGE
+========================= */
 .card-image {
   position: relative;
   height: 220px;
+  flex-shrink: 0;
   overflow: hidden;
 }
 
@@ -152,11 +157,14 @@ body {
   object-fit: cover;
 }
 
-/* BADGE */
+/* =========================
+   BADGE
+========================= */
 .card-badge {
   position: absolute;
   top: 12px;
   right: 12px;
+  z-index: 2;
 }
 
 .live-badge {
@@ -168,16 +176,19 @@ body {
   font-weight: 700;
 }
 
-/* OVERLAY */
+/* =========================
+   OVERLAY
+========================= */
 .card-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(10,15,41,0.85);
+  background: rgba(10, 15, 41, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
   transition: var(--transition);
+  z-index: 1;
 }
 
 .portfolio-card:hover .card-overlay {
@@ -191,14 +202,27 @@ body {
   border-radius: 50%;
   border: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* CONTENT */
+.preview-btn svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--dark);
+  fill: none;
+  stroke-width: 2;
+}
+
+/* =========================
+   CONTENT
+========================= */
 .card-content {
   padding: 1.6rem;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  flex: 1;
 }
 
 .card-title {
@@ -207,18 +231,52 @@ body {
   margin-bottom: 0.5rem;
 }
 
+/* FIXED HEIGHT DESCRIPTION */
 .card-desc {
   font-size: 0.95rem;
   color: var(--muted);
   margin-bottom: 1.2rem;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-/* LINK */
+/* =========================
+   TAGS (OPTIONAL)
+========================= */
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.card-tags span {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.25rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+/* =========================
+   LINK
+========================= */
 .card-link {
   margin-top: auto;
   color: var(--gold);
   font-weight: 600;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.card-link:hover {
+  text-decoration: underline;
 }
 
 /* =========================
