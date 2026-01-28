@@ -1,0 +1,373 @@
+/* ================================================= */
+/* INTERNSHIPS GRID – GRAPHURA (PORTFOLIO ENHANCED) */
+/* ================================================= */
+
+.internships-grid {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Top Accent Line */
+.internships-grid::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #6366f1, transparent);
+}
+
+/* ================= HEADER ================= */
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #18213f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #18213f;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.highlight {
+    background: linear-gradient(90deg, #facc15);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+/* ================= GRID ================= */
+
+.internship-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ================= CARD ================= */
+
+.internship-card {
+    background: rgba(30, 41, 59, 0.75);
+    border-radius: 22px;
+    padding: 30px;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    position: relative;
+    overflow: hidden;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.45s cubic-bezier(.175,.885,.32,1.275);
+}
+
+/* Portfolio-style glass reflection */
+.internship-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.08),
+        transparent 60%
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+/* Category top bar */
+.internship-card::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 4px;
+    opacity: 0.9;
+}
+
+/* Hover – portfolio lift */
+.internship-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+    border-color: rgba(99, 102, 241, 0.4);
+}
+
+.internship-card:hover::after {
+    opacity: 1;
+}
+
+/* ================= CATEGORY COLORS ================= */
+
+.internship-card[data-category="creative"]::before {
+    background: linear-gradient(90deg, #ec4899, #f472b6);
+}
+.internship-card[data-category="technical"]::before {
+    background: linear-gradient(90deg, #10b981, #34d399);
+}
+.internship-card[data-category="marketing"]::before {
+    background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
+.internship-card[data-category="management"]::before {
+    background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+}
+
+/* ================= HEADER ================= */
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+/* Icon colors by category */
+[data-category="creative"] .card-icon { color:#ec4899; background:rgba(236,72,153,.2); }
+[data-category="technical"] .card-icon { color:#10b981; background:rgba(16,185,129,.2); }
+[data-category="marketing"] .card-icon { color:#f59e0b; background:rgba(245,158,11,.2); }
+[data-category="management"] .card-icon { color:#8b5cf6; background:rgba(139,92,246,.2); }
+
+/* Badge */
+.badge-duration {
+    background: rgba(99,102,241,.15);
+    color: #a5b4fc;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: .85rem;
+    border: 1px solid rgba(99,102,241,.3);
+}
+
+/* ================= CONTENT ================= */
+
+.card-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.card-description {
+    color: #cbd5e1;
+    line-height: 1.6;
+    font-size: .95rem;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+/* Features */
+.card-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.card-features li {
+    color: #94a3b8;
+    margin-bottom: 12px;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color .3s ease;
+}
+
+.internship-card:hover .card-features li {
+    color: #fff;
+}
+
+.card-features i {
+    transition: transform .3s ease;
+}
+
+.internship-card:hover .card-features i {
+    transform: scale(1.2);
+}
+
+/* ================= FOOTER BUTTON ================= */
+
+.view-details-btn {
+    width: 100%;
+    padding: 16px;
+    border-radius: 14px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all .35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.view-details-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    transition: transform .4s ease;
+}
+
+.view-details-btn:hover::before {
+    transform: translateX(0);
+}
+
+.view-details-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.4);
+}
+
+[data-category="creative"] .view-details-btn { background:linear-gradient(90deg,#ec4899,#f472b6); }
+[data-category="technical"] .view-details-btn { background:linear-gradient(90deg,#10b981,#34d399); }
+[data-category="marketing"] .view-details-btn { background:linear-gradient(90deg,#f59e0b,#fbbf24); }
+[data-category="management"] .view-details-btn { background:linear-gradient(90deg,#8b5cf6,#a78bfa); }
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeInUp {
+    from { opacity:0; transform:translateY(30px); }
+    to { opacity:1; transform:translateY(0); }
+}
+
+.internship-card {
+    animation: fadeInUp .6s ease forwards;
+    opacity: 0;
+}
+
+.internship-card:nth-child(n) {
+    animation-delay: calc(var(--i, 1) * 0.1s);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    .section-title { font-size:2.2rem; }
+    .internship-card { padding:25px; }
+}
+
+@media (max-width: 480px) {
+    .internship-cards { grid-template-columns:1fr; }
+}
+/* =========================================
+   CARD COLOR UPDATE – MATCH IMAGE STYLE
+========================================= */
+
+/* Section background lighter */
+.internships-grid {
+    background: #f8fafc;
+}
+
+/* Card base */
+.internship-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    backdrop-filter: none;
+    animation: fadeInUp .6s ease forwards;
+}
+
+/* Remove glass reflection */
+.internship-card::after {
+    display: none;
+}
+
+/* Hover – subtle lift */
+.internship-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+    border-color: #facc15;
+}
+
+/* Top accent bar → yellow */
+.internship-card::before {
+    background: linear-gradient(90deg, #facc15, #fbbf24);
+}
+
+/* Icon box */
+.card-icon {
+    background: #fff7ed;
+    color: #f59e0b;
+    border: 1px solid #fde68a;
+}
+
+/* Title */
+.card-title {
+    color: #111827;
+}
+
+/* Description */
+.card-description {
+    color: #4b5563;
+}
+
+/* Features */
+.card-features li {
+    color: #374151;
+}
+
+.internship-card:hover .card-features li {
+    color: #111827;
+}
+
+/* Duration badge */
+.badge-duration {
+    background: #fff7ed;
+    color: #b45309;
+    border: 1px solid #fde68a;
+}
+
+/* CTA button */
+.view-details-btn {
+    background: transparent;
+    color: #f59e0b;
+    border: none;
+    justify-content: flex-start;
+    padding-left: 0;
+    box-shadow: none;
+}
+
+.view-details-btn::before {
+    display: none;
+}
+
+.view-details-btn:hover {
+    transform: none;
+    box-shadow: none;
+    color: #d97706;
+}
+
+/* Remove category gradients */
+[data-category] .view-details-btn {
+    background: none;
+}
