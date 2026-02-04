@@ -84,107 +84,127 @@
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
-   <url>
+
+  <url>
     <loc>https://www.graphura.in/services/cw.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
-   <url>
+
+  <url>
     <loc>https://www.graphura.in/services/banner.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
-   <url>
+
+  <url>
     <loc>https://www.graphura.in/services/smm.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
-   <url>
+
+  <url>
     <loc>https://www.graphura.in/services/smo.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
 
-   <url>
+  <url>
     <loc>https://www.graphura.in/services/seo.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
-   <url>
+
+  <url>
     <loc>https://www.graphura.in/services/google.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
-   <url>
+
+  <url>
     <loc>https://www.graphura.in/services/meta.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
-   <url>
+
+  <url>
     <loc>https://www.graphura.in/services/cc.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
-   <url>
+
+  <url>
     <loc>https://www.graphura.in/services/email.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
- <url>
+
+  <url>
     <loc>https://www.graphura.in/services/corporate.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
-   <url>
+
+  <url>
     <loc>https://www.graphura.in/services/wd.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
-   <url>
+
+  <url>
     <loc>https://www.graphura.in/services/wad.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
-   <url>
+
+  <url>
     <loc>https://www.graphura.in/services/mad.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
-   <url>
+
+  <url>
     <loc>https://www.graphura.in/services/crm.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://www.graphura.in/services/erp.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://www.graphura.in/services/dba.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://www.graphura.in/services/api.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://www.graphura.in/services/uiux.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://www.graphura.in/services/wam.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://www.graphura.in/Portfolio.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>1.0</priority>
   </url>
+
   <url>
     <loc>https://www.graphura.in/blog.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
@@ -192,7 +212,7 @@
   </url>
 
   <url>
-    <loc>https://www.graphura.in/Term&condition.html</loc>
+    <loc>https://www.graphura.in/Term&amp;condition.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>0.8</priority>
   </url>
@@ -202,7 +222,8 @@
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>0.6</priority>
   </url>
-   <url>
+
+  <url>
     <loc>https://www.graphura.in/cookies.html</loc>
     <lastmod>2026-02-04T18:30:00+05:30</lastmod>
     <priority>0.6</priority>
