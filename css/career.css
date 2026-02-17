@@ -10,9 +10,10 @@ body {
 }
 
 .why-container {
-  width: 90%;
+  width: 95%;
   max-width: 1200px;
   margin: auto;
+  
 }
 
 .why-title {
@@ -30,7 +31,9 @@ body {
 .why-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 25px;
+  gap: 35px;
+  margin-left: 1%;
+  margin-right: 1%;
 }
 
 .why-card {

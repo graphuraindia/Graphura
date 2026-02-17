@@ -605,3 +605,52 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+
+
+
+
+const popup = document.getElementById("popup");
+const openPopupBtn = document.getElementById("openPopupBtn");
+const closePopup = document.getElementById("closePopup");
+const whatsappFloat = document.getElementById("whatsappFloat");
+
+let scrollTriggered = false;
+
+// Open popup
+function openPopup() {
+  popup.style.display = "flex";
+}
+
+// Close popup
+function closePopupFn() {
+  popup.style.display = "none";
+}
+
+// Register Now click
+openPopupBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  openPopup();
+});
+
+// Floating WhatsApp click
+whatsappFloat.addEventListener("click", openPopup);
+
+// Close button
+closePopup.addEventListener("click", closePopupFn);
+
+// Auto popup on page load (once)
+setTimeout(openPopup, 3000);
+
+// Auto popup in middle scroll (once)
+window.addEventListener("scroll", () => {
+  if (!scrollTriggered && window.scrollY > 500) {
+    openPopup();
+    scrollTriggered = true;
+  }
+});
+
+
+
+  
+
