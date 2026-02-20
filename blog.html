@@ -67,6 +67,59 @@
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/blog.css" />
+
+    <style>
+      /* View More Button Styling */
+      .view-more-container {
+        text-align: center;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+        display: block !important;
+        visibility: visible !important;
+      }
+
+      .view-more-btn {
+        padding: 12px 32px;
+        border-radius: 40px;
+        border: none;
+        background: #d4af37;
+        color: #0a0f29;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: inline-block !important;
+        visibility: visible !important;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+      }
+
+      .view-more-btn:hover {
+        background: #ffc107;
+        box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+        transform: translateY(-2px);
+      }
+
+      .view-more-btn:active {
+        transform: translateY(0);
+      }
+
+      /* Hide blog items beyond 6 initially */
+      .blog-item {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 0.4s ease, transform 0.4s ease;
+        display: block !important;
+      }
+
+      .blog-item.hidden {
+        display: none !important;
+        opacity: 0;
+        transform: translateY(20px);
+        visibility: hidden !important;
+      }
+    </style>
   </head>
 
   <body>
@@ -262,7 +315,7 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Featured Posts</h2>
-          <p class="section-subtitle">Discover our most popular articles</p>
+          <p class="section-subtitle">Explore our internship and skill-building articles</p>
           <div class="section-decoration">
             <div class="decoration-line"></div>
             <div class="decoration-dot"></div>
@@ -274,17 +327,16 @@
           <article class="featured-post">
             <div class="post-image">
               <img
-                src="./image/5 Essential SEO Strategies for Small Businesses.webp"
-                alt="5 Essential SEO Strategies for Small Businesses"
+                src="./image/Blogs/Business-Development-Internship-Program.webp"
+                alt="Business Development Internship"
               />
             </div>
             <div class="post-content">
-              <h3>5 Essential SEO Strategies for Small Businesses</h3>
+              <h3>Business Development Internship Program</h3>
               <p>
-                Discover the most effective SEO techniques to boost your online
-                presence and drive organic traffic to your website.
+                Master business development skills through real-world projects and industry mentorship. Learn strategies that drive growth and revenue.
               </p>
-              <a href="./services/search-engine-optimization.html" class="btn-text"
+              <a href="./blog-details/Business-Development-Internship.html" class="btn-text"
                 >Read More <i class="fas fa-arrow-right"></i
               ></a>
             </div>
@@ -293,17 +345,52 @@
           <article class="featured-post">
             <div class="post-image">
               <img
-                src="./image/Social Media Trends to Watch in 2025.webp"
-                alt="Social Media Trends to Watch in 2025"
+                src="./image/Blogs/Graphura-Internship-Program.webp"
+                alt="Graphura Internship Program Overview"
               />
             </div>
             <div class="post-content">
-              <h3>Social Media Trends to Watch in 2025</h3>
+              <h3>Complete Graphura Internship Program Guide</h3>
               <p>
-                Stay ahead of the curve with these emerging social media trends
-                that will shape digital marketing in the coming year.
+                Comprehensive overview of Graphura's internship program, structure, benefits, and how to get started with your career transformation.
               </p>
-              <a href="../blog/social-media-trends.html" class="btn-text"
+              <a href="./blog-details/Graphura-Internship-Program.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="featured-post">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/Social-Media-Marketing-Internship.webp"
+                alt="Social Media Marketing Internship"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Social Media Marketing Internship</h3>
+              <p>
+                Master social media strategies, content creation, and digital engagement. Build your marketing portfolio with real campaigns.
+              </p>
+              <a href="./blog-details/Social-Media-Marketing-Internship.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="featured-post">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/The-Art-of-Professional-Content-Writing.webp"
+                alt="Professional Content Writing"
+              />
+            </div>
+            <div class="post-content">
+              <h3>The Art of Professional Content Writing</h3>
+              <p>
+                Master content writing skills that drive engagement and conversions. Learn SEO-friendly writing techniques and industry best practices.
+              </p>
+              <a href="./blog-details/contentWriting.html" class="btn-text"
                 >Read More <i class="fas fa-arrow-right"></i
               ></a>
             </div>
@@ -316,8 +403,8 @@
     <section id="recent-posts">
       <div class="container" >
         <div class="section-header">
-          <h2 class="section-title">Latest Articles</h2>
-          <p class="section-subtitle">Stay updated with our newest content</p>
+          <h2 class="section-title">All Articles</h2>
+          <p class="section-subtitle">Explore all our internship guides, skill-building articles, and career advice</p>
           <div class="section-decoration">
             <div class="decoration-line"></div>
             <div class="decoration-dot"></div>
@@ -325,129 +412,491 @@
           </div>
         </div>
 
-        <div class="posts-grid">
-          <article class="blog-post">
+        <div class="posts-grid" id="blogPostsGrid">
+          <!-- Internship Core Programs -->
+          <article class="blog-post blog-item">
             <div class="post-image">
               <img
-                src="./image/How to Create Engaging Content for Your Audience.webp"
-                alt="How to Create Engaging Content for Your Audience"
+                src="./image/Blogs/Business-Development-Internship-Program.webp"
+                alt="Business Development Internship"
               />
             </div>
             <div class="post-content">
-              <h3>How to Create Engaging Content for Your Audience</h3>
+              <h3>Business Development Internship</h3>
               <p>
-                Learn the secrets to creating content that resonates with your
-                target market and drives engagement.
+                Learn business development strategies and skills through real-world projects at Graphura. Perfect for aspiring entrepreneurs.
               </p>
-              <a href="./services/content-creation.html" class="btn-text"
+              <a href="./blog-details/Business-Development-Internship.html" class="btn-text"
                 >Read More <i class="fas fa-arrow-right"></i
               ></a>
             </div>
           </article>
 
-          <article class="blog-post">
+          <article class="blog-post blog-item">
             <div class="post-image">
               <img
-                src="./image/The Power of Email Marketing in 2025.webp"
-                alt="The Power of Email Marketing in 2025"
+                src="./image/Blogs/Social-Media-Marketing-Internship.webp"
+                alt="Social Media Marketing Internship"
               />
             </div>
             <div class="post-content">
-              <h3>The Power of Email Marketing in 2025</h3>
+              <h3>Social Media Marketing Internship</h3>
               <p>
-                Why email marketing remains one of the most effective digital
-                channels for customer acquisition and retention.
+                Master social media strategies, content creation, and digital engagement. Build your marketing portfolio with real campaigns.
               </p>
-              <a href="./services/email-and-whatsapp-marketing-services.html" class="btn-text"
+              <a href="./blog-details/Social-Media-Marketing-Internship.html" class="btn-text"
                 >Read More <i class="fas fa-arrow-right"></i
               ></a>
             </div>
           </article>
 
-          <article class="blog-post">
+          <article class="blog-post blog-item">
             <div class="post-image">
               <img
-                src="./image/Branding Tips for Startups.webp"
-                alt="Branding Tips for Startups"
+                src="./image/Blogs/AI-Machine-Learning-Internship.webp"
+                alt="AI and ML Internship"
               />
             </div>
             <div class="post-content">
-              <h3>Branding Tips for Startups in 2025</h3>
+              <h3>AI & Machine Learning Internship</h3>
               <p>
-                Establish a strong, compelling, and memorable brand identity
-                successfully from day one with these expert tips for startups
-                and small businesses.
+                Work on cutting-edge AI and ML projects. Learn practical applications of artificial intelligence in real-world scenarios.
               </p>
-              <a href="./services/search-engine-optimization.html" class="btn-text"
+              <a href="./blog-details/AI-ML-Internship.html" class="btn-text"
                 >Read More <i class="fas fa-arrow-right"></i
               ></a>
             </div>
           </article>
 
-          <article class="blog-post">
+          <!-- Internship Positioning Articles -->
+          <article class="blog-post blog-item">
             <div class="post-image">
               <img
-                src="./image/Maximizing ROI with Digital Advertising.webp"
-                alt="Maximizing ROI with Digital Advertising"
+                src="./image/Blogs/Graphura-Internship-for-Freshers.webp"
+                alt="Internship for Freshers"
               />
             </div>
             <div class="post-content">
-              <h3>Maximizing ROI with Digital Advertising</h3>
+              <h3>Graphura Internship for Freshers</h3>
               <p>
-                Strategies to optimize your digital advertising campaigns and
-                get the best return on your investment.
+                Perfect entry-level opportunities for fresh graduates. Start your career with hands-on experience and industry mentorship.
               </p>
-              <a href="./services/google-ads.html" class="btn-text"
+              <a href="./blog-details/Graphura-Internship-for-Freshers.html" class="btn-text"
                 >Read More <i class="fas fa-arrow-right"></i
               ></a>
             </div>
           </article>
 
-          <article class="blog-post">
+          <article class="blog-post blog-item">
             <div class="post-image">
               <img
-                src="./image/Importance of Mobile Optimization.webp"
-                alt="Importance of Mobile Optimization"
+                src="./image/Blogs/Internship-for-Final-Year-Students.webp"
+                alt="Internship for Final Year Students"
               />
             </div>
             <div class="post-content">
-              <h3>Importance of Mobile Optimization</h3>
+              <h3>Graphura Internship for Final Year Students</h3>
               <p>
-                Why mobile-friendly design is crucial for your website's success
-                in today's mobile-first world.A mobile-friendly design ensures
-                easy navigation and fast loading times for users on the go.
+                Complete your final year with practical learning and placement support. Bridge the gap between academics and industry.
               </p>
-              <a href="./services/mobile-app-development.html" class="btn-text"
+              <a href="./blog-details/Graphura-Internship-for-Final-Year-Students.html" class="btn-text"
                 >Read More <i class="fas fa-arrow-right"></i
               ></a>
             </div>
           </article>
 
-          <article class="blog-post">
+          <article class="blog-post blog-item">
             <div class="post-image">
               <img
-                src="./image/Building a Content Strategy That Converts.webp"
-                alt="Building a Content Strategy That Converts"
+                src="./image/Blogs/Internship-vs-Other-Online-Internships.webp"
+                alt="Graphura vs Other Online Internships"
               />
             </div>
             <div class="post-content">
-              <h3>Building a Content Strategy That Converts</h3>
+              <h3>Graphura Internship vs Other Online Internships</h3>
               <p>
-                Learn how to develop a content strategy that not only engages
-                but also converts visitors into customers.
+                Understand why Graphura stands out from competitors. Real projects, real mentorship, real career growth opportunities.
               </p>
-              <a href="./services/content-writing.html" class="btn-text"
+              <a href="./blog-details/Graphura-Internship-vs-Other-Online-Internships.html" class="btn-text"
                 >Read More <i class="fas fa-arrow-right"></i
               ></a>
             </div>
           </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/Graphura-Internship-vs-College-Internship.webp"
+                alt="Graphura vs College Internship"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Graphura Internship vs College Internship</h3>
+              <p>
+                Compare the benefits of online internships with traditional college programs. Learn why real-world experience matters.
+              </p>
+              <a href="./blog-details/Graphura-Internship-vs-College-Internship.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Decision and Career Growth Articles -->
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/Should-You-Choose-Graphura-Internship.webp"
+                alt="Should You Choose Graphura Internship"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Should You Choose Graphura Internship?</h3>
+              <p>
+                Decision guide to determine if Graphura internship is right for you. Explore eligibility, benefits, and expected outcomes.
+              </p>
+              <a href="./blog-details/Should-You-Choose-Graphura-Internship.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/How-Graphura-Internship-Helps-Freshers-Get-Jobs.webp"
+                alt="Graphura Internship Helps Freshers Get Jobs"
+              />
+            </div>
+            <div class="post-content">
+              <h3>How Graphura Internship Helps Freshers Get Jobs</h3>
+              <p>
+                Discover how Graphura's internship program leads to job placements. Real success stories and placement strategies.
+              </p>
+              <a href="./blog-details/How-Graphura-Internship-Helps-Freshers-Get-Jobs.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/Can-Graphura-Internship-Improve-Your-Resume.webp"
+                alt="Can Graphura Internship Improve Your Resume"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Can Graphura Internship Improve Your Resume?</h3>
+              <p>
+                Learn how Graphura internship experience strengthens your resume. Portfolio building and credential enhancement strategies.
+              </p>
+              <a href="./blog-details/Can-Graphura-Internship-Improve-Your-Resume.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/Graphura-Internship-Career-Path.webp"
+                alt="Graphura Internship Career Path"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Graphura Internship Career Path</h3>
+              <p>
+                Charting your career progression from internship to industry leadership. Long-term growth and advancement opportunities.
+              </p>
+              <a href="./blog-details/Graphura-Internship-Career-Path.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Internship Value and Program Details -->
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/Why-Real-Project-Internships-Matter-More.webp"
+                alt="Why Real Project Internships Matter More"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Why Real Project Internships Matter More</h3>
+              <p>
+                Understand the value of real-world project experience over theoretical learning. Transform your skills with practical applications.
+              </p>
+              <a href="./blog-details/Why-Real-Project-Internships-Matter-More.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/Graphura-Internship-Assessment-Task-System.webp"
+                alt="Graphura Internship Assessment Task System"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Graphura Internship Assessment Task System</h3>
+              <p>
+                Learn about our comprehensive task assessment methodology. How we track progress and ensure quality learning outcomes.
+              </p>
+              <a href="./blog-details/Graphura-Internship-Assessment-Task-System.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/Graphura-Internship-Offer-Letter.webp"
+                alt="Graphura Internship Offer Letter"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Graphura Internship Offer Letter</h3>
+              <p>
+                Understanding your offer letter and onboarding process. What to expect and how to get started with Graphura.
+              </p>
+              <a href="./blog-details/Graphura-Internship-Offer-Letter.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/Graphura-Internship-Fees-ROI.webp"
+                alt="Graphura Internship Fees"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Graphura Internship Fees & ROI</h3>
+              <p>
+                Transparent pricing and return on investment. Understand the cost structure and value of the internship program.
+              </p>
+              <a href="./blog-details/Graphura-Internship-Fees.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/Top-Internship-Mistakes-Students-Make.webp"
+                alt="Top Internship Mistakes Students Make"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Top Internship Mistakes Students Make</h3>
+              <p>
+                Learn from common pitfalls and mistakes that students make during internships. Strategies to maximize your learning.
+              </p>
+              <a href="./blog-details/Top-Internship-Mistakes-Students-Make.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/Graphura-Internship-Program.webp"
+                alt="Graphura Internship Program Overview"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Graphura Internship Program</h3>
+              <p>
+                Complete overview of our internship program, structure, duration, and benefits. Your comprehensive guide to getting started.
+              </p>
+              <a href="./blog-details/Graphura-Internship-Program.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <!-- Additional Skill and Service Articles -->
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/lead-generation.webp"
+                alt="Graphura Lead Generation Service"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Graphura's Lead Generation Service</h3>
+              <p>
+                Master lead generation strategies and techniques. Learn how to identify, attract, and convert quality leads effectively.
+              </p>
+              <a href="./blog-details/Graphura's-Lead-Generation-Service.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/How-Students-Can-Network-Better-with-AI-Tools.webp"
+                alt="How Students Can Network Better with AI Tools"
+              />
+            </div>
+            <div class="post-content">
+              <h3>How Students Can Network Better with AI Tools</h3>
+              <p>
+                Leverage AI and automation tools to enhance your professional networking. Build meaningful connections in the digital age.
+              </p>
+              <a href="./blog-details/ai.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/The-Art-of-Professional-Content-Writing.webp"
+                alt="Content Writing Guide"
+              />
+            </div>
+            <div class="post-content">
+              <h3>The Art of Professional Content Writing</h3>
+              <p>
+                Master content writing skills that drive engagement and conversions. Learn SEO-friendly writing techniques and strategies.
+              </p>
+              <a href="./blog-details/contentWriting.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/Professional-Networking-Building-Business-Connections.webp"
+                alt="Professional Networking Building"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Professional Networking: Building Business Connections</h3>
+              <p>
+                Learn effective networking strategies to build meaningful business relationships. Advance your career through connections.
+              </p>
+              <a href="./blog-details/professionalNetworking.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/AI-in-Professional-Networking-Evolution.webp"
+                alt="Lead Generation Marketing"
+              />
+            </div>
+            <div class="post-content">
+              <h3>AI in Professional Networking Evolution</h3>
+              <p>
+                Discover how AI is transforming professional networking and lead generation. Adopt new tools and strategies for success.
+              </p>
+              <a href="./blog-details/leadGeneration.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/Video-Editing-Content-Production.webp"
+                alt="Social Media Marketing Tips"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Video Editing &amp; Content Production</h3>
+              <p>
+                Learn professional video editing techniques and content production. Create engaging visual content for your audience.
+              </p>
+              <a href="./blog-details/socialMedia.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/Web-Design-UX-Fundamentals.webp"
+                alt="Video Editing Guide"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Web Design &amp; UX Fundamentals</h3>
+              <p>
+                Master web design principles and user experience design. Create beautiful, functional websites that convert visitors.
+              </p>
+              <a href="./blog-details/videoEditing.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/The-Ultimate-Web-Development-Guide-2025.webp"
+                alt="Web Development 2025"
+              />
+            </div>
+            <div class="post-content">
+              <h3>The Ultimate Web Development Guide 2025</h3>
+              <p>
+                Comprehensive guide to modern web development. Learn the latest technologies, frameworks, and best practices for success.
+              </p>
+              <a href="./blog-details/webDesignblog.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+
+          <article class="blog-post blog-item">
+            <div class="post-image">
+              <img
+                src="./image/Blogs/Blog-Resources-Information-Hub.webp"
+                alt="Blog Details Category"
+              />
+            </div>
+            <div class="post-content">
+              <h3>Blog Resources & Information Hub</h3>
+              <p>
+                Access our comprehensive blog resources and detailed guides. Find answers to common questions about internships and skills.
+              </p>
+              <a href="./blog-details/blog-details.html" class="btn-text"
+                >Read More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- View More/Less Button -->
+        <div class="view-more-container">
+          <button class="view-more-btn" id="viewToggleBtn">View More Articles</button>
         </div>
       </div>
     </section>
 
     <!-- Subscribe Section -->
     <section id="subscribe">
-      <div  class="subscribe-section" style="margin-top: 2rem;">
+      <div  class="subscribe-section" style="margin-top: 2rem; margin-bottom: 80px;">
       <div class="container">
         <div class="subscribe-content">
           <h2>Stay Updated with Graphura</h2>
@@ -576,9 +1025,12 @@
       </a>
     </div>
 
-    <script>
+   <script>
+document.addEventListener("DOMContentLoaded", () => {
 
-    document.addEventListener("DOMContentLoaded", () => {
+  /* ==============================
+     NAVBAR CODE (UNCHANGED)
+  ============================== */
 
   const toggle = document.querySelector(".navbar-toggle");
   const menu = document.querySelector(".navbar-nav");
@@ -597,10 +1049,8 @@
     toggle.setAttribute("aria-expanded", "false");
     cont.style.flexWrap = "nowrap";
 
-    // Close Service Mega Menu
     if (megaMenu) megaMenu.classList.remove("active");
 
-    // Close all dropdown menus
     dropdownToggles.forEach((btn) => {
       const dropdownMenu = btn.nextElementSibling;
       if (dropdownMenu) dropdownMenu.classList.remove("active");
@@ -610,7 +1060,6 @@
     isOpen = false;
   };
 
-  // Mobile menu toggle
   toggle.addEventListener("click", () => {
     isOpen = !isOpen;
 
@@ -621,10 +1070,8 @@
 
     toggle.setAttribute("aria-expanded", isOpen.toString());
 
-    // 🔥 CLOSE SERVICE DROPDOWN when hamburger is clicked
     if (megaMenu) megaMenu.classList.remove("active");
 
-    // 🔥 CLOSE ALL DROPDOWNS when hamburger is clicked
     dropdownToggles.forEach((btn) => {
       const dropdownMenu = btn.nextElementSibling;
       if (dropdownMenu) dropdownMenu.classList.remove("active");
@@ -632,7 +1079,6 @@
     });
   });
 
-  // SERVICE mega menu toggle (mobile)
   if (serviceToggle && megaMenu) {
     serviceToggle.addEventListener("click", (e) => {
       if (window.innerWidth <= 900) {
@@ -642,7 +1088,6 @@
     });
   }
 
-  // Dropdown toggle inside mobile menu
   dropdownToggles.forEach((btn) => {
     btn.addEventListener("click", (e) => {
       if (window.innerWidth <= 900) {
@@ -656,21 +1101,66 @@
     });
   });
 
-  // Close menu on desktop resize
   window.addEventListener("resize", () => {
     if (window.innerWidth > 900) {
       closeMenu();
     }
   });
 
-  // Overlay click closes everything
   if (overlay) {
     overlay.addEventListener("click", closeMenu);
   }
 
-});
+  /* ======================================================
+     BLOG VIEW MORE / VIEW LESS FUNCTIONALITY - SINGLE BUTTON
+  ====================================================== */
 
-  </script>
+  const blogItems = document.querySelectorAll(".blog-item");
+  const viewToggleBtn = document.getElementById("viewToggleBtn");
+
+  let displayedCount = 6; // Initially show 6 items
+
+  // Function to update display
+  function updateBlogDisplay() {
+    blogItems.forEach((item, index) => {
+      if (index < displayedCount) {
+        item.classList.remove("hidden");
+      } else {
+        item.classList.add("hidden");
+      }
+    });
+
+    // Hide the button when all items are shown, otherwise show "View More"
+    if (displayedCount >= blogItems.length) {
+      if (viewToggleBtn) viewToggleBtn.style.display = "none";
+    } else {
+      if (viewToggleBtn) {
+        viewToggleBtn.style.display = "inline-block";
+        viewToggleBtn.textContent = "View More Articles";
+      }
+    }
+  }
+
+  // Toggle button click
+  if (viewToggleBtn) {
+    viewToggleBtn.addEventListener("click", () => {
+      // Increase the displayed count by 6; when all are shown the button will hide
+      displayedCount += 6;
+      if (displayedCount > blogItems.length) displayedCount = blogItems.length;
+      updateBlogDisplay();
+      // Scroll to button for better UX
+      setTimeout(() => {
+        viewToggleBtn.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }, 300);
+    });
+  }
+
+  // Initialize
+  updateBlogDisplay();
+
+});
+</script>
+
 
     <script src="./js/script.js"></script>
   </body>
