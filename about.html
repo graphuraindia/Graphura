@@ -8,68 +8,90 @@
   <meta name="title" content="About Graphura India Private Limited | Branding, Marketing & Software Development Agency" />
     <meta name="description" content="Learn about Graphura India Private Limited — a Branding, Digital Marketing and Custom Software Development company working with clients across India, the UK and globally. We specialize in brand identity, performance marketing, website development, UI/UX design and scalable software solutions.    "/>
     <meta name="keywords" content="About Graphura India Private Limited, Branding Company India, Digital Marketing Agency, Software Development Company, UI UX Design Company India, UK Software Outsourcing, Custom Software Developers, Brand Identity Services, Performance Marketing Agency"/>
-    <script type="application/ld+json">
+   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "AboutPage",
-      "name": "About Graphura India Private Limited",
-      "url": "https://graphura.in/about",
-      "description": "Learn about Graphura India Private Limited, a Branding, Digital Marketing, Website Design and Custom Software Development company serving clients in India, UK and worldwide."
-    },
-    {
       "@type": "Organization",
+      "@id": "https://graphura.in/#organization",
       "name": "Graphura India Private Limited",
       "url": "https://graphura.in",
       "logo": "https://graphura.in/logo.webp",
-      "description": "Graphura India Private Limited helps businesses build strong brands, run results-driven marketing campaigns and develop scalable software platforms such as websites, web apps, mobile apps, CRM, ERP and SaaS products.",
+      "description": "Graphura India Private Limited helps businesses build strong brands, run results-driven marketing campaigns and develop scalable software platforms including websites, web apps, mobile apps, CRM, ERP and SaaS products.",
       "foundingDate": "2022",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Patudi",
-        "addressLocality": "Gurugram",
+        "addressLocality": "Gurgaon",
         "addressRegion": "Haryana",
         "postalCode": "122503",
         "addressCountry": "IN"
       },
       "contactPoint": {
         "@type": "ContactPoint",
+        "telephone": "+91 7378021327",
         "contactType": "customer support",
         "email": "support@graphura.in",
+        "areaServed": "IN",
         "availableLanguage": ["English", "Hindi"]
       },
       "sameAs": [
-        "https://instagram.com/graphura.in",
-        "https://linkedin.com/company/graphura"
+        "https://www.instagram.com/graphura.in",
+        "https://www.linkedin.com/company/graphura-india-private-limited/"
       ]
     },
     {
-      "@type": "Service",
-      "serviceType": "Branding & Identity Design",
-      "areaServed": ["IN", "GB", "AE"],
-      "provider": {
-        "@type": "Organization",
-        "name": "Graphura India Private Limited"
+      "@type": "WebSite",
+      "@id": "https://graphura.in/#website",
+      "url": "https://graphura.in",
+      "name": "Graphura India Private Limited",
+      "publisher": {
+        "@id": "https://graphura.in/#organization"
+      }
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://graphura.in/about/#webpage",
+      "name": "About Graphura India Private Limited",
+      "url": "https://graphura.in/about",
+      "description": "Learn about Graphura India Private Limited, a Branding, Digital Marketing, Website Design and Custom Software Development company serving clients in India, UK and worldwide.",
+      "isPartOf": {
+        "@id": "https://graphura.in/#website"
+      },
+      "about": {
+        "@id": "https://graphura.in/#organization"
       }
     },
     {
       "@type": "Service",
-      "serviceType": "Digital Marketing & Growth Strategy",
-      "areaServed": ["IN", "GB", "AE"],
+      "@id": "https://graphura.in/#branding",
+      "name": "Branding & Identity Design",
+      "serviceType": "Branding",
       "provider": {
-        "@type": "Organization",
-        "name": "Graphura India Private Limited"
-      }
+        "@id": "https://graphura.in/#organization"
+      },
+      "areaServed": ["IN", "GB", "AE"]
     },
     {
       "@type": "Service",
-      "serviceType": "Custom Website, App & Software Development",
-      "areaServed": ["IN", "GB", "AE"],
+      "@id": "https://graphura.in/#marketing",
+      "name": "Digital Marketing & Growth Strategy",
+      "serviceType": "Digital Marketing",
       "provider": {
-        "@type": "Organization",
-        "name": "Graphura India Private Limited"
-      }
+        "@id": "https://graphura.in/#organization"
+      },
+      "areaServed": ["IN", "GB", "AE"]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://graphura.in/#development",
+      "name": "Custom Website, App & Software Development",
+      "serviceType": "Software Development",
+      "provider": {
+        "@id": "https://graphura.in/#organization"
+      },
+      "areaServed": ["IN", "GB", "AE"]
     }
   ]
 }

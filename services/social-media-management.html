@@ -5,76 +5,141 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SMM Services - Graphura India Private Limited</title>
-  <meta name="title" content="Social Media Marketing Services in India | Best SMM Agency Gurugram | Graphura India Private Limited" />
-    <meta name="description" content="Grow your brand presence with expert Social Media Marketing services from Graphura India Private Limited. Based in Patudi, Gurugram, Haryana, we help businesses in India, UK and worldwide achieve engagement, followers, meaningful reach and measurable conversions through tailored SMM strategies."/>
-    <meta name="keywords" content="Social Media Marketing Services India, Best SMM Agency Gurugram, Digital Marketing Company Haryana, SMM Services for UK Businesses, Instagram Marketing Agency, Facebook Ads Expert India, Social Media Brand Management, Affordable Social Media Packages"/>
-    <script type="application/ld+json">
+  <meta name="title" content="Social Media Marketing Services in India | Best SMM Agency Gurgaon | Graphura India Private Limited" />
+    <meta name="description" content="Grow your brand presence with expert Social Media Marketing services from Graphura India Private Limited. Based in Patudi, Gurgaon, Haryana, we help businesses in India, UK and worldwide achieve engagement, followers, meaningful reach and measurable conversions through tailored SMM strategies."/>
+    <meta name="keywords" content="Social Media Marketing Services India, Best SMM Agency Gurgaon, Digital Marketing Company Haryana, SMM Services for UK Businesses, Instagram Marketing Agency, Facebook Ads Expert India, Social Media Brand Management, Affordable Social Media Packages"/>
+   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Social Media Marketing (SMM) Services",
-  "serviceType": "Social Media Marketing",
-  "provider": {
-    "@type": "Organization",
-    "name": "Graphura India Private Limited",
-    "url": "https://graphura.in",
-    "logo": "https://graphura.in/wp-content/uploads/2024/graphura-logo.webp",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Patudi",
-      "addressLocality": "Gurugram",
-      "addressRegion": "Haryana",
-      "postalCode": "122503",
-      "addressCountry": "IN"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91 ",
-      "contactType": "customer support",
-      "availableLanguage": ["English", "Hindi"],
-      "areaServed": ["IN", "UK"]
-    }
-  },
-  "description": "Professional Social Media Marketing (SMM) services to build brand awareness, increase engagement, grow followers and generate business leads across Instagram, Facebook, LinkedIn, YouTube and more.",
-  "areaServed": [
+  "@graph": [
+
     {
-      "@type": "Country",
-      "name": "India"
-    },
-    {
-      "@type": "Country",
-      "name": "United Kingdom"
-    }
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "SMM Service Packages",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "name": "Instagram Marketing",
-        "description": "Create brand-focused posts, reels, and engagement campaigns to grow followers and visibility."
-      },
-      {
-        "@type": "Offer",
-        "name": "Facebook Marketing",
-        "description": "Community growth, targeted promotions, and page engagement campaigns for business presence."
-      },
-      {
-        "@type": "Offer",
-        "name": "LinkedIn Marketing",
-        "description": "Professional brand positioning, corporate communication, and authority-building content."
-      },
-      {
-        "@type": "Offer",
-        "name": "YouTube Channel Growth",
-        "description": "Content planning, title/thumbnail strategy and channel branding for business storytelling."
+      "@type": "Organization",
+      "@id": "https://graphura.in/#organization",
+      "name": "Graphura India Private Limited",
+      "url": "https://graphura.in",
+      "logo": "https://graphura.in/wp-content/uploads/2024/graphura-logo.webp",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 7378021327",
+        "contactType": "customer support",
+        "areaServed": "IN",
+        "availableLanguage": ["English", "Hindi"]
       }
-    ]
-  }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://graphura.in/#website",
+      "url": "https://graphura.in",
+      "name": "Graphura India Private Limited",
+      "publisher": {
+        "@id": "https://graphura.in/#organization"
+      }
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://graphura.in/smm-services/#webpage",
+      "url": "https://graphura.in/smm-services",
+      "name": "Social Media Marketing (SMM) Services | Graphura India Private Limited",
+      "description": "Professional Social Media Marketing (SMM) services to build brand awareness, increase engagement, and generate leads.",
+      "isPartOf": {
+        "@id": "https://graphura.in/#website"
+      },
+      "about": {
+        "@id": "https://graphura.in/#organization"
+      }
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://graphura.in/smm-services/#service",
+      "name": "Social Media Marketing (SMM) Services",
+      "serviceType": "Social Media Marketing",
+      "description": "Professional Social Media Marketing services to grow brand awareness, engagement, followers, and generate business leads across Instagram, Facebook, LinkedIn, and YouTube.",
+      "provider": {
+        "@id": "https://graphura.in/#organization"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "India"
+        },
+        {
+          "@type": "Country",
+          "name": "United Kingdom"
+        },
+        {
+          "@type": "Country",
+          "name": "United States"
+        }
+      ],
+
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "SMM Service Packages",
+        "itemListElement": [
+
+          {
+            "@type": "Offer",
+            "name": "Instagram Marketing",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Instagram Marketing",
+              "description": "Brand-focused posts, reels, and engagement campaigns to grow followers and visibility."
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "name": "Facebook Marketing",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Facebook Marketing",
+              "description": "Community growth, targeted promotions, and engagement campaigns."
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "name": "LinkedIn Marketing",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "LinkedIn Marketing",
+              "description": "Professional brand positioning and authority-building content."
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "name": "YouTube Channel Growth",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "YouTube Marketing",
+              "description": "Content strategy, thumbnail optimization, and channel growth techniques."
+            }
+          }
+
+        ]
+      },
+
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IN"
+          }
+        }
+      }
+
+    }
+
+  ]
 }
 </script>
-
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

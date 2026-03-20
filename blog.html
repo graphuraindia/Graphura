@@ -5,43 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Blog - Graphura India Private Limited</title>
     <meta name="title" content="Graphura Blog | Branding, Marketing & Software Development Insights" />
-    <meta name="description" content="Explore expert articles on branding, digital marketing, UI/UX, graphic design, software development and business growth strategies. Stay updated with industry insights, creative trends and helpful guides by Graphura India Private Limited, Patudi, Gurugram, Haryana."/>
+    <meta name="description" content="Explore expert articles on branding, digital marketing, UI/UX, graphic design, software development and business growth strategies. Stay updated with industry insights, creative trends and helpful guides by Graphura India Private Limited, Patudi, Gurgaon, Haryana."/>
     <meta name="keywords" content="branding blog, digital marketing tips, UI UX design blog, software development articles, business growth insights, creative design trends, marketing strategy blog, Graphura blog"/>
-    <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Blog",
-  "name": "Graphura Blog",
-  "url": "https://graphura.in/blog",
-  "description": "Branding, marketing, design and software development insights from Graphura India Private Limited.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Graphura India Private Limited",
-    "url": "https://graphura.in",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://graphura.in/logo.webp"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://graphura.in/#organization",
+      "name": "Graphura India Private Limited",
+      "url": "https://graphura.in",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://graphura.in/logo.webp"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 7378021327",
+        "contactType": "customer support",
+        "email": "support@graphura.in",
+        "areaServed": "IN",
+        "availableLanguage": ["English", "Hindi"]
+      },
+      "sameAs": [
+        "https://www.instagram.com/graphura.in",
+        "https://www.linkedin.com/company/graphura-india-private-limited/"
+      ]
     },
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Patudi",
-      "addressLocality": "Gurugram",
-      "addressRegion": "Haryana",
-      "postalCode": "122503",
-      "addressCountry": "IN"
+    {
+      "@type": "WebSite",
+      "@id": "https://graphura.in/#website",
+      "url": "https://graphura.in",
+      "name": "Graphura India Private Limited",
+      "publisher": {
+        "@id": "https://graphura.in/#organization"
+      }
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "Customer Support",
-      "email": "support@graphura.in",
-      "availableLanguage": ["English", "Hindi"]
+    {
+      "@type": "Blog",
+      "@id": "https://graphura.in/blog/#blog",
+      "name": "Graphura Blog",
+      "url": "https://graphura.in/blog",
+      "description": "Branding, marketing, design, and software development insights from Graphura India Private Limited.",
+      "isPartOf": {
+        "@id": "https://graphura.in/#website"
+      },
+      "publisher": {
+        "@id": "https://graphura.in/#organization"
+      }
     },
-    "sameAs": [
-      "https://instagram.com/graphura.in",
-      "https://linkedin.com/company/graphura"
-    ]
-  },
-  "blogPost": []
+    {
+      "@type": "WebPage",
+      "@id": "https://graphura.in/blog/#webpage",
+      "url": "https://graphura.in/blog",
+      "name": "Graphura Blog",
+      "isPartOf": {
+        "@id": "https://graphura.in/#website"
+      },
+      "about": {
+        "@id": "https://graphura.in/#organization"
+      },
+      "description": "Read the latest blogs on branding, marketing strategies, UI/UX design, and software development."
+    }
+  ]
 }
 </script>
 

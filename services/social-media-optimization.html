@@ -5,79 +5,144 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SMO Services - Graphura India Private Limited</title>
-  <meta name="title" content="SMO Services in India | Best SMO Agency Gurugram | Graphura India Private Limited" />
-  <meta name="description" content="Graphura India Private Limited offers professional Social Media Optimization (SMO) services to improve brand presence, audience engagement, and social visibility. Based in Patudi, Gurugram, Haryana, we help businesses across India, UK, UAE and globally strengthen their digital identity and community engagement."/>
-  <meta name="keywords" content="SMO Services India, Best SMO Agency Gurugram, Social Media Optimization Company Haryana, SMO Services for UK Clients, Social Media Profile Management, Brand Awareness Marketing India, Digital Engagement Strategy, Affordable SMO Packages"/>
-  <script type="application/ld+json">
+  <meta name="title" content="SMO Services in India | Best SMO Agency Gurgaon | Graphura India Private Limited" />
+  <meta name="description" content="Graphura India Private Limited offers professional Social Media Optimization (SMO) services to improve brand presence, audience engagement, and social visibility. Based in Patudi, Gurgaon, Haryana, we help businesses across India, UK, UAE and globally strengthen their digital identity and community engagement."/>
+  <meta name="keywords" content="SMO Services India, Best SMO Agency Gurgaon, Social Media Optimization Company Haryana, SMO Services for UK Clients, Social Media Profile Management, Brand Awareness Marketing India, Digital Engagement Strategy, Affordable SMO Packages"/>
+ <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "SMO Services",
-  "url": "https://graphura.in/smo-services",
-  "image": "https://graphura.in/assets/img/branding/graphura-brand-banner.webp",
-  "description": "Professional Social Media Optimization services to improve brand visibility, engagement, and consistent social media presence across major platforms including Instagram, Facebook, LinkedIn, and YouTube.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Graphura India Private Limited",
-    "logo": "https://graphura.in/assets/img/logo/graphura-logo.webp",
-    "url": "https://graphura.in",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Patudi",
-      "addressLocality": "Gurugram",
-      "addressRegion": "Haryana",
-      "addressCountry": "India"
+  "@graph": [
+
+    {
+      "@type": "Organization",
+      "@id": "https://graphura.in/#organization",
+      "name": "Graphura India Private Limited",
+      "url": "https://graphura.in",
+      "logo": "https://graphura.in/assets/img/logo/graphura-logo.webp",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 7378021327",
+        "contactType": "customer support",
+        "email": "support@graphura.in",
+        "areaServed": "IN",
+        "availableLanguage": ["English", "Hindi"]
+      }
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer support",
-      "email": "support@graphura.in"
-    }
-  },
-  "areaServed": ["India", "Worldwide"],
-  "serviceType": "Social Media Optimization",
-  "serviceOutput": "Consistent branding, improved engagement, increased brand trust",
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "SMO Service Package",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "CreativeWork",
-          "name": "Profile & Page Optimization",
-          "description": "Optimizing all social media profiles for professional branding."
-        }
+
+    {
+      "@type": "WebSite",
+      "@id": "https://graphura.in/#website",
+      "url": "https://graphura.in",
+      "name": "Graphura India Private Limited",
+      "publisher": {
+        "@id": "https://graphura.in/#organization"
+      }
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://graphura.in/smo-services/#webpage",
+      "url": "https://graphura.in/smo-services",
+      "name": "SMO Services | Graphura India Private Limited",
+      "description": "Professional Social Media Optimization services to improve brand visibility, engagement, and consistent social media presence.",
+      "isPartOf": {
+        "@id": "https://graphura.in/#website"
       },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "CreativeWork",
-          "name": "Content Strategy & Planning",
-          "description": "Monthly content strategy aligned with brand tone and goals."
-        }
+      "about": {
+        "@id": "https://graphura.in/#organization"
+      }
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://graphura.in/smo-services/#service",
+      "name": "SMO Services",
+      "description": "Professional Social Media Optimization services to improve brand visibility, engagement, and consistent social media presence across platforms like Instagram, Facebook, LinkedIn, and YouTube.",
+      "image": "https://graphura.in/assets/img/branding/graphura-brand-banner.webp",
+      "serviceType": "Social Media Optimization",
+      "provider": {
+        "@id": "https://graphura.in/#organization"
       },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "CreativeWork",
-          "name": "Posting & Hashtag Optimization",
-          "description": "Scheduled posting with researched hashtags for organic reach."
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "India"
+        },
+        {
+          "@type": "Country",
+          "name": "United States"
+        },
+        {
+          "@type": "Country",
+          "name": "United Kingdom"
         }
+      ],
+      "serviceOutput": "Consistent branding, improved engagement, increased brand trust",
+
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "SMO Service Packages",
+        "itemListElement": [
+
+          {
+            "@type": "Offer",
+            "name": "Profile & Page Optimization",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Profile & Page Optimization",
+              "description": "Optimizing all social media profiles for professional branding."
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "name": "Content Strategy & Planning",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Content Strategy & Planning",
+              "description": "Monthly content strategy aligned with brand goals."
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "name": "Posting & Hashtag Optimization",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Posting & Hashtag Optimization",
+              "description": "Scheduled posting with researched hashtags for better reach."
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "name": "Audience Engagement",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Audience Engagement",
+              "description": "Managing comments, messages, and community interaction."
+            }
+          }
+
+        ]
       },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "CreativeWork",
-          "name": "Audience Engagement",
-          "description": "Replying, responding and maintaining community engagement."
+
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceLocation": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "IN"
+          }
         }
       }
-    ]
-  }
+
+    }
+
+  ]
 }
 </script>
-
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

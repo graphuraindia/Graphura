@@ -5,58 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Brand Design Services - Graphura India Private Limited</title>
     <meta name="title" content="Brand Identity Design | Colors, Fonts & Brand Guidelines | Graphura" />
-    <meta name="description" content=" Graphura India Private Limited creates cohesive brand identity systems — logo, color palette, typography, iconography and full brand guidelines — that make businesses memorable and consistent across digital & print. Based in Patudi, Gurugram, we serve India, UK & global clients."/>
+    <meta name="description" content=" Graphura India Private Limited creates cohesive brand identity systems — logo, color palette, typography, iconography and full brand guidelines — that make businesses memorable and consistent across digital & print. Based in Patudi, Gurgaon, we serve India, UK & global clients."/>
     <meta name="keywords" content=" brand identity design, brand guideline design, corporate branding, colors and fonts, brand system, visual identity, Graphura brand identity"/>
-    <script type="application/ld+json">
+   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Brand Identity Design",
-  "url": "https://graphura.in/brand-identity-design",
-  "description": "Brand identity design services by Graphura India Private Limited — color palettes, typography, logo systems, iconography, and practical brand guidelines for consistent brand communication.",
-  "provider": {
-    "@type": "Organization",
-    "name": "Graphura India Private Limited",
-    "url": "https://graphura.in",
-    "logo": "https://graphura.in/assets/img/logo/graphura-logo.webp",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Patudi",
-      "addressLocality": "Gurugram",
-      "addressRegion": "Haryana",
-      "postalCode": "122503",
-      "addressCountry": "IN"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer support",
-      "email": "support@graphura.in",
-      "availableLanguage": ["English","Hindi"]
-    }
-  },
-  "serviceType": "Brand Identity Design",
-  "areaServed": ["IN","GB","US"],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Brand Identity Packages",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "name": "Basic Brand Identity",
-        "description": "Logo + color palette + typography + basic guidelines."
-      },
-      {
-        "@type": "Offer",
-        "name": "Standard Brand Identity",
-        "description": "Logo system + palette + typography + iconography + guidelines + stationery mockups."
-      },
-      {
-        "@type": "Offer",
-        "name": "Premium Brand System",
-        "description": "Full identity system + templates + strategy workshop + onboarding support."
+  "@graph": [
+
+    {
+      "@type": "Organization",
+      "@id": "https://graphura.in/#organization",
+      "name": "Graphura India Private Limited",
+      "url": "https://graphura.in",
+      "logo": "https://graphura.in/assets/img/logo/graphura-logo.webp",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 7378021327",
+        "contactType": "customer support",
+        "email": "support@graphura.in",
+        "areaServed": "IN",
+        "availableLanguage": ["English","Hindi"]
       }
-    ]
-  }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://graphura.in/#website",
+      "url": "https://graphura.in",
+      "name": "Graphura India Private Limited",
+      "publisher": {
+        "@id": "https://graphura.in/#organization"
+      }
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://graphura.in/brand-identity-design/#webpage",
+      "url": "https://graphura.in/brand-identity-design",
+      "name": "Brand Identity Design Services | Graphura India Private Limited",
+      "description": "Brand identity design services including logo systems, typography, color palettes and brand guidelines for consistent branding.",
+      "isPartOf": {
+        "@id": "https://graphura.in/#website"
+      },
+      "about": {
+        "@id": "https://graphura.in/#organization"
+      }
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://graphura.in/brand-identity-design/#service",
+      "name": "Brand Identity Design",
+      "serviceType": "Brand Identity Design",
+      "description": "Professional brand identity design services including logo systems, typography, color palettes, iconography and brand guidelines for consistent communication.",
+      "provider": {
+        "@id": "https://graphura.in/#organization"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "India" },
+        { "@type": "Country", "name": "United Kingdom" },
+        { "@type": "Country", "name": "United States" }
+      ],
+
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Brand Identity Packages",
+        "itemListElement": [
+
+          {
+            "@type": "Offer",
+            "name": "Basic Brand Identity",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Basic Brand Identity",
+              "description": "Logo, color palette, typography and basic brand guidelines."
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "name": "Standard Brand Identity",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Standard Brand Identity",
+              "description": "Logo system, palette, typography, iconography, guidelines and stationery mockups."
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "name": "Premium Brand System",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Premium Brand Identity",
+              "description": "Complete brand system with templates, strategy workshop and onboarding support."
+            }
+          }
+
+        ]
+      },
+
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceLocation": {
+          "@type": "Place",
+          "name": "Gurgaon",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Gurgaon",
+            "addressRegion": "Haryana",
+            "addressCountry": "IN"
+          }
+        }
+      }
+
+    }
+
+  ]
 }
 </script>
 
@@ -270,7 +335,7 @@
           <div class="benefit-card" style=" border-right: 4px solid var(--accent);">
             <h4>Local + Global Experience</h4>
             <p>
-              Based in Patudi, Gurugram, we serve clients across India, the UK and internationally — blending local insight with global standards.
+              Based in Patudi, Gurgaon, we serve clients across India, the UK and internationally — blending local insight with global standards.
             </p>
           </div>
         </div>

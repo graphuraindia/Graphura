@@ -6,97 +6,165 @@
     <title>Brand Statergy - Graphura India Private Limited</title>
     <meta name="title" content="Brand Strategy Services | Positioning & Messaging | Graphura" />
     <meta name="description" content="Build a strong brand identity with Graphura’s Brand Strategy Services. Positioning, messaging, audience persona, tone, brand story & complete communication framework."/>
-    <script type="application/ld+json">
+   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
+
+    {
+      "@type": "Organization",
+      "@id": "https://graphura.in/#organization",
+      "name": "Graphura India Private Limited",
+      "url": "https://graphura.in",
+      "logo": "https://graphura.in/assets/img/logo/graphura-logo.webp",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 7378021327",
+        "contactType": "customer support",
+        "email": "support@graphura.in",
+        "areaServed": "IN",
+        "availableLanguage": ["English", "Hindi"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Patudi",
+        "addressLocality": "Gurgaon",
+        "addressRegion": "Haryana",
+        "postalCode": "122503",
+        "addressCountry": "IN"
+      }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://graphura.in/#website",
+      "url": "https://graphura.in",
+      "name": "Graphura India Private Limited",
+      "publisher": {
+        "@id": "https://graphura.in/#organization"
+      }
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://graphura.in/brand-strategy/#webpage",
+      "url": "https://graphura.in/brand-strategy",
+      "name": "Brand Strategy Services | Graphura India Private Limited",
+      "description": "Brand strategy services including positioning, messaging, customer personas and communication planning.",
+      "isPartOf": {
+        "@id": "https://graphura.in/#website"
+      },
+      "about": {
+        "@id": "https://graphura.in/#organization"
+      }
+    },
+
     {
       "@type": "Service",
+      "@id": "https://graphura.in/brand-strategy/#service",
       "name": "Brand Strategy Services",
       "serviceType": "Brand Strategy",
-      "url": "https://graphura.in/brand-strategy",
-      "description": "Brand strategy services by Graphura India Private Limited: positioning, messaging, customer personas, voice & tone, competitor benchmarking and communication roadmaps.",
+      "description": "Brand strategy services including positioning, messaging, customer personas, voice & tone, competitor benchmarking and communication roadmaps.",
       "provider": {
-        "@type": "Organization",
-        "name": "Graphura India Private Limited",
-        "url": "https://graphura.in",
-        "logo": "https://graphura.in/assets/img/logo/graphura-logo.webp",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "customer support",
-          "email": "support@graphura.in",
-          "telephone": "+91-73780 21327",
-          "availableLanguage": ["English", "Hindi"]
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Patudi",
-          "addressLocality": "Gurugram",
-          "addressRegion": "Haryana",
-          "postalCode": "122503",
-          "addressCountry": "IN"
-        }
+        "@id": "https://graphura.in/#organization"
       },
-      "areaServed": ["IN", "GB", "US"],
+      "areaServed": [
+        { "@type": "Country", "name": "India" },
+        { "@type": "Country", "name": "United Kingdom" },
+        { "@type": "Country", "name": "United States" }
+      ],
+
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "name": "Brand Strategy Offerings",
         "itemListElement": [
+
           {
             "@type": "Offer",
             "name": "Essentials Brand Strategy",
-            "description": "Discovery, UVP, persona and a two-week roadmap."
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Essentials Brand Strategy",
+              "description": "Discovery, unique value proposition, customer persona and short-term roadmap."
+            }
           },
+
           {
             "@type": "Offer",
             "name": "Comprehensive Brand Strategy",
-            "description": "In-depth research, positioning, messaging, and a 3-month communication plan."
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Comprehensive Brand Strategy",
+              "description": "In-depth research, positioning, messaging and long-term communication planning."
+            }
           }
+
         ]
+      },
+
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceLocation": {
+          "@type": "Place",
+          "name": "Gurgaon",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Gurgaon",
+            "addressRegion": "Haryana",
+            "addressCountry": "IN"
+          }
+        }
       }
+
     },
+
     {
       "@type": "FAQPage",
+      "@id": "https://graphura.in/brand-strategy/#faq",
       "mainEntity": [
+
         {
           "@type": "Question",
           "name": "What is included in a brand strategy?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Positioning, messaging, UVP, audience personas, voice & tone, competitor benchmarking, and a communication roadmap."
+            "text": "It includes positioning, messaging, unique value proposition, audience personas, voice and tone, competitor analysis and communication roadmap."
           }
         },
+
         {
           "@type": "Question",
           "name": "How long does the process take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Typically 7–15 business days depending on complexity and stakeholder availability."
+            "text": "Typically 7 to 15 business days depending on complexity and requirements."
           }
         },
+
         {
           "@type": "Question",
           "name": "Do you also provide brand identity design?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We offer Brand Identity Design as a follow-on or combined package with Brand Strategy."
+            "text": "Yes, we offer brand identity design as a standalone or combined package with brand strategy."
           }
         },
+
         {
           "@type": "Question",
           "name": "Will I get a strategy document?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes — a downloadable PDF with all recommendations and implementation steps."
+            "text": "Yes, you will receive a complete strategy document with actionable recommendations and implementation steps."
           }
         }
+
       ]
     }
+
   ]
 }
-
 </script>
-
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

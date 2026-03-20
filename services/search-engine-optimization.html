@@ -5,78 +5,131 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>SEO Services - Graphura India Private Limited</title>
-  <meta name="title" content="SEO Services in India | Best SEO Agency Gurugram | Graphura India Private Limited" />
-    <meta name="description" content="Graphura India Private Limited offers professional SEO services to help businesses increase website traffic, improve Google rankings, and generate qualified leads. Based in Patudi, Gurugram, Haryana, we provide SEO solutions for India, UK and global clients with proven and measurable results."/>
-    <meta name="keywords" content="SEO Services India, Best SEO Agency Gurugram, SEO Company Haryana, Search Engine Optimization Experts, SEO Agency for UK Clients, Digital Marketing and SEO Services, Local SEO Gurugram, Technical SEO Company India, Affordable SEO Packages"/>
+  <meta name="title" content="SEO Services in India | Best SEO Agency Gurgaon | Graphura India Private Limited" />
+    <meta name="description" content="Graphura India Private Limited offers professional SEO services to help businesses increase website traffic, improve Google rankings, and generate qualified leads. Based in Patudi, Gurgaon, Haryana, we provide SEO solutions for India, UK and global clients with proven and measurable results."/>
+    <meta name="keywords" content="SEO Services India, Best SEO Agency Gurgaon, SEO Company Haryana, Search Engine Optimization Experts, SEO Agency for UK Clients, Digital Marketing and SEO Services, Local SEO Gurgaon, Technical SEO Company India, Affordable SEO Packages"/>
   
   <meta name="author" content="Graphura" />
-  <script type="application/ld+json">
+ <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "SEO Services",
-  "provider": {
-    "@type": "Organization",
-    "name": "Graphura India Private Limited",
-    "url": "https://graphura.in",
-    "logo": "https://graphura.in/wp-content/uploads/2024/graphura-logo.webp",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Patudi",
-      "addressLocality": "Gurugram",
-      "addressRegion": "Haryana",
-      "postalCode": "122503",
-      "addressCountry": "IN"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91 ",
-      "contactType": "customer support",
-      "areaServed": "IN, UK",
-      "availableLanguage": ["English", "Hindi"]
-    }
-  },
-  "description": "Professional SEO services to improve website ranking, increase organic traffic, and generate business growth. We provide Local SEO, National SEO, E-Commerce SEO, Technical SEO, and Content Optimization.",
-  "serviceType": "Search Engine Optimization (SEO)",
-  "areaServed": [
+  "@graph": [
+
     {
-      "@type": "Country",
-      "name": "India"
-    },
-    {
-      "@type": "Country",
-      "name": "United Kingdom"
-    }
-  ],
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "SEO Service Packages",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "name": "Local SEO Services",
-        "description": "Grow visibility in your city or region with optimized local search ranking."
+      "@type": "Organization",
+      "@id": "https://graphura.in/#organization",
+      "name": "Graphura India Private Limited",
+      "url": "https://graphura.in",
+      "logo": "https://graphura.in/wp-content/uploads/2024/graphura-logo.webp",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Patudi",
+        "addressLocality": "Gurgaon",
+        "addressRegion": "Haryana",
+        "postalCode": "122503",
+        "addressCountry": "IN"
       },
-      {
-        "@type": "Offer",
-        "name": "National SEO Services",
-        "description": "Rank across India for industry competitive keywords."
-      },
-      {
-        "@type": "Offer",
-        "name": "E-Commerce SEO",
-        "description": "Increase online store visibility, traffic and sales."
-      },
-      {
-        "@type": "Offer",
-        "name": "Technical SEO",
-        "description": "Improve website performance, crawlability and indexation."
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91 7378021327",
+        "contactType": "customer support",
+        "areaServed": "IN",
+        "availableLanguage": ["English", "Hindi"]
       }
-    ]
-  }
+    },
+
+    {
+      "@type": "WebSite",
+      "@id": "https://graphura.in/#website",
+      "url": "https://graphura.in",
+      "name": "Graphura India Private Limited",
+      "publisher": {
+        "@id": "https://graphura.in/#organization"
+      }
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://graphura.in/seo-services/#webpage",
+      "url": "https://graphura.in/seo-services",
+      "name": "SEO Services | Graphura India Private Limited",
+      "description": "Professional SEO services to improve website rankings, increase organic traffic, and drive business growth.",
+      "isPartOf": {
+        "@id": "https://graphura.in/#website"
+      },
+      "about": {
+        "@id": "https://graphura.in/#organization"
+      }
+    },
+
+    {
+      "@type": "Service",
+      "@id": "https://graphura.in/seo-services/#service",
+      "name": "SEO Services",
+      "serviceType": "Search Engine Optimization",
+      "description": "Professional SEO services including Local SEO, National SEO, E-Commerce SEO, Technical SEO, and Content Optimization.",
+      "provider": {
+        "@id": "https://graphura.in/#organization"
+      },
+      "areaServed": [
+        { "@type": "Country", "name": "India" },
+        { "@type": "Country", "name": "United Kingdom" },
+        { "@type": "Country", "name": "United States" }
+      ],
+
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "SEO Service Packages",
+        "itemListElement": [
+
+          {
+            "@type": "Offer",
+            "name": "Local SEO Services",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Local SEO",
+              "description": "Improve visibility in Gurgaon and nearby regions with optimized local search strategies."
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "name": "National SEO Services",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "National SEO",
+              "description": "Rank across India for competitive keywords."
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "name": "E-Commerce SEO",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "E-Commerce SEO",
+              "description": "Increase product visibility and sales for online stores."
+            }
+          },
+
+          {
+            "@type": "Offer",
+            "name": "Technical SEO",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Technical SEO",
+              "description": "Improve site performance, crawlability, and indexing."
+            }
+          }
+
+        ]
+      }
+
+    }
+
+  ]
 }
 </script>
-
 
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
