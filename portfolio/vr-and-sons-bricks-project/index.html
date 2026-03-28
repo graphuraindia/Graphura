@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>VR and Sons Bricks Project | Graphura India Private Limited</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="VR and Sons Bricks Project developed by Graphura India Private Limited. Modern construction website with optimized UI/UX.">
+  <meta name="keywords" content="VR and Sons Bricks, bricks supplier website, construction materials India, bricks project website, furniture construction site, Graphura portfolio, web development project India">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "VR and Sons Bricks Website",
+  "creator": {
+    "@type": "Organization",
+    "name": "Graphura India Private Limited"
+  },
+  "about": "Construction and bricks website",
+  "url": "https://graphura.in/portfolio/vr-and-sons-bricks-project/index.html",
+  "keywords": [
+    "Bricks Website",
+    "Construction Website",
+    "VR and Sons",
+    "Graphura Project",
+    "Web Development India"
+  ]
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      max-width: 850px;
+      width: 100%;
+      padding: 40px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    /* LOGO */
+    .logo {
+      width: 140px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 5px 15px rgba(56,189,248,0.4));
+      transition: 0.3s;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .subtitle {
+      color: #38bdf8;
+      margin-bottom: 20px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      color: #cbd5f5;
+      line-height: 1.7;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .timer {
+      margin-top: 25px;
+      font-size: 18px;
+      color: #22c55e;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 6px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      margin-top: 15px;
+      overflow: hidden;
+    }
+
+    .progress {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #22c55e, #38bdf8);
+      transition: width 1s linear;
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 12px 25px;
+      border-radius: 30px;
+      border: none;
+      background: linear-gradient(90deg, #38bdf8, #22c55e);
+      color: #000;
+      font-weight: 600;
+      cursor: pointer;
+      display: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    iframe {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      z-index: 9999;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container" id="seoSection">
+  <div class="card">
+
+    <!-- GRAPHURA LOGO -->
+    <img src="...assets/img/logo.png" alt="Graphura Logo" class="logo">
+
+    <div class="subtitle">GRAPHURA PORTFOLIO</div>
+
+    <h1>VR and Sons Bricks Project</h1>
+
+    <p>
+      A modern bricks and construction-focused website designed to showcase premium quality materials, strengthen business credibility, and deliver a seamless digital experience for customers.
+    </p>
+
+    <p>
+      The platform offers a responsive layout, fast performance, and intuitive navigation, making it easy for users to explore products and services across construction and furniture-related needs. This project reflects a strong digital presence for VR and Sons, combining clean design, efficient functionality, and a user-centric approach to support business growth and customer engagement.
+    </p>
+
+    <p>
+      Developed by Graphura India Private Limited, this project highlights expertise in web development, branding, and SEO-driven architecture.
+    </p>
+
+    <div class="timer" id="timer">Opening website in 120 seconds</div>
+
+    <div class="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <button class="btn" id="enterBtn" onclick="loadWebsite()">Enter Website</button>
+
+  </div>
+</div>
+
+<iframe id="websiteFrame"></iframe>
+
+<script>
+  let timeLeft = 120;
+  const totalTime = 120;
+
+  const timer = document.getElementById("timer");
+  const progress = document.getElementById("progress");
+  const button = document.getElementById("enterBtn");
+
+  const interval = setInterval(() => {
+    timeLeft--;
+
+    timer.innerText = "Opening website in " + timeLeft + " seconds";
+
+    let percent = ((totalTime - timeLeft) / totalTime) * 100;
+    progress.style.width = percent + "%";
+
+    if (timeLeft <= 0) {
+      clearInterval(interval);
+      loadWebsite();
+    }
+  }, 1000);
+
+  setTimeout(() => {
+    button.style.display = "inline-block";
+  }, 10000);
+
+  function loadWebsite() {
+    document.getElementById("websiteFrame").src = "https://www.vrandsons.com";
+    document.getElementById("websiteFrame").style.display = "block";
+    document.getElementById("seoSection").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
