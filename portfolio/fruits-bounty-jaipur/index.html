@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fruits Bounty Jaipur Project | Graphura</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="Fruits Bounty Jaipur website showcasing fresh fruits supply and export services. Designed for product display, customer engagement, and business growth.">
+  <meta name="keywords" content="Fruits Bounty Jaipur, fresh fruits website, fruits supplier Jaipur, fruits export India, agriculture website, Graphura portfolio">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://graphura.online/fruits-bounty-jaipur-project">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fruits Bounty Jaipur Project | Graphura Portfolio">
+  <meta property="og:description" content="Fresh fruits supply and export website designed for modern business growth.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://graphura.online/fruits-bounty-jaipur-project">
+  <meta property="og:image" content="https://graphura.online/assets/img/projects/fruits-bounty.jpg">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Fruits Bounty Jaipur Website",
+    "about": "Fresh fruits supply and export business website",
+    "url": "https://graphura.online/fruits-bounty-jaipur-project",
+    "creator": {
+      "@type": "Organization",
+      "name": "Graphura India Private Limited"
+    }
+  }
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: #fff;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      max-width: 850px;
+      width: 100%;
+      padding: 40px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 10px 25px rgba(56,189,248,0.3));
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .subtitle {
+      color: #38bdf8;
+      margin-bottom: 20px;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    p {
+      color: #cbd5f5;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .timer {
+      margin-top: 25px;
+      font-size: 18px;
+      color: #22c55e;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 6px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      margin-top: 15px;
+      overflow: hidden;
+    }
+
+    .progress {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #22c55e, #38bdf8);
+    }
+
+    .btn {
+      margin-top: 25px;
+      padding: 12px 25px;
+      border-radius: 30px;
+      border: none;
+      background: linear-gradient(90deg, #38bdf8, #22c55e);
+      color: #000;
+      font-weight: 600;
+      cursor: pointer;
+      display: none;
+    }
+
+    iframe {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      z-index: 9999;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container" id="seoSection">
+  <div class="card">
+
+    <img src="image/Graphura-logo-white.webp" alt="Graphura Logo" class="logo">
+
+    <div class="subtitle">GRAPHURA PORTFOLIO</div>
+
+    <h1>Fruits Bounty Jaipur Project</h1>
+
+    <p>
+      A modern website designed to showcase fresh fruits supply and distribution services in Jaipur. The platform highlights product quality, availability, and business credibility.
+    </p>
+
+    <p>
+      Built with a responsive layout and fast performance, the website enables customers and buyers to easily explore fruit categories and connect with the business.
+    </p>
+
+    <p>
+      This project strengthens the digital presence of Fruits Bounty Jaipur, focusing on trust, simplicity, and seamless user experience for customers and partners.
+    </p>
+
+    <p>
+      Developed by Graphura India Private Limited.
+    </p>
+
+    <div class="timer" id="timer">Opening website in 120 seconds</div>
+
+    <div class="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <button class="btn" id="enterBtn" onclick="loadWebsite()">Enter Website</button>
+
+  </div>
+</div>
+
+<iframe id="websiteFrame"></iframe>
+
+<script>
+  let timeLeft = 120;
+  const totalTime = 120;
+
+  const timer = document.getElementById("timer");
+  const progress = document.getElementById("progress");
+  const button = document.getElementById("enterBtn");
+
+  const interval = setInterval(() => {
+    timeLeft--;
+
+    timer.innerText = "Opening website in " + timeLeft + " seconds";
+
+    let percent = ((totalTime - timeLeft) / totalTime) * 100;
+    progress.style.width = percent + "%";
+
+    if (timeLeft <= 0) {
+      clearInterval(interval);
+      loadWebsite();
+    }
+  }, 1000);
+
+  setTimeout(() => {
+    button.style.display = "inline-block";
+  }, 10000);
+
+  function loadWebsite() {
+    document.getElementById("websiteFrame").src = "https://www.fuitsbounty.in";
+    document.getElementById("websiteFrame").style.display = "block";
+    document.getElementById("seoSection").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
